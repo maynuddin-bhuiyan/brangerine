@@ -1,6 +1,7 @@
-import '../styles/globals.css';
 import Head from 'next/head';
 import Script from 'next/script';
+import 'remixicon/fonts/remixicon.css';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -22,6 +23,10 @@ function MyApp({ Component, pageProps }) {
           crossOrigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        {/* Font Link */}
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700;800;900&display=swap" rel="stylesheet"></link>
       </Head>
       <Component {...pageProps} />
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></Script>
