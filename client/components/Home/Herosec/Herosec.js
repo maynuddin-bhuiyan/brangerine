@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Herosec() {
+function HeroSec() {
     return (
-        <div>Herosec</div>
+        <div>HeroSec</div>
     )
 }
 
-export default Herosec
+export default HeroSec
