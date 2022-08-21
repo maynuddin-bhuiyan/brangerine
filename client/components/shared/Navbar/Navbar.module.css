@@ -1,0 +1,18 @@
+.navItem {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.navBtn {
+  padding: 10px 20px;
+  gap: 20px;
+  width: 166px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50px;
+}
