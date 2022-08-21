@@ -24,7 +24,7 @@ function Navbar() {
                             <a className={`nav-link active me-5 ${styles.navItem}`} aria-current="page" href="#">About Us</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link active ${styles.navBtn}`} aria-current="page" href="#">Contact Us</a>
+                            <a className={`nav-link active ${styles.navBtn}`} aria-current="page" href="#">Contact Us <i className="ri-arrow-right-line"></i></a>
                         </li>
                     </ul>
                 </div>
