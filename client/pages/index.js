@@ -9,6 +9,7 @@ import FooterTwo from "../components/shared/FooterTwo/FooterTwo";
 import styles from "../styles/Home.module.css";
 import Navbar from "./../components/shared/Navbar/Navbar";
 
+
 export default function Home() {
   return (
     <div>
@@ -16,9 +17,9 @@ export default function Home() {
         <Navbar />
         <HeroSec />
       </div>
-      <WhatWeDo />
-      <CaseStudies />
       <FeaturedClients />
+      <WhatWeDo />
+      <CaseStudies />     
       <WorkProcess />
       <Testimonials />
       <Footer />
