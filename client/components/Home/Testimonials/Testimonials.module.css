@@ -1,0 +1,64 @@
+.testimonials {
+  margin: 100px 0px;
+}
+.testimonials h5 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4f42c9;
+}
+.testimonials h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.sliderDiv {
+  border: 1px solid #4f42c9;
+  padding: 40px;
+}
+
+.sliderDiv img {
+  margin-bottom: 40px;
+}
+.sliderDiv p {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+.avatarInfo {
+}
+
+.avatarInfo p {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
