@@ -16,7 +16,7 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
+          infinite: false,
           dots: true,
         },
       },
@@ -36,14 +36,7 @@ const Testimonials = () => {
         },
       },
     ],
-    };
-     const gotoNext = () => {
-    portfolioSlider.current.slickNext()
-  }
-
-  const gotoPrev = () => {
-    portfolioSlider.current.slickPrev()
-  }
+  };
   const data = [
     {
       id: 1,
@@ -91,29 +84,23 @@ const Testimonials = () => {
       <div className={styles.testimonials}>
         <h5>Testimonials</h5>
         <h1>What Our Clients Say</h1>
-        <div  className="testimonialSlider">
-                  <Slider {...settings}>
+        <div className="testimonialSlider">
+          <Slider {...settings}>
             {data.map((item, i) => (
-              <div className={styles.sliderDiv} key={item.id}>
-                <img src={item.logo} alt="logo" />
-                <p>{item.text}</p>
-                <div className={styles.avatar}>
-                  <img src={item.image} alt="avatar" />
-                  <div className={styles.avatarInfo}>
-                    <p>{item.name}</p>
-                    <p>{item.designation}</p>
+              <div className={styles.sliderContainer} key={item.id}>
+                <div className={styles.sliderDiv}>
+                  <img src={item.logo} alt="logo" />
+                  <p>{item.text}</p>
+                  <div className={styles.avatar}>
+                    <img src={item.image} alt="avatar" />
+                    <div className={styles.avatarInfo}>
+                      <p>{item.name}</p>
+                      <p>{item.designation}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
-                       <div className={styles.nftSliderButton}>
-                <button onClick={() => gotoPrev()}>
-                  <i className="fa-solid fa-angle-left"></i>
-                </button>
-                <button onClick={() => gotoNext()}>
-                  <i className="fa-solid fa-angle-right"></i>
-                </button>
-              </div>
           </Slider>
         </div>
       </div>
