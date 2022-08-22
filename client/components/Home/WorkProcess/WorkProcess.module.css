@@ -1,6 +1,6 @@
 .workProcess {
   display: flex;
-  /* grid-template-columns: repeat(2, 1fr); */
+  margin-top: 100px;
 }
 
 .workProcessHeadMain {
@@ -47,6 +47,10 @@
   margin-bottom: 50px;
 }
 
+.workProcessHead a {
+  text-decoration: none;
+}
+
 .learnButton {
   border-radius: 4px;
   background: #101011;
@@ -60,6 +64,7 @@
   transition: all 0.5s;
   margin: 5px;
   display: flex;
+  width: 280px;
   align-items: center;
   font-family: "Swiss 721", sans-serif;
 }
@@ -195,6 +200,7 @@
     line-height: 120%;
     padding: 12px 20px;
     margin-bottom: 78px;
+    width: 240px;
   }
   .learnButton:hover i {
     transform: translateX(175px);
@@ -262,6 +268,7 @@
     line-height: 120%;
     padding: 12px 20px;
     margin-bottom: 115px;
+    width: 235px;
   }
   .learnButton:hover i {
     transform: translateX(175px);
@@ -311,6 +318,7 @@
     line-height: 120%;
     padding: 12px 20px;
     margin-bottom: 125px;
+    width: 235px;
   }
   .learnButton:hover i {
     transform: translateX(175px);
