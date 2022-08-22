@@ -95,9 +95,12 @@
 }
 
 
+
+
 .WhatWeDoAccordion .Accordion {
-    background-color: inherit !important;
+    background-color: transparent !important;
 }
+
 
 .WhatWeDoAccordion .Accordion .Title button {
     margin-bottom: 30px !important;
