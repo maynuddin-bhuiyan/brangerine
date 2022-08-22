@@ -12,13 +12,89 @@ body {
   color-scheme: dark;
 }
 
-/* Testimonial Carousel */
 
-/* .testimonialSlider > .slick-slider > .slick-prev:before {
-  content: "/images/testimonials/Vector.svg ";
+
+.accordion-button {
+  background-color: transparent !important;
+  color: #FFFFFF !important
+}
+
+.accordion-button span {
+  color: #FFFFFF;
+  opacity: 65%;
+  margin-right: 10px;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+  color: #4f42c9 !important;
+}
+
+.accordion-button:not(.collapsed) span {
+  color: #4f42c9 !important;
+}
+
+
+.accordion-button::after {
+  background: url(../public/images/WhatWeDo/Vector.svg) !important;
+  background-repeat: no-repeat !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url(../public/images/WhatWeDo/subtract-line.svg) !important;
+  background-repeat: no-repeat !important;
+}
+
+
+
+
+
+
+
+
+/* Testimonial Carousel */
+.testimonialSlider>.slick-slider>.slick-prev:before {
+  content: "....";
   background: url("/images/testimonials/Vector.svg");
-  right: 100px;
-} */
+  background-position: top center;
+  background-size: cover;
+  top: 0;
+  color: transparent;
+  font-size: 15px;
+}
+
+.testimonialSlider>.slick-slider>.slick-prev {
+  left: -2px;
+  background: #ffffff;
+  padding: 22px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.testimonialSlider>.slick-slider>.slick-next:before {
+  content: "....";
+  background: url("/images/testimonials/Vector (1).svg");
+  background-position: top center;
+  background-size: cover;
+  top: 0;
+  color: transparent;
+  font-size: 15px;
+}
+
+.testimonialSlider>.slick-slider>.slick-next {
+  right: -2px;
+  background: #4f42c9;
+  padding: 22px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 1;
+}
 
 .testimonialSlider>.slick-slider>.slick-dots li button:before {
   color: #606060 !important;
@@ -30,4 +106,23 @@ body {
 .testimonialSlider>.slick-slider>.slick-dots li.slick-active button:before {
   color: #4f42c9 !important;
   font-size: 8px !important;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .testimonialSlider>.slick-slider>.slick-prev:before {
+    content: none;
+  }
+
+  .testimonialSlider>.slick-slider>.slick-prev {
+    background: none;
+  }
+
+  .testimonialSlider>.slick-slider>.slick-next:before {
+    content: none;
+  }
+
+  .testimonialSlider>.slick-slider>.slick-next {
+    background: none;
+  }
 }

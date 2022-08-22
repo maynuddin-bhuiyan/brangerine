@@ -6,13 +6,23 @@
 .workProcessHeadMain {
   width: 100%;
 }
-
 .workProcessHead {
-  background: url("/images/workprocess/Ellipse_line_shape.svg");
+  position: relative;
+  z-index: 1;
+}
+
+.workProcessHead:after {
+  content: " ";
+  background: url("/images/workprocess/Ellipse Shape.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 0px 397px 0px;
+  position: absolute;
+  width: 600px;
+  left: 85px;
+  top: -12px;
+  height: 613px;
+  z-index: -1;
 }
 
 .workProcessHead h1 {
@@ -156,8 +166,11 @@
     display: flex;
     flex-direction: column;
   }
-  .workProcessHead {
-    padding: 0px 0px 75px 0px;
+  .workProcessHead:after {
+    width: 350px;
+    left: 0px;
+    top: -12px;
+    height: 358px;
   }
   .workProcessInfo {
     width: 100%;
@@ -181,6 +194,7 @@
     font-size: 16px;
     line-height: 120%;
     padding: 12px 20px;
+    margin-bottom: 78px;
   }
   .learnButton:hover i {
     transform: translateX(175px);
@@ -197,29 +211,32 @@
   }
 }
 @media only screen and (max-width: 375px) {
-  .workProcessHead {
-    background: url("/images/workprocess/Ellipse 15.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px 0px 29px 0px;
-    width: 356px;
+  .workProcessHead:after {
+    width: 300px;
+    left: 0px;
+    top: -12px;
+    height: 307px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .workProcessHead {
-    background: url("/images/workprocess/Ellipse 15.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px 0px 29px 0px;
-    width: 356px;
+  .workProcessHead:after {
+    width: 300px;
+    left: 0px;
+    top: -12px;
+    height: 307px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .workProcess {
     display: flex;
     flex-direction: column;
+  }
+
+  .workProcessHead:after {
+    width: 429px;
+    left: 85px;
+    top: -12px;
+    height: 439px;
   }
 
   .workProcessInfo {
@@ -231,9 +248,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 36px;
-  }
-  .workProcessHead {
-    padding: 30px 0px 346px 0px;
   }
   .workProcessHead h1 {
     font-size: 64px;
@@ -247,6 +261,7 @@
     font-size: 16px;
     line-height: 120%;
     padding: 12px 20px;
+    margin-bottom: 115px;
   }
   .learnButton:hover i {
     transform: translateX(175px);
@@ -267,6 +282,12 @@
     display: flex;
     flex-direction: column;
   }
+  .workProcessHead:after {
+    width: 429px;
+    left: 85px;
+    top: -12px;
+    height: 439px;
+  }
   .workProcessInfo {
     width: 100%;
     height: 100%;
@@ -289,6 +310,7 @@
     font-size: 16px;
     line-height: 120%;
     padding: 12px 20px;
+    margin-bottom: 125px;
   }
   .learnButton:hover i {
     transform: translateX(175px);
