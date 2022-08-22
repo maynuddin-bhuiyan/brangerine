@@ -92,50 +92,6 @@
   width: 410px;
 }
 
-@media screen and (max-width: 768px) {
-  .leftImage,
-  .rightImage,
-  .middleImage {
-    width: 120px !important;
-  }
-  .tramp {
-    width: 140px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .leftImage,
-  .rightImage,
-  .middleImage {
-    width: 110px !important;
-  }
-  .tramp {
-    width: 130px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .leftImage,
-  .rightImage,
-  .middleImage {
-    width: 110px !important;
-  }
-  .tramp {
-    width: 110px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .leftImage,
-  .rightImage,
-  .middleImage {
-    width: 90px !important;
-  }
-  .tramp {
-    width: 110px;
-  }
-}
-
 .leftImageWrapper,
 .rightImageWrapper,
 .middleImageWrapper {
@@ -171,7 +127,7 @@
 }
 
 .middleImageWrapper {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .leftImage,
@@ -190,6 +146,50 @@
 .middleImageWrapper:hover:hover .flowImage {
   animation: flowDown 1s;
   top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 120px !important;
+  }
+  .tramp {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 110px !important;
+  }
+  .tramp {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 90px !important;
+  }
+  .tramp {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 90px !important;
+  }
+  .tramp {
+    width: 110px;
+  }
 }
 
 /*  */
