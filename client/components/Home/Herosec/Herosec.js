@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import styles from './HeroSec.module.css';
 
 function HeroSec() {
