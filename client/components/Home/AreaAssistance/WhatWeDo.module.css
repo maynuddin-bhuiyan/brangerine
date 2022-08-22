@@ -1,6 +1,78 @@
+.WhatWeDo {
+    position: relative;
+    padding: 100px 0px;
+}
+
+
+.WhatWeDoImage {
+    position: relative;
+}
+
+
+.leftShap {
+    background-color: #4F2416;
+    border-radius: 50%;
+    width: 480px;
+    height: 480px;
+    filter: blur(200px);
+    position: absolute;
+    left: -260px;
+    top: 160px;
+}
+
+
+
+
+.WhatWeDo h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Jost";
+    text-align: center;
+    color: #8A81DB;
+    line-height: 26.4px;
+}
+
+.WhatWeDo h1 {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: "Jost";
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 88px;
+    letter-spacing: -1%;
+    text-transform: capitalize;
+    width: 820px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+
+.imgShap {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    z-index: 3;
+}
+
+.mainImag {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImag img {
+    border-radius: 24px;
+    z-index: 2;
+}
+
+
+
 .WhatWeDoAccordion .Accordion {
     background-color: inherit !important;
 }
+
 
 
 .WhatWeDoAccordion .Accordion .Title button {
@@ -17,7 +89,9 @@
 }
 
 
-
+.WhatWeDoAccordion .Accordion .Title button:focus {
+    box-shadow: none !important;
+}
 
 .Title button span {
     color: #FFFFFF !important;

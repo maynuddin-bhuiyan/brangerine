@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./WhatWeDo.module.css";
 
 const WhatWeDo = () => {
@@ -27,22 +27,34 @@ const WhatWeDo = () => {
     },
   ];
 
+  const [] = useState();
+
   return (
     <div className={styles.WhatWeDo}>
+      <div className={styles.leftShap}></div>
+      <h3>What We Do</h3>
+      <h1>In what area do you need assistance</h1>
       <div className="container">
         <div className="row">
           <div
             className={`col-lg-6 col-md-6 col-sm-12  ${styles.WhatWeDoImage}`}
           >
+            <div className={styles.imgShap}>
+              <Image
+                src={"/images/WhatWeDo/Ellipse_line_shape.svg"}
+                width="740"
+                height="720"
+              />
+            </div>
+
             <div className={styles.mainImag}>
               <Image
-                src={"/images/WhatWeDo/brand_development.jpg"}
-                width="400"
-                height="300"
+                src={"/images/WhatWeDo/Videography.jpg"}
+                width="600"
+                height="580"
               />
             </div>
           </div>
-
           <div
             className={`col-lg-6 col-md-6 col-sm-12  ${styles.WhatWeDoAccordion}`}
           >
