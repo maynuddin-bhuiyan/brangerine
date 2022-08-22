@@ -14,8 +14,10 @@ body {
 
 
 
+
+/* Accordion  */
 .accordion-button {
-  background-color: transparent !important;
+  background-color: #000000 !important;
   color: #FFFFFF !important
 }
 
@@ -33,6 +35,7 @@ body {
 
 .accordion-button:not(.collapsed) span {
   color: #4f42c9 !important;
+  opacity: 100% !important;
 }
 
 
