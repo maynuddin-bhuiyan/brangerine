@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './HeroSec.module.css';
+import styles from './Herosec.module.css';
 
 function HeroSec() {
     return (
