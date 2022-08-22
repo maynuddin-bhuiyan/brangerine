@@ -1,0 +1,81 @@
+.heroSecTextWrapper {
+}
+
+.heroSecTextWrapper h1 {
+  font-size: 130px;
+  font-weight: 800;
+  background-image: url("../../../public/images/hero_section/Text\ bg.png");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: flliper 5s infinite;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.heroSecTextWrapper p {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+  max-width: 677px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.heroSecTextWrapper div {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btnDiscuss {
+  padding: 18px 30px;
+  gap: 10px;
+  background: #4f42c9;
+  border-radius: 50px;
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.btnAbout {
+  margin: 10px;
+  padding: 18px 30px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 50px;
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  text-transform: capitalize;
+  color: #4f42c9;
+}
+
+@keyframes flliper {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
