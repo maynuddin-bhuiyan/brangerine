@@ -1,0 +1,140 @@
+.WhatWeDo {
+    position: relative;
+    padding: 100px 0px;
+}
+
+
+.WhatWeDoImage {
+    position: relative;
+}
+
+
+.leftShap {
+    background-color: #4F2416;
+    border-radius: 50%;
+    width: 480px;
+    height: 480px;
+    filter: blur(200px);
+    position: absolute;
+    left: -260px;
+    top: 160px;
+}
+
+
+
+
+.WhatWeDo h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Jost";
+    text-align: center;
+    color: #8A81DB;
+    line-height: 26.4px;
+}
+
+.WhatWeDo h1 {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: "Jost";
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 88px;
+    letter-spacing: -1%;
+    text-transform: capitalize;
+    width: 820px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+
+.imgShap {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    z-index: 3;
+}
+
+.mainImag {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImag img {
+    border-radius: 24px;
+    z-index: 2;
+}
+
+
+
+.WhatWeDoAccordion .Accordion {
+    background-color: inherit !important;
+}
+
+
+
+.WhatWeDoAccordion .Accordion .Title button {
+    background-color: inherit !important;
+    margin-bottom: 30px !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 50px !important;
+    color: #FFFFFF !important;
+    padding: 30px 40px !important;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: "Swiss 721";
+}
+
+
+.WhatWeDoAccordion .Accordion .Title button:focus {
+    box-shadow: none !important;
+}
+
+.Title button span {
+    color: #FFFFFF !important;
+    opacity: 65%;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.Title button::after {
+    background-image: url(../../../public//images/WhatWeDo/Vector.svg) !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+
+
+
+.Accordion .AccordionBody {
+    padding: 0px !important;
+    margin-bottom: 40px !important;
+    padding: 0px 30px !important;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: "Swiss 721";
+}
+
+
+@media only screen and (max-width: 576px) {
+    .WhatWeDo h1 {
+        width: auto !important;
+        font-size: 32px;
+        line-height: 35px;
+        padding: 0px 20px;
+        margin-top: 20px;
+    }
+}
