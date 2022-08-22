@@ -1,5 +1,7 @@
 .headerWrapper {
-  height: 100vh;
+  height: auto;
+  padding-bottom: 500px;
+  overflow: hidden;
   background-image: url("../public/images/hero_section/Mask\ group.png");
   background-repeat: no-repeat;
   background-size: cover;
