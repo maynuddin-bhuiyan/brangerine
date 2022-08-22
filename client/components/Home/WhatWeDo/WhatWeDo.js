@@ -46,14 +46,19 @@ const WhatWeDo = () => {
                 height="720"
               />
             </div>
-            
-              <div className={styles.mainImag}>
-                <Image
-                  src={data.find(item => item?.id === show)?.image}
-                  width="600"
-                  height="580"
-                />
-              </div>
+
+            <div className={styles.mainImag}>
+              <Image
+                src={data.find((item) => item?.id === show)?.image}
+                width="600"
+                height="580"
+              />
+            </div>
+
+            <button className={styles.StudieButton}>
+              <i class="ri-user-voice-line"></i>
+              <p>Book Your appointment Today</p>
+            </button>
           </div>
           <div
             className={`col-lg-6 col-md-6 col-sm-12  ${styles.WhatWeDoAccordion}`}
@@ -66,12 +71,11 @@ const WhatWeDo = () => {
                 return (
                   <div
                     className={`accordion-item ${styles.Accordion}`}
-                    key={item?.id} 
+                    key={item?.id}
                   >
                     <h2
                       className={`accordion-header ${styles.Title}`}
                       id={`flush-heading${item?.id}`}
-                      
                     >
                       <button
                         className={`accordion-button`}
