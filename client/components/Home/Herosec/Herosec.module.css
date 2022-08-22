@@ -79,3 +79,125 @@
     background-position: 0% 50%;
   }
 }
+
+.trampWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tramp {
+  width: 410px;
+}
+
+.leftImageWrapper,
+.rightImageWrapper,
+.middleImageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leftImageWrapper:hover,
+.rightImageWrapper:hover,
+.middleImageWrapper:hover {
+  cursor: pointer;
+}
+
+.leftImageWrapper::before,
+.rightImageWrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/hero_section/Ellipse_line_shape.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.rightImageWrapper::before {
+  transform: rotate(115deg);
+}
+
+.middleImageWrapper {
+  margin-top: 150px;
+}
+
+.leftImage,
+.rightImage,
+.middleImage {
+  z-index: 1;
+}
+
+.flowImage {
+  position: absolute;
+  top: 98px;
+}
+
+.leftImageWrapper:hover .flowImage,
+.rightImageWrapper:hover .flowImage,
+.middleImageWrapper:hover:hover .flowImage {
+  animation: flowDown 1s;
+  top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 120px !important;
+  }
+  .tramp {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 110px !important;
+  }
+  .tramp {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 90px !important;
+  }
+  .tramp {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 90px !important;
+  }
+  .tramp {
+    width: 110px;
+  }
+}
+
+/*  */
+@keyframes flowDown {
+  0% {
+    top: 98px;
+  }
+  100% {
+    top: 120px;
+  }
+}

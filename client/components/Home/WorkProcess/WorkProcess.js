@@ -52,10 +52,10 @@ const WorkProcess = () => {
               businesses need a cohesive plan that incorporates research,
               branding and design.{" "}
             </p>
-            <button className={styles.learnButton}>
+            <a className={styles.learnButton} href="#" target="_blank" rel="noreferrer">
               <i className="ri-arrow-right-up-line"></i>
               <span>Learn More About Us</span>
-            </button>
+            </a>
           </div>
         </div>
         <div className={styles.workProcessInfo}>
