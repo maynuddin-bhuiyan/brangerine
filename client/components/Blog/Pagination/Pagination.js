@@ -41,18 +41,23 @@ export default function Pagination() {
   const [currPage, setcurrPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [post, setPost] = useState([]);
-  const [page, setPage] = useState(1)
 
-  if(post[page]){
+  console.log(currPage)
+
+  function handlePage(index){
+    setcurrPage(index)
+  }
+
+  if(post[currPage]){
     return (
         <div className={`container ${styles.pagination}`}>
           <div className="row">
-            {post[page].map((post) => (
+            {post[currPage].map((post) => (
               <Post post={post} />
             ))}
           </div>
           <div className="row">
-            <Nav />
+            <Nav totalPage={totalPages} currentPage={currPage} setPage={handlePage}/>
           </div>
         </div>
       );
