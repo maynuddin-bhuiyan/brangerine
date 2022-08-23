@@ -1,6 +1,6 @@
 import CaseStudies from "../components/Home/CaseStudies/CaseStudies";
 import FeaturedClients from "../components/Home/FeaturedClients/FeaturedClients";
-import HeroSec from "../components/Home/HeroSec/HeroSec";
+import HeroSec from "../components/Home/Herosec/Herosec";
 import Testimonials from "../components/Home/Testimonials/Testimonials";
 import WhatWeDo from "../components/Home/WhatWeDo/WhatWeDo";
 import WorkProcess from "../components/Home/WorkProcess/WorkProcess";
