@@ -12,8 +12,9 @@ body {
   color-scheme: dark;
 }
 
+/* Accordion  */
 .accordion-button {
-  background-color: transparent !important;
+  background-color: #000000 !important;
   color: #ffffff !important;
 }
 
@@ -30,6 +31,7 @@ body {
 
 .accordion-button:not(.collapsed) span {
   color: #4f42c9 !important;
+  opacity: 100% !important;
 }
 
 .accordion-button::after {
@@ -113,4 +115,22 @@ body {
   .testimonialSlider > .slick-slider > .slick-next {
     background: none;
   }
+}
+
+/* Form */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-select {
+  background-image: url("/images/contact us/Vector.png") !important;
+  background-repeat: no-repeat !important ;
+  background-position: right 0.75rem center !important;
 }
