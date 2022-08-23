@@ -1,0 +1,108 @@
+.partners {
+  margin: 50px 0px;
+}
+
+.partners h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.partnersCard {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  justify-items: center;
+}
+
+.partnersCardInfo {
+  background: #4f42c9;
+  border-radius: 500px;
+  padding: 15px 60px;
+  margin: 0px 20px;
+  z-index: 1;
+  text-align: center;
+  width: 314px;
+  margin: 0 auto;
+}
+
+.partnersCardInfo h4 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #e3ecff;
+}
+
+.partnersCardInfo p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #e3ecff;
+  opacity: 0.8;
+}
+
+.socialsIcons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.socialsIcons a {
+  text-decoration: none;
+}
+
+.socialsIcons a i {
+  color: #8a81db;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.socialsIcons a i:hover {
+  color: #e3ecff;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .partnersCardInfo {
+    margin-top: 30px;
+    width: 290px;
+    padding: 15px 40px;
+  }
+  .partners h1 {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .partnersCardInfo {
+    padding: 15px 28px;
+    width: 325px;
+    margin-top: 30px;
+  }
+  .partners h1 {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .partnersCardInfo {
+    padding: 15px 28px;
+    width: 270px;
+  }
+  .partners h1 {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .partnersCardInfo {
+    width: 290px;
+    padding: 15px 40px;
+  }
+}
