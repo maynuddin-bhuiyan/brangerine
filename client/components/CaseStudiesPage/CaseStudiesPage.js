@@ -1,64 +1,31 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { caseStudiesData } from "../../data/casestudiesdata";
 import styles from "./CaseStudiesPage.module.css";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const CaseStudiesPage = () => {
-    const [show, setShow] = useState(null);
-    
-    const [currPage, setcurrPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(1);
-    const [post, setPost] = useState([]);
+  const router = useRouter();
+  const [show, setShow] = useState(null);
+  const [currPage, setCurrPage] = useState(0);
 
-  const postMap = {};
   useEffect(() => {
-    if (posts.length < 8) {
-      setPost(posts);
+    if (router.query.page) {
+      setCurrPage(Number(router.query.page));
     } else {
-      setPost(posts);
-      const numberOfPages = Math.ceil(posts.length / 8);
-      setTotalPages(numberOfPages);
-      let start = 0;
-      let end = 8;
-      let pageIndex = 1;
-      while (end < posts.length && pageIndex <= numberOfPages) {
-        if (start === 0) {
-          postMap[pageIndex] = posts.slice(start, end);
-          start = end;
-          end = start + 8;
-          pageIndex += 1;
-        } else {
-          postMap[pageIndex] = posts.slice(start, end);
-          start = end - 1;
-          end = start + 8;
-          pageIndex += 1;
-        }
-      }
-      if (end > posts.length) {
-        end = posts.length;
-        postMap[pageIndex] = posts.slice(start + 1, end);
-      }
+      setCurrPage(0);
     }
-    setPost(postMap);
-    console.log(postMap)
-  }, []);
-  
-
-  console.log(currPage)
-
-  function handlePage(index){
-    setcurrPage(index)
-  }
-
-  if(post[currPage])
+  }, [router.query.page]);
 
   return (
     <div className={styles.CaseStudiesHeroSec}>
       <h3>PAST PROJECTS</h3>
       <h1>Case Studies</h1>
       <div className={`container ${styles.StudiesHeroSec}`}>
-        <div className="row">    
-         
-          {data?.map((item, i) => (
+        <div className="row">
+
+          {caseStudiesData[currPage]?.data?.map((item, i) => (
             <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center" key={item?.id}>
               <div
                 className={`${styles.StudieCard}`}
@@ -90,18 +57,30 @@ const CaseStudiesPage = () => {
           ))}
 
 
-<nav aria-label="Page navigation example">
-  <ul className={`pagination ${styles.studiePagination}`}>
-    <li className="page-item"><a className={`page-link ${styles.PaginationButton}`} id={styles.PaginationButton} href="#"> <i className="ri-arrow-left-line" id={styles.iconLeft}></i> Previous</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationItem}`} href="#">1</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationItem}`} href="#">2</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationItem}`} href="#">3</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationButton}`} href="#">Next <i className="ri-arrow-right-line" id={styles.iconRight}></i></a></li>
-  </ul>
-</nav>
+          <nav aria-label="Page navigation example">
+            <ul className={`pagination ${styles.studiePagination}`}>
+              {
+                currPage > 0 && <Link href={`/case-studies/?page=${currPage - 1}`}><li className="page-item"><a className={`page-link ${styles.PaginationButton}`} id={styles.PaginationButton} href="#"> <i className="ri-arrow-left-line" id={styles.iconLeft}></i> Previous</a></li></Link>
+              }
+              {
+                caseStudiesData.map((data, i) => {
+                  return (
+                    <Link href={`/case-studies/?page=${i}`}>
+                      <li className="page-item">
+                        <a className={`page-link ${styles.PaginationItem} ${currPage == i && styles.active}`} href="#">{i + 1}</a>
+                      </li>
+                    </Link>
+                  )
+                })
+              }
+              {
+                caseStudiesData.length > currPage + 1 && <Link href={`/case-studies/?page=${currPage + 1}`}><li className="page-item"><a className={`page-link ${styles.PaginationButton}`} href="#">Next <i className="ri-arrow-right-line" id={styles.iconRight}></i></a></li></Link>
+              }
+            </ul>
+          </nav>
         </div>
-        </div>    
-     </div>
+      </div>
+    </div>
   );
 };
 
