@@ -1,91 +1,31 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { caseStudiesData } from "../../data/casestudiesdata";
 import styles from "./CaseStudiesPage.module.css";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const CaseStudiesPage = () => {
-    const [show, setShow] = useState(null);
+  const router = useRouter();
+  const [show, setShow] = useState(null);
+  const [currPage, setCurrPage] = useState(0);
 
-  const data = [
-    {
-      id: 1,
-      hoverImage: "/images/CaseStudies/Pinnaclewebsite+.png",
-      image: "/images/CaseStudies/Component 2.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 2,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 3,
-      hoverImage: "/images/CaseStudies/Blackbeardcards.png",
-      image: "/images/CaseStudies/Component 4.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 4,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 5,
-      hoverImage: "/images/CaseStudies/Pinnaclewebsite+.png",
-      image: "/images/CaseStudies/Component 2.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 6,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 7,
-      hoverImage: "/images/CaseStudies/Blackbeardcards.png",
-      image: "/images/CaseStudies/Component 4.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 8,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 9,
-      hoverImage: "/images/CaseStudies/Pinnaclewebsite+.png",
-      image: "/images/CaseStudies/Component 2.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 10,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-  ];
+  useEffect(() => {
+    if (router.query.page) {
+      setCurrPage(Number(router.query.page));
+    } else {
+      setCurrPage(0);
+    }
+  }, [router.query.page]);
 
   return (
     <div className={styles.CaseStudiesHeroSec}>
       <h3>PAST PROJECTS</h3>
       <h1>Case Studies</h1>
       <div className={`container ${styles.StudiesHeroSec}`}>
-        <div className="row">    
-         
-          {data?.map((item, i) => (
+        <div className="row">
+
+          {caseStudiesData[currPage]?.data?.map((item, i) => (
             <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center" key={item?.id}>
               <div
                 className={`${styles.StudieCard}`}
@@ -117,18 +57,30 @@ const CaseStudiesPage = () => {
           ))}
 
 
-<nav aria-label="Page navigation example">
-  <ul className={`pagination ${styles.studiePagination}`}>
-    <li className="page-item"><a className={`page-link ${styles.PaginationButton}`} id={styles.PaginationButton} href="#"> <i className="ri-arrow-left-line" id={styles.iconLeft}></i> Previous</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationItem}`} href="#">1</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationItem}`} href="#">2</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationItem}`} href="#">3</a></li>
-    <li className="page-item"><a className={`page-link ${styles.PaginationButton}`} href="#">Next <i className="ri-arrow-right-line" id={styles.iconRight}></i></a></li>
-  </ul>
-</nav>
+          <nav aria-label="Page navigation example">
+            <ul className={`pagination ${styles.studiePagination}`}>
+              {
+                currPage > 0 && <Link href={`/case-studies/?page=${currPage - 1}`}><li className="page-item"><a className={`page-link ${styles.PaginationButton}`} id={styles.PaginationButton} href="#"> <i className="ri-arrow-left-line" id={styles.iconLeft}></i> Previous</a></li></Link>
+              }
+              {
+                caseStudiesData.map((data, i) => {
+                  return (
+                    <Link href={`/case-studies/?page=${i}`}>
+                      <li className="page-item">
+                        <a className={`page-link ${styles.PaginationItem} ${currPage == i && styles.active}`} href="#">{i + 1}</a>
+                      </li>
+                    </Link>
+                  )
+                })
+              }
+              {
+                caseStudiesData.length > currPage + 1 && <Link href={`/case-studies/?page=${currPage + 1}`}><li className="page-item"><a className={`page-link ${styles.PaginationButton}`} href="#">Next <i className="ri-arrow-right-line" id={styles.iconRight}></i></a></li></Link>
+              }
+            </ul>
+          </nav>
         </div>
-        </div>    
-     </div>
+      </div>
+    </div>
   );
 };
 
