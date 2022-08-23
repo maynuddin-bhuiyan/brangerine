@@ -1,0 +1,37 @@
+.post_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start;
+    gap: 10px;
+    margin:10px
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Swiss 721';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #4F42C9;
+}
+
+.title {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #E3ECFF;
+}
+.others{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
