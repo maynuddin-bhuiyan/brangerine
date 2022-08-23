@@ -1,0 +1,165 @@
+.contactForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0px;
+  grid-gap: 80px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.formLabel {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.formLabel span {
+  color: red;
+}
+
+.formGroup input {
+  background: #e3ecff;
+  border-radius: 50px;
+  border: 0px;
+  padding: 14px 20px;
+  color: #101010;
+  font-family: "Swiss 721", sans-serif;
+}
+
+.formGroup input::placeholder {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #101010;
+  opacity: 0.8;
+}
+
+.formTextarea {
+  background: #e3ecff;
+  border-radius: 12px;
+  padding: 14px 20px;
+  height: 183px;
+  color: #101010;
+  font-family: "Swiss 721", sans-serif;
+}
+
+.formTextarea::placeholder {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #101010;
+  opacity: 0.8;
+}
+
+.submitButton {
+  background: #352a9f;
+  border-radius: 50px;
+  border: 0px;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.submitButton span {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.submitButton i {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.formEndText {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: #e3ecff;
+  opacity: 0.8;
+  margin-bottom: 0px;
+}
+
+.formSelect {
+  background: #e3ecff;
+  border-radius: 50px;
+  border: 0px;
+  padding: 16px 20px;
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3a3c40;
+  margin-bottom: 30px;
+}
+
+.formSelect option {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #101010;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  .submitButton {
+    width: 100%;
+    justify-content: center;
+  }
+  .contactForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 0px;
+    grid-gap: 80px;
+  }
+  .submitButton {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .contactForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 0px;
+    grid-gap: 80px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contactForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 0px;
+    grid-gap: 80px;
+  }
+}

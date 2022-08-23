@@ -12,22 +12,24 @@ body {
   color-scheme: dark;
 }
 
-
-
-
 /* Accordion  */
 
 
+
+.accordion-button {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+
 .accordion-button span {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 65%;
   margin-right: 10px;
 }
 
-.accordion-button .collapsed {
-  background-color: transparent !important;
-  color: #FFFFFF !important;
-}
+
+
 
 .accordion-button:not(.collapsed) {
   background-color: #ffffff !important;
@@ -39,10 +41,12 @@ body {
   opacity: 100% !important;
 }
 
+
 .accordion-button {
   background-color: #000000 !important;
   color: #FFFFFF !important
 }
+
 
 .accordion-button::after {
   background: url(../public/images/WhatWeDo/Vector.svg) !important;
@@ -53,13 +57,6 @@ body {
   background: url(../public/images/WhatWeDo/subtract-line.svg) !important;
   background-repeat: no-repeat !important;
 }
-
-
-
-
-
-
-
 
 /* Testimonial Carousel */
 .testimonialSlider>.slick-slider>.slick-prev:before {
@@ -114,7 +111,6 @@ body {
 .testimonialSlider>.slick-slider>.slick-dots li.slick-active button:before {
   color: #4f42c9 !important;
   font-size: 8px !important;
-
 }
 
 @media only screen and (max-width: 1024px) {
@@ -133,4 +129,22 @@ body {
   .testimonialSlider>.slick-slider>.slick-next {
     background: none;
   }
+}
+
+/* Form */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-select {
+  background-image: url("/images/contact us/Vector.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.75rem center !important;
 }

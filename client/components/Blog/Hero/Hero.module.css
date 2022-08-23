@@ -11,6 +11,7 @@
     line-height: 100%;
     text-transform: capitalize;
     color: #E3ECFF;
+    height: 136px;
 }
 
 .desc {
@@ -25,11 +26,15 @@
     width: 360px;
     height: 136px;
     margin-left: 120px;
+    margin-top:15px
 }
 
 @media only screen and (max-width: 768px) {
     .desc {
       margin: 13px 0 0 0;
       width:100%
+    }
+    .title{
+        height:auto;
     }
   }

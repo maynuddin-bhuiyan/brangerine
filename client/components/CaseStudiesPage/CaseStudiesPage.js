@@ -78,6 +78,50 @@ const CaseStudiesPage = () => {
     },
   ];
 
+
+  const postMap = {};
+  useEffect(() => {
+    if (posts.length < 9) {
+      setPost(posts);
+    } else {
+      setPost(posts);
+      const numberOfPages = Math.ceil(posts.length / 9);
+      setTotalPages(numberOfPages);
+      let start = 0;
+      let end = 9;
+      let pageIndex = 1;
+      while (end < posts.length && pageIndex <= numberOfPages) {
+        if (start === 0) {
+          postMap[pageIndex] = posts.slice(start, end);
+          start = end;
+          end = start + 9;
+          pageIndex += 1;
+        } else {
+          postMap[pageIndex] = posts.slice(start, end);
+          start = end - 1;
+          end = start + 9;
+          pageIndex += 1;
+        }
+      }
+      if (end > posts.length) {
+        end = posts.length;
+        postMap[pageIndex] = posts.slice(start + 1, end);
+      }
+    }
+    setPost(postMap);
+  }, []);
+  const [currPage, setcurrPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [post, setPost] = useState([]);
+
+  console.log(currPage)
+
+  function handlePage(index){
+    setcurrPage(index)
+  }
+
+  if(post[currPage])
+
   return (
     <div className={styles.CaseStudiesHeroSec}>
       <h3>PAST PROJECTS</h3>
