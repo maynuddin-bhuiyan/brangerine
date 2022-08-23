@@ -77,8 +77,11 @@
   margin-bottom: 0px;
 }
 
-/* .contactHero::before {
-  content: " ";
+.contactHeroMain {
+  position: relative;
+}
+
+.abstractLeft {
   position: absolute;
   width: 478px;
   height: 478px;
@@ -89,12 +92,11 @@
   z-index: 1;
 }
 
-.contactHero::after {
-  content: " ";
+/* .abstractRight {
   position: absolute;
   width: 792px;
   height: 792px;
-  right: 0px;
+  right: -500px;
   top: 616px;
   background: #4f42c9;
   opacity: 0.5;

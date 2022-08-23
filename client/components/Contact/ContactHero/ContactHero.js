@@ -23,7 +23,10 @@ const ContactHero = () => {
         },
     ]
     return (
-        <div className='container'>
+        <div className={styles.contactHeroMain}>
+             <div className={styles.abstractRight}></div>
+            <div className={styles.abstractLeft}></div>
+            <div className='container'>
             <div className={styles.contactHero}> 
                 <h5>Contact Us</h5>
                 <h1>Request an <br /> Appointment</h1>
@@ -42,6 +45,7 @@ const ContactHero = () => {
                     }
                 </div>
             </div>
+        </div>
         </div>
     );
 };

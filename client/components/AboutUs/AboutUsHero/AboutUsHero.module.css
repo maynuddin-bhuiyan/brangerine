@@ -1,0 +1,195 @@
+.aboutUsHeroMain {
+  position: relative;
+}
+
+.abstractLeft {
+  position: absolute;
+  width: 478px;
+  height: 478px;
+  left: -239px;
+  top: 377px;
+  background: #4f2416;
+  filter: blur(250px);
+  z-index: 1;
+}
+
+/* .abstractRight {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  right: -500px !important;
+  left: 1718px;
+  overflow: hidden;
+  top: 616px;
+  background: #4f42c9;
+  opacity: 0.5;
+  filter: blur(250px);
+} */
+
+.aboutUsHero {
+  margin: 50px 0px;
+}
+
+.aboutUsHero h5 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8a81db;
+}
+.aboutUsHero h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #e3ecff;
+}
+
+.aboutUsHeroImg {
+  text-align: center;
+  margin-top: 20px;
+  width: 100% !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutUsHeroImg1 {
+  margin-right: -230px !important;
+  width: 100%;
+  z-index: 2 !important;
+  float: right;
+}
+
+.aboutUsHeroImg2 {
+  margin-left: -230px !important;
+  width: 100%;
+  z-index: 3 !important;
+  float: left;
+}
+
+.aboutUsHeroInfo {
+  padding: 0px 284px;
+  margin-top: 80px;
+}
+.aboutUsHeroInfo h4 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #e3ecff;
+  margin-bottom: 30px;
+}
+.aboutUsHeroInfo p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: -0.01em;
+  color: #e3ecff;
+}
+
+@media only screen and (max-width: 576px) {
+  .aboutUsHero h5 {
+    font-size: 20px;
+  }
+  .aboutUsHero h1 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .aboutUsHeroImg {
+    width: 100% !important;
+    display: flex;
+  }
+  .aboutUsHeroInfo {
+    padding: 0px 0px;
+    margin-top: 80px;
+  }
+  .aboutUsHeroInfo h4 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .aboutUsHeroImg1 {
+    margin-right: -10px !important;
+    width: 100%;
+    z-index: 2 !important;
+    float: right;
+  }
+
+  .aboutUsHeroImg2 {
+    margin-left: -10px !important;
+    width: 100%;
+    z-index: 3 !important;
+    float: left;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .aboutUsHeroImg {
+    width: 100% !important;
+    display: flex;
+  }
+  .aboutUsHeroInfo {
+    padding: 0px 0px;
+    margin-top: 80px;
+  }
+  .aboutUsHeroImg1 {
+    margin-right: -20px !important;
+    width: 100%;
+    z-index: 2 !important;
+    float: right;
+  }
+
+  .aboutUsHeroImg2 {
+    margin-left: -20px !important;
+    width: 100%;
+    z-index: 3 !important;
+    float: left;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .aboutUsHeroInfo {
+    padding: 0px 76px;
+    margin-top: 80px;
+  }
+  .aboutUsHeroImg {
+    width: 100% !important;
+    display: flex;
+  }
+  .aboutUsHeroImg1 {
+    margin-right: -30px !important;
+    width: 100%;
+    z-index: 2 !important;
+    float: right;
+  }
+
+  .aboutUsHeroImg2 {
+    margin-left: -30px !important;
+    width: 100%;
+    z-index: 3 !important;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .aboutUsHeroImg1 {
+    margin-right: -120px !important;
+    width: 100%;
+    z-index: 2 !important;
+    float: right;
+  }
+
+  .aboutUsHeroImg2 {
+    margin-left: -120px !important;
+    width: 100%;
+    z-index: 3 !important;
+    float: left;
+  }
+}
