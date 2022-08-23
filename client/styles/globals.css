@@ -16,10 +16,7 @@ body {
 
 
 /* Accordion  */
-.accordion-button {
-  background-color: #000000 !important;
-  color: #FFFFFF !important
-}
+
 
 .accordion-button span {
   color: #FFFFFF;
@@ -27,6 +24,10 @@ body {
   margin-right: 10px;
 }
 
+.accordion-button .collapsed {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+}
 
 .accordion-button:not(.collapsed) {
   background-color: #ffffff !important;
@@ -38,6 +39,10 @@ body {
   opacity: 100% !important;
 }
 
+.accordion-button {
+  background-color: #000000 !important;
+  color: #FFFFFF !important
+}
 
 .accordion-button::after {
   background: url(../public/images/WhatWeDo/Vector.svg) !important;
