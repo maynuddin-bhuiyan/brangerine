@@ -56,7 +56,7 @@ const WhatWeDo = () => {
             </div>
 
             <button className={styles.StudieButton}>
-              <i class="ri-user-voice-line"></i>
+              <i className="ri-user-voice-line"></i>
               <p>Book Your appointment Today</p>
             </button>
           </div>
@@ -75,7 +75,7 @@ const WhatWeDo = () => {
                   >
                     <h2
                       className={`accordion-header ${styles.Title}`}
-                      id={`flush-heading${item?.id}`}
+                      // id={`flush-heading${item?.id}`}
                     >
                       <button
                         className={`accordion-button`}
