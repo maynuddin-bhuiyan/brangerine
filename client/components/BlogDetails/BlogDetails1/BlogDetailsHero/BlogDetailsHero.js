@@ -198,7 +198,10 @@ const BlogDetailsHero = () => {
             </div>
 
             {/* Blog Details Related Posts */}
-            <div className={styles.RelatedPosts}></div>
+            <div className={styles.RelatedPosts}>
+                <h2>Related Posts</h2>
+                
+            </div>
           </div>
         </div>
       </div>

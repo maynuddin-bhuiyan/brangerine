@@ -221,7 +221,15 @@ ul .TagLink {
     margin-top: 50px;
     padding: 0px 0px 80px;
     border-bottom: 1px solid #383838;
+}
 
+
+.RelatedPosts {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px 0px;
+    border-bottom: 1px solid #383838;
 }
 
 

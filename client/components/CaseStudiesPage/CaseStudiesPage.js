@@ -4,102 +4,32 @@ import styles from "./CaseStudiesPage.module.css";
 
 const CaseStudiesPage = () => {
     const [show, setShow] = useState(null);
-
-  const data = [
-    {
-      id: 1,
-      hoverImage: "/images/CaseStudies/Pinnaclewebsite+.png",
-      image: "/images/CaseStudies/Component 2.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 2,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 3,
-      hoverImage: "/images/CaseStudies/Blackbeardcards.png",
-      image: "/images/CaseStudies/Component 4.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 4,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 5,
-      hoverImage: "/images/CaseStudies/Pinnaclewebsite+.png",
-      image: "/images/CaseStudies/Component 2.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 6,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 7,
-      hoverImage: "/images/CaseStudies/Blackbeardcards.png",
-      image: "/images/CaseStudies/Component 4.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 8,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 9,
-      hoverImage: "/images/CaseStudies/Pinnaclewebsite+.png",
-      image: "/images/CaseStudies/Component 2.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-    {
-      id: 10,
-      hoverImage: "/images/CaseStudies/image-asset.png",
-      image: "/images/CaseStudies/Component 3.jpg",
-      butText: "View Case Studie",
-      url: "/",
-    },
-  ];
-
+    
+    const [currPage, setcurrPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+    const [post, setPost] = useState([]);
 
   const postMap = {};
   useEffect(() => {
-    if (posts.length < 9) {
+    if (posts.length < 8) {
       setPost(posts);
     } else {
       setPost(posts);
-      const numberOfPages = Math.ceil(posts.length / 9);
+      const numberOfPages = Math.ceil(posts.length / 8);
       setTotalPages(numberOfPages);
       let start = 0;
-      let end = 9;
+      let end = 8;
       let pageIndex = 1;
       while (end < posts.length && pageIndex <= numberOfPages) {
         if (start === 0) {
           postMap[pageIndex] = posts.slice(start, end);
           start = end;
-          end = start + 9;
+          end = start + 8;
           pageIndex += 1;
         } else {
           postMap[pageIndex] = posts.slice(start, end);
           start = end - 1;
-          end = start + 9;
+          end = start + 8;
           pageIndex += 1;
         }
       }
@@ -109,10 +39,9 @@ const CaseStudiesPage = () => {
       }
     }
     setPost(postMap);
+    console.log(postMap)
   }, []);
-  const [currPage, setcurrPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const [post, setPost] = useState([]);
+  
 
   console.log(currPage)
 
