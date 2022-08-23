@@ -224,13 +224,7 @@ ul .TagLink {
 }
 
 
-.RelatedPosts {
-    width: 750px;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 50px 0px;
-    border-bottom: 1px solid #383838;
-}
+
 
 
 .SocialMedia h2 {
@@ -280,4 +274,23 @@ ul .TagLink {
     font-weight: 500;
     color: #4F42C9;
     margin-left: 5px;
+}
+
+.RelatedPosts {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px 0px;
+    border-bottom: 1px solid #383838;
+    text-align: left !important;
+}
+
+
+.RelatedPosts h2 {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #E3ECFF;
+    font-family: "Spartan", sans-serif;
+
 }
