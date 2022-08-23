@@ -98,7 +98,6 @@
     margin-top: 50px;
 }
 
-
 .DetailsText p {
     text-align: left !important;
     font-size: 18px !important;
@@ -147,7 +146,6 @@
     color: #101010;
     font-family: "Swiss 721", sans-serif;
 }
-
 
 .DetailsTags {
     width: 750px;
@@ -280,17 +278,202 @@ ul .TagLink {
     width: 750px;
     margin: 0 auto;
     margin-top: 50px;
-    padding: 50px 0px;
+    padding: 0px 0px 50px;
     border-bottom: 1px solid #383838;
     text-align: left !important;
 }
 
 
 .RelatedPosts h2 {
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
     color: #E3ECFF;
-    font-family: "Spartan", sans-serif;
+    font-family: "Jost";
+    margin: 0px;
+    margin-bottom: 40px;
+}
 
+
+.PostsCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    gap: 30px;
+}
+
+
+.PostsCard img {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+
+.PostsCard h3 {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Swiss 721", sans-serif;
+    text-align: left;
+    color: #4F42C9;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+
+.PostsCard h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #E3ECFF;
+    font-family: "Jost";
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.PostsCard p {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Swiss 721", sans-serif;
+    text-align: left;
+    color: #E3ECFF;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.PostsCard i {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+
+
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+    .blogDetailsHero {
+        padding: 40px 0px;
+    }
+
+    .blogHeaderText {
+        width: 600px !important;
+    }
+
+    .DetailsText {
+        width: 600px !important;
+    }
+
+    .DetailsTags {
+        width: 600px !important;
+    }
+
+    .SocialMedia {
+        width: 600px !important;
+    }
+
+    .RelatedPosts {
+        width: 600px !important;
+    }
+
+    .DetailsReview {
+        width: 600px !important;
+    }
+
+    .PostsCard i {
+        width: 10px;
+    }
+
+    .PostsCard p {
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .blogDetailsHero {
+        padding: 40px 0px;
+    }
+
+    .blogHeaderText {
+        width: auto !important;
+        padding: 0px 10px;
+    }
+
+    .blogHeaderText h3 {
+        font-size: 15px !important;
+    }
+
+    .blogHeaderText h1 {
+        font-size: 32px !important;
+        line-height: 40px !important;
+    }
+
+
+    .blogMedia p {
+        font-size: 12px !important;
+    }
+
+    .blogMedia i {
+        margin: 0px !important;
+        padding: 0px 10px;
+    }
+
+    .DetailsText {
+        width: auto !important;
+    }
+
+    .DetailsTags {
+        width: auto !important;
+    }
+
+    .SocialMedia {
+        width: auto !important;
+    }
+
+    .RelatedPosts {
+        width: auto !important;
+
+    }
+
+    .DetailsReview {
+        width: auto !important;
+        padding: 10px 20px !important;
+    }
+
+    .BlogLink {
+        width: 310px !important;
+    }
+
+    .PostsCard i {
+        width: 10px;
+    }
+
+    .PostsCard p {
+        font-size: 10px;
+    }
+
+    .SocialMedia p {
+        font-size: 10px !important;
+    }
+
+    .SocialMedia i {
+        font-size: 16px !important;
+    }
+
+
+    .PostsCard img {
+        width: 100% !important;
+        height: auto !important;
+        text-align: center;
+        margin-top: 30px !important;
+    }
+
+    .PostsCard {
+        display: flow-root !important;
+    }
+
+    .RelatedPosts h2 {
+        margin-bottom: 0px !important;
+    }
 }
