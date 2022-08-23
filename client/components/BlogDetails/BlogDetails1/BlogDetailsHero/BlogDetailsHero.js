@@ -18,7 +18,7 @@ const BlogDetailsHero = () => {
   const postsData = [
     {
       id: 1,
-      img: "/images/BlogDetails1/FB.svg",
+      img: "/images/BlogDetails1/pexels-photo-25876.jpg",
       subTitel: "SPORTS",
       text: "By Dianne Russell",
       data: "October 25, 2022",
@@ -26,27 +26,11 @@ const BlogDetailsHero = () => {
     },
     {
       id: 2,
-      img: "/images/BlogDetails1/FB.svg",
+      img: "/images/BlogDetails1/pexels-photo-57825.jpeg",
       subTitel: "SPORTS",
       text: "By Dianne Russell",
       data: "October 25, 2022",
       titel: "Literal crud far conservatively perfect classically supreme",
-    },
-    {
-      id: 3,
-      img: "/images/BlogDetails1/FB.svg",
-      subTitel: "SPORTS",
-      text: "By Dianne Russell",
-      data: "October 25, 2022",
-      titel: "Like meadowlark while onto this this that dully some far wound",
-    },
-    {
-      id: 4,
-      img: "/images/BlogDetails1/FB.svg",
-      subTitel: "SPORTS",
-      text: "By Dianne Russell",
-      data: "October 25, 2022",
-      titel: "Like meadowlark while onto this this that dully some far wound",
     },
   ];
 
@@ -78,7 +62,7 @@ const BlogDetailsHero = () => {
       {/* Blog Details Main Image  */}
       <div className={`container`}>
         <div className="row">
-          <div className="col-lg-12 col-sm-12 col-md 12 text-center">
+          <div className="col-lg-12 col-sm-12 col-md-12 text-center">
             <Image
               width="950"
               height="520"
@@ -199,8 +183,22 @@ const BlogDetailsHero = () => {
 
             {/* Blog Details Related Posts */}
             <div className={styles.RelatedPosts}>
-                <h2>Related Posts</h2>
-                
+              <h2>Related Posts</h2>
+              <div className={styles.PostsCard}>
+                {postsData?.map((post, i) => (
+                  <div className={styles.Icon} key={post?.id}>
+                    <Image width="360" height="195" src={post?.img} />
+                    <h3>{post?.subTitel}</h3>
+                    <h1>{post?.titel}</h1>
+
+                    <div className={styles.mediaData}>
+                      <p>{post?.text}</p>
+                      <i className="ri-calendar-2-line"></i>
+                      <p>{post?.data}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
