@@ -9,21 +9,21 @@ const WhatWeDo = () => {
       image: "/images/WhatWeDo/Videography.jpg",
       title: "BRAND DEVELOPMENT",
       number: "01",
-      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today. Learn More",
+      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today.",
     },
     {
       id: 2,
       number: "02",
       image: "/images/WhatWeDo/brand_development.jpg",
       title: "BUSINESS CONSULTING",
-      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today. Learn More",
+      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today.",
     },
     {
       id: 3,
       number: "03",
       image: "/images/WhatWeDo/business_consulting .jpg",
       title: "VIDEOGRAPHY",
-      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today. Learn More",
+      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today.",
     },
   ];
 
@@ -56,7 +56,7 @@ const WhatWeDo = () => {
             </div>
 
             <button className={styles.StudieButton}>
-              <i class="ri-user-voice-line"></i>
+              <i className="ri-user-voice-line"></i>
               <p>Book Your appointment Today</p>
             </button>
           </div>
@@ -75,7 +75,7 @@ const WhatWeDo = () => {
                   >
                     <h2
                       className={`accordion-header ${styles.Title}`}
-                      id={`flush-heading${item?.id}`}
+                      // id={`flush-heading${item?.id}`}
                     >
                       <button
                         className={`accordion-button`}
@@ -99,6 +99,9 @@ const WhatWeDo = () => {
                         className={`accordion-body  ${styles.AccordionBody}`}
                       >
                         {item?.text}
+                        <a href="/" target="_blank" rel="noreferrer">
+                          Learn More 
+                        </a>
                       </div>
                     </div>
                   </div>
