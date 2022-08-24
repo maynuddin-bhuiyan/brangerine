@@ -31,7 +31,8 @@ const WhatWeDo = () => {
 
   return (
     <div className={styles.WhatWeDo}>
-      <div className={styles.leftShap}></div>
+      <div className="abstractRight"></div>
+      <div className="abstractLeft"></div>
       <h3>What We Do</h3>
       <h1>In what area do you need assistance</h1>
       <div className={`container`}>

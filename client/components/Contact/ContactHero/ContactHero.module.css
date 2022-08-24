@@ -1,3 +1,8 @@
+.ContactHeroMain {
+  position: relative;
+}
+
+
 .contactHero {
   margin: 100px 0px 50px 0px;
   background: url("/images/contact us/global-map 1.svg");
@@ -6,7 +11,7 @@
   z-index: 10;
 }
 
-.contactHero > h5 {
+.contactHero>h5 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
@@ -17,7 +22,8 @@
   color: #8a81db;
   margin-bottom: 20px;
 }
-.contactHero > h1 {
+
+.contactHero>h1 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
@@ -27,7 +33,8 @@
   color: #e3ecff;
   margin-bottom: 60px;
 }
-.contactHero > p {
+
+.contactHero>p {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -67,6 +74,7 @@
   letter-spacing: -0.01em;
   color: #101010;
 }
+
 .contactText p {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
@@ -77,31 +85,8 @@
   margin-bottom: 0px;
 }
 
-.contactHeroMain {
-  position: relative;
-}
 
-.abstractLeft {
-  position: absolute;
-  width: 478px;
-  height: 478px;
-  left: -239px;
-  top: 377px;
-  background: #4f2416;
-  filter: blur(250px);
-  z-index: 1;
-}
 
-/* .abstractRight {
-  position: absolute;
-  width: 792px;
-  height: 792px;
-  right: -500px;
-  top: 616px;
-  background: #4f42c9;
-  opacity: 0.5;
-  filter: blur(250px);
-} */
 
 @media only screen and (max-width: 576px) {
   .contactHero {
@@ -110,34 +95,42 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
-  .contactHero > h5 {
+
+  .contactHero>h5 {
     font-size: 14px;
   }
-  .contactHero > h1 {
+
+  .contactHero>h1 {
     font-size: 32px;
     line-height: 120%;
     margin-bottom: 30px;
   }
-  .contactHero > p {
+
+  .contactHero>p {
     padding: 0px 0px;
     font-size: 18px;
     line-height: 140%;
   }
+
   .contactInfo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
   }
+
   .contactCard {
     padding: 10px 10px;
     justify-content: center;
   }
+
   .contactCard img {
     width: 14%;
   }
+
   .contactText h5 {
     font-size: 16px;
   }
+
   .contactText p {
     font-size: 14px;
   }
@@ -147,24 +140,30 @@
     /* width: 100%; */
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .contactHero > h1 {
+  .contactHero>h1 {
     font-size: 64px;
   }
-  .contactHero > p {
+
+  .contactHero>p {
     padding: 0px 74px;
 
     margin-bottom: 50px;
   }
+
   .contactCard {
     padding: 10px 10px;
   }
+
   .contactCard img {
     width: 18%;
   }
+
   .contactText h5 {
     font-size: 16px;
   }
+
   .contactText p {
     font-size: 14px;
   }
@@ -173,29 +172,36 @@
     margin-left: 10px;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .contactHero > h1 {
+  .contactHero>h1 {
     font-size: 64px;
   }
-  .contactHero > p {
+
+  .contactHero>p {
     padding: 0px 187px;
     margin-bottom: 50px;
   }
+
   .contactCard {
     padding: 20px 20px;
   }
+
   .contactCard img {
     width: 24%;
   }
+
   .contactText h5 {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  .contactHero > p {
+  .contactHero>p {
     padding: 0px 100px;
     margin-bottom: 50px;
   }
+
   .contactCard {
     padding: 20px 20px;
   }
