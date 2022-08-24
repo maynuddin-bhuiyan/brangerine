@@ -23,9 +23,10 @@ const ContactHero = () => {
         },
     ]
     return (
-        <div className={styles.contactHeroMain}>
-             <div className={styles.abstractRight}></div>
-            <div className={styles.abstractLeft}></div>
+        <div className={styles.ContactHeroMain}>
+            <div className="abstractRight"></div>
+            <div className="abstractLeft"></div>
+            <>
             <div className='container'>
             <div className={styles.contactHero}> 
                 <h5>Contact Us</h5>
@@ -45,7 +46,9 @@ const ContactHero = () => {
                     }
                 </div>
             </div>
-        </div>
+        </div>      
+        </>
+        
         </div>
     );
 };
