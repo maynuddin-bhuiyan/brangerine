@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import styles from "./BlogComments.module.css";
 
 const BlogComments = () => {
+  useState
   const data = [
     {
       id: 1,
@@ -40,7 +41,7 @@ const BlogComments = () => {
 
   const inputs = [
     {
-      name: "full_name",
+      name: "name",
       type: "text",
       placeholder: "Full Name",
       required: true,
@@ -54,12 +55,36 @@ const BlogComments = () => {
       label: "E-mail Address",
     },
     {
-      name: "message",
+      name: "text",
       placeholder: "Write your Text...",
       required: true,
       label: "Your Message",
     },
   ];
+
+  const [dep, setDep] = useState(null);
+
+  const handleSubmitComment = (e) => {
+    e.preventDefault();
+    try {
+      const formData = new FormData(e.target);
+      const comment = {};
+      inputs.forEach(({ name }) => (comment[name] = formData.get(name)));
+      comment.likes = 0;
+      comment.dislikes = 0;
+      comment.image = "/images/BlogDetails1/Ellipse 7.png";
+      comment.id = data.length + 1;
+      data.push(comment);
+      console.log(data);
+      setDep(Math.random());
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    console.log(data);
+  }, [dep]);
   return (
     <div className="container">
       <div className={styles.blogComments}>
@@ -104,7 +129,7 @@ const BlogComments = () => {
         <div className={styles.replyForm}>
           <h1>Reply Comments</h1>
           <div>
-            <form id="contact-form">
+            <form onSubmit={(e) => handleSubmitComment(e)} id="contact-form">
               <Row>
                 {inputs.map(
                   ({ name, type, placeholder, required, label, star }) => (
