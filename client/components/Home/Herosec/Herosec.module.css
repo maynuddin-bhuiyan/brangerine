@@ -1,4 +1,5 @@
-.heroSecTextWrapper {}
+.heroSecTextWrapper {
+}
 
 .heroSecTextWrapper h1 {
   font-size: 130px;
@@ -149,8 +150,67 @@
   top: 120px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1490px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 160px !important;
+  }
 
+  .tramp {
+    width: 329px;
+  }
+}
+
+@media screen and (max-width: 1162px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 145px !important;
+  }
+
+  .tramp {
+    width: 296px;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 135px !important;
+  }
+
+  .tramp {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 130px !important;
+  }
+
+  .tramp {
+    width: 224px;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 125px !important;
+  }
+
+  .tramp {
+    width: 198px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .leftImage,
   .rightImage,
   .middleImage {
@@ -158,25 +218,35 @@
   }
 
   .tramp {
-    width: 140px;
+    width: 150px;
+  }
+
+  .heroSecTextWrapper h1 {
+    font-size: 80px;
   }
 }
 
 @media screen and (max-width: 600px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
-    width: 110px !important;
+    width: 100px !important;
   }
 
   .tramp {
     width: 130px;
   }
+
+  .flowImage {
+    top: 80px;
+  }
+
+  .trampWrapper {
+    margin-top: -75px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -185,11 +255,22 @@
 
   .tramp {
     width: 110px;
+  }
+
+  .flowImage {
+    top: 75px;
+  }
+
+  .heroSecTextWrapper h1 {
+    font-size: 50px;
+  }
+
+  .heroSecTextWrapper p {
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 400px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -198,6 +279,22 @@
 
   .tramp {
     width: 110px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 70px !important;
+  }
+
+  .tramp {
+    width: 90px;
+  }
+
+  .flowImage {
+    top: 58px;
   }
 }
 
