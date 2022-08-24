@@ -104,7 +104,7 @@
   margin-top: 5px;
 }
 
-.likeButton > p {
+.likeButton>p {
   margin-bottom: 0px;
 }
 
@@ -134,6 +134,7 @@
   width: 359px;
   margin-bottom: 35px;
 }
+
 .formGroup input::placeholder {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
@@ -182,4 +183,64 @@
   text-align: center;
   text-transform: capitalize;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+  .comments:nth-child(3) {
+    display: none !important;
+  }
+
+  .blogComments {
+    width: 600px !important;
+  }
+
+  .formGroup input {
+    width: 280px !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .replyForm {
+    display: none !important;
+  }
+
+  .comments:nth-child(2) {
+    display: none;
+  }
+
+  .comments:nth-child(3) {
+    margin-left: 0px !important;
+  }
+
+  .comments:nth-child(4) {
+    margin-bottom: 50px !important;
+  }
+
+  .comments {
+    border-bottom: 1px solid #383838;
+  }
+
+  .avatarComment {
+    width: 300px !important;
+    line-height: 28px !important;
+  }
+
+  .imageAvatar {
+    margin-right: 10px !important;
+  }
+
+  .imageAvatar img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .avatarComment {
+    width: 250px !important;
+    line-height: 28px !important;
+  }
 }
