@@ -7,7 +7,7 @@
 }
 
 .footerTwo h1 {
-  font-family: "Swiss 721";
+  font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -15,7 +15,7 @@
   color: #ffffff;
 }
 .footerTwo a {
-  font-family: "Swiss 721";
+  font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

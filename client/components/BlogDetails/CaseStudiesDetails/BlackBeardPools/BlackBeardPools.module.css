@@ -1,0 +1,91 @@
+.BlackBeardPools {
+  width: 956px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+.BlackBeardPools > h4 {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4f42c9;
+}
+.BlackBeardPools > h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.BlackBeardPools > h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.BlackBeardPools > p {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+.BlackBeardPools > h3 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.imageDiv {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .BlackBeardPools {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0px;
+  }
+  .BlackBeardPools > h4 {
+    font-size: 14px;
+  }
+  .BlackBeardPools > h1 {
+    font-size: 32px;
+  }
+  .BlackBeardPools > h2 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .BlackBeardPools {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .BlackBeardPools {
+    width: 100%;
+  }
+}

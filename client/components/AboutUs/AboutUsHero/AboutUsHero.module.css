@@ -1,5 +1,6 @@
 .aboutUsHeroMain {
   position: relative;
+  width: 100%;
 }
 
 .abstractLeft {
@@ -17,9 +18,7 @@
   position: absolute;
   width: 792px;
   height: 792px;
-  right: -500px !important;
-  left: 1718px;
-  overflow: hidden;
+  right: 0% !important;
   top: 616px;
   background: #4f42c9;
   opacity: 0.5;

@@ -79,7 +79,7 @@ const WhatWeDo = () => {
                       // id={`flush-heading${item?.id}`}
                     >
                       <button
-                        className={`accordion-button`}
+                        className={`accordion-button collapsed`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#flush-collapse${item.id}`}
@@ -101,7 +101,7 @@ const WhatWeDo = () => {
                       >
                         {item?.text}
                         <a href="/" target="_blank" rel="noreferrer">
-                          Learn More 
+                          Learn More
                         </a>
                       </div>
                     </div>

@@ -1,0 +1,185 @@
+.blogComments {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.blogHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.blogHeader h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #e3ecff;
+}
+
+.blogHeaderTop {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #e3ecff;
+  border-bottom: 1px solid #383838;
+  display: flex;
+  align-items: center;
+}
+
+.blogHeaderTop span {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.comments {
+  display: flex;
+  padding-top: 50px;
+  border-top: 1px solid #383838;
+  padding-bottom: 50px;
+}
+
+.comments:nth-child(2) {
+  margin-left: 100px;
+}
+
+.comments:nth-child(3) {
+  margin-left: 100px;
+}
+
+.imageAvatar {
+  margin-right: 30px;
+}
+
+.avatarName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatarName h5 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #e3ecff;
+}
+
+.avatarComment {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #e3ecff;
+}
+
+.likeButton {
+  display: flex;
+  align-items: center;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
+}
+
+.likes p {
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #e3ecff;
+  margin-top: 5px;
+}
+
+.likeButton > p {
+  margin-bottom: 0px;
+}
+
+.replyForm {
+  border-top: 1px solid #383838;
+  padding: 50px 0px;
+}
+
+.replyForm h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #e3ecff;
+  margin-bottom: 30px;
+}
+
+.formGroup input {
+  background: #e3ecff;
+  border-radius: 50px;
+  border: 0px;
+  padding: 14px 20px;
+  color: #101010;
+  font-family: "Swiss 721", sans-serif;
+  width: 359px;
+  margin-bottom: 35px;
+}
+.formGroup input::placeholder {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #101010;
+  opacity: 0.65;
+}
+
+.formTextarea {
+  background: #e3ecff;
+  border-radius: 12px;
+  padding: 14px 20px;
+  height: 183px;
+  color: #101010;
+  font-family: "Swiss 721", sans-serif;
+  width: 100%;
+}
+
+.formTextarea::placeholder {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #101010;
+  opacity: 0.65;
+}
+
+.submitButton {
+  width: 256px;
+  height: 58px;
+  background: #352a9f;
+  border-radius: 50px;
+  border: 0px;
+  margin-top: 30px;
+}
+
+.submitButton span {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
