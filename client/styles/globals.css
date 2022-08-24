@@ -10,12 +10,10 @@ body {
   color: white;
   background: black;
   color-scheme: dark;
+  overflow-x: hidden;
 }
 
 /* Accordion  */
-
-
-
 .accordion-button {
   background-color: #000000 !important;
   color: #ffffff !important;
@@ -147,4 +145,40 @@ input[type="number"] {
   background-image: url("/images/contact us/Vector.png") !important;
   background-repeat: no-repeat !important;
   background-position: right 0.75rem center !important;
+}
+
+
+/* Abstract left and right */
+.abstractRight {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  right: -500px;
+  top: 616px;
+  background: #4f42c9;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+
+.abstractLeft {
+  position: absolute;
+  width: 478px;
+  height: 478px;
+  left: -239px;
+  top: 377px;
+  background: #4f2416;
+  filter: blur(250px);
+  z-index: 1;
+}
+
+
+.abstractMore {
+  position: absolute;
+  width: 478px;
+  height: 350px;
+  left: -239px;
+  top: 400px;
+  background: #4f42c9;
+  filter: blur(300px);
+  z-index: 1;
 }

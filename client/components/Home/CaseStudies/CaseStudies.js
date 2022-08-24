@@ -83,6 +83,7 @@ const CaseStudies = () => {
   ];
   return (
     <div className={styles.CaseStudies}>
+      <div className="abstractMore"></div>
       <div className={`container ${styles.CaseStudiesPart}`}>
         <div className="row">
           <h3>PAST PROJECTS</h3>

@@ -106,20 +106,42 @@
     margin-left: 10px;
 }
 
+@media only screen and (min-width: 770px) and (max-width: 1100px) {
+    .StudieSlideButton button {
+        margin-right: 20px;
+    }
 
+    .StudieCarouselCard {
+        height: 280px !important;
+    }
 
+    .CaseStudiesPart .StudieButton {
+        width: 220px !important;
+
+    }
+}
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .StudieSlideButton button {
         margin-right: 20px;
     }
+
+    .StudieCarouselCard {
+        height: 220px !important;
+    }
+
+    .CaseStudiesPart .StudieButton {
+        width: 220px !important;
+
+    }
 }
 
 
-
-
-
 @media only screen and (max-width: 576px) {
+    .CaseStudies {
+        padding: 50px 0px 0px !important;
+    }
+
     .CaseStudies h1 {
         font-size: 32px;
         line-height: 35px;
@@ -133,8 +155,13 @@
         margin-top: 0px;
     }
 
+    .StudieCarouselCard {
+        height: 250px !important;
+    }
+
     .StudieSlideButton {
         top: 35px;
+        right: -15px;
     }
 
     .StudieSlideButton button {
@@ -145,5 +172,25 @@
 
     .StudieSlideButton button i {
         font-size: 15px;
+    }
+
+    .CaseStudiesPart .StudieButton {
+        width: 220px !important;
+        bottom: 0px;
+    }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .StudieSlideButton button {
+        width: 35px;
+        height: 35px;
+        margin-right: 7px;
+    }
+
+    .StudieSlideButton {
+        top: 45px;
+        right: -10px;
     }
 }
