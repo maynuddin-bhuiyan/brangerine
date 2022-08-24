@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import styles from "./BlogComments.module.css";
 
 const BlogComments = () => {
-  const data = [
+  const [data, setData] = useState([
     {
       id: 1,
       image: "/images/BlogDetails1/Ellipse 7.png",
@@ -36,11 +36,11 @@ const BlogComments = () => {
       likes: "312",
       dislikes: "12",
     },
-  ];
+  ]);
 
   const inputs = [
     {
-      name: "full_name",
+      name: "name",
       type: "text",
       placeholder: "Full Name",
       required: true,
@@ -54,17 +54,37 @@ const BlogComments = () => {
       label: "E-mail Address",
     },
     {
-      name: "message",
+      name: "text",
       placeholder: "Write your Text...",
       required: true,
       label: "Your Message",
     },
   ];
+
+  const handleSubmitComment = (e) => {
+    e.preventDefault();
+    try {
+      const formData = new FormData(e.target);
+      const comment = {};
+      inputs.forEach(({ name }) => (comment[name] = formData.get(name)));
+      comment.likes = 0;
+      comment.dislikes = 0;
+      comment.image = "/images/BlogDetails1/Ellipse 7.png";
+      comment.id = data.length + 1;
+      setData([...data, comment]);
+      // reset the form
+      e.target.reset();
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
   return (
     <div className="container">
       <div className={styles.blogComments}>
         <div className={styles.blogHeader}>
-          <h1>Comments (5)</h1>
+          <h1>Comments ({data.length})</h1>
           <div className={styles.blogHeaderTop}>
             <h4>Top comments</h4>
             <span>
@@ -102,9 +122,9 @@ const BlogComments = () => {
         </div>
 
         <div className={styles.replyForm}>
-          <h1>Reply Comments</h1>
+          <h1>Comments</h1>
           <div>
-            <form id="contact-form">
+            <form onSubmit={(e) => handleSubmitComment(e)} id="contact-form">
               <Row>
                 {inputs.map(
                   ({ name, type, placeholder, required, label, star }) => (
