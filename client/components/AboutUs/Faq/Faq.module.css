@@ -1,0 +1,140 @@
+.faq {
+  margin: 80px 0px;
+}
+
+.faqInfo {
+  margin-bottom: 20px;
+}
+
+.faqInfo h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: #e3ecff;
+}
+
+.faqInfo p {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: #e3ecff;
+}
+
+.contactButton {
+  text-decoration: none;
+  width: 220px;
+  height: 60px;
+  background: #4f42c9;
+  border-radius: 50px;
+  padding: 18px 30px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.contactButton span {
+  transition: all 0.5s;
+}
+
+.contactButton .icon2 {
+  display: none;
+}
+
+.contactButton:hover {
+  background: #352a9f;
+  color: #ffffff;
+}
+
+.contactButton:hover span {
+  color: #ffffff;
+}
+
+.contactButton:hover .icon2 {
+  display: block;
+}
+
+.contactButton:hover .icon1 {
+  display: none;
+}
+
+.accordionItem {
+  margin-bottom: 30px;
+}
+
+.accordionItem > .accordionBody {
+  background-color: black !important;
+}
+
+.accordionButton {
+  padding: 30px 40px !important;
+  border: 1px solid white !important;
+  border-radius: 500px !important;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 24px;
+}
+
+.accordionButton:focus {
+  box-shadow: none !important;
+}
+
+.accordionBodyText {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  color: #ffffff;
+}
+
+.accordionBodyText > a {
+  color: #352a9f;
+}
+
+@media only screen and (max-width: 576px) {
+  .accordionButton {
+    padding: 17px 20px !important;
+    font-size: 18px !important;
+  }
+  .accordionBodyText {
+    font-size: 16px;
+  }
+  .faqInfo h1 {
+    font-size: 32px;
+  }
+  .faqInfo {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .accordionButton {
+    padding: 17px 20px !important;
+    font-size: 17px !important;
+  }
+  .faqInfo h1 {
+    font-size: 32px;
+  }
+
+  .faqInfo p {
+    font-family: "Swiss 721", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #e3ecff;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .accordionButton {
+    padding: 17px 20px !important;
+    font-size: 20px !important;
+  }
+}

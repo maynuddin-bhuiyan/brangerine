@@ -7,19 +7,19 @@ const StudiesDetailsHero = () => {
   const infoData = [
     {
       id: 1,
-      img: "/images/CaseStudies/Blackbeardcards.png",
+      img: "/images/CaseStudies/Rectangle 44.png",
       titel: "BUSINESS COLLATERAL",
     },
 
     {
       id: 2,
-      img: "/images/CaseStudies/Pinnaclewebsite+.png",
+      img: "/images/CaseStudies/Rectangle 45.png",
       titel: "WEB DESIGN",
     },
 
     {
       id: 3,
-      img: "/images/CaseStudies/image-asset.png",
+      img: "/images/CaseStudies/Rectangle 46.png",
       titel: "Pinnacle Logo",
     },
   ];
@@ -28,12 +28,12 @@ const StudiesDetailsHero = () => {
   const viewData = [
     {
       id: 1,
-      img: "/images/CaseStudies/Blackbeardcards.png",
+      img: "/images/CaseStudies/Rectangle 47.png",
     },
 
     {
       id: 2,
-      img: "/images/CaseStudies/Pinnaclewebsite+.png",
+      img: "/images/CaseStudies/Rectangle 48.png",
     },
   ];
 
@@ -50,8 +50,8 @@ const StudiesDetailsHero = () => {
         <div className="row">
           <div className="col-lg-12 col-sm-12 col-md-12 text-center">
             <Image
-              width="950"
-              height="550"
+              width="946"
+              height="518"
               src="/images/CaseStudies/Component 2.jpg"
             />
 

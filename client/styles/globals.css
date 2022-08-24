@@ -14,22 +14,16 @@ body {
 
 /* Accordion  */
 
-
-
 .accordion-button {
   background-color: #000000 !important;
   color: #ffffff !important;
 }
-
 
 .accordion-button span {
   color: #ffffff;
   opacity: 65%;
   margin-right: 10px;
 }
-
-
-
 
 .accordion-button:not(.collapsed) {
   background-color: #ffffff !important;
@@ -41,25 +35,25 @@ body {
   opacity: 100% !important;
 }
 
-
 .accordion-button {
   background-color: #000000 !important;
-  color: #FFFFFF !important
+  color: #ffffff !important;
 }
-
 
 .accordion-button::after {
   background: url(../public/images/WhatWeDo/Vector.svg) !important;
   background-repeat: no-repeat !important;
+  margin-top: 5px;
 }
 
 .accordion-button:not(.collapsed)::after {
   background: url(../public/images/WhatWeDo/subtract-line.svg) !important;
   background-repeat: no-repeat !important;
+  margin-top: 5px;
 }
 
 /* Testimonial Carousel */
-.testimonialSlider>.slick-slider>.slick-prev:before {
+.testimonialSlider > .slick-slider > .slick-prev:before {
   content: "....";
   background: url("/images/testimonials/Vector.svg");
   background-position: top center;
@@ -69,7 +63,7 @@ body {
   font-size: 15px;
 }
 
-.testimonialSlider>.slick-slider>.slick-prev {
+.testimonialSlider > .slick-slider > .slick-prev {
   left: -2px;
   background: #ffffff;
   padding: 22px;
@@ -80,7 +74,7 @@ body {
   z-index: 1;
 }
 
-.testimonialSlider>.slick-slider>.slick-next:before {
+.testimonialSlider > .slick-slider > .slick-next:before {
   content: "....";
   background: url("/images/testimonials/Vector (1).svg");
   background-position: top center;
@@ -90,7 +84,7 @@ body {
   font-size: 15px;
 }
 
-.testimonialSlider>.slick-slider>.slick-next {
+.testimonialSlider > .slick-slider > .slick-next {
   right: -2px;
   background: #4f42c9;
   padding: 22px;
@@ -101,32 +95,32 @@ body {
   z-index: 1;
 }
 
-.testimonialSlider>.slick-slider>.slick-dots li button:before {
+.testimonialSlider > .slick-slider > .slick-dots li button:before {
   color: #606060 !important;
   font-size: 8px;
   margin-top: 40px;
   opacity: 1;
 }
 
-.testimonialSlider>.slick-slider>.slick-dots li.slick-active button:before {
+.testimonialSlider > .slick-slider > .slick-dots li.slick-active button:before {
   color: #4f42c9 !important;
   font-size: 8px !important;
 }
 
 @media only screen and (max-width: 1024px) {
-  .testimonialSlider>.slick-slider>.slick-prev:before {
+  .testimonialSlider > .slick-slider > .slick-prev:before {
     content: none;
   }
 
-  .testimonialSlider>.slick-slider>.slick-prev {
+  .testimonialSlider > .slick-slider > .slick-prev {
     background: none;
   }
 
-  .testimonialSlider>.slick-slider>.slick-next:before {
+  .testimonialSlider > .slick-slider > .slick-next:before {
     content: none;
   }
 
-  .testimonialSlider>.slick-slider>.slick-next {
+  .testimonialSlider > .slick-slider > .slick-next {
     background: none;
   }
 }
@@ -147,4 +141,29 @@ input[type="number"] {
   background-image: url("/images/contact us/Vector.png") !important;
   background-repeat: no-repeat !important;
   background-position: right 0.75rem center !important;
+}
+
+/* FAQ */
+.accordion-item {
+  border: 0px;
+  background-color: transparent !important;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+
+/* aedik clothing slider */
+.custom-indicator {
+  bottom: -52px !important;
+}
+.custom-indicator li {
+  width: 149px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+.custom-indicator li.slick-active {
+  filter: grayscale(0%);
 }
