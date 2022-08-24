@@ -1,9 +1,10 @@
-.aedikClothingHero {
+.rileyZavala {
   width: 956px;
   margin: 0 auto;
   padding: 100px 0px;
 }
-.aedikClothingHero h4 {
+
+.rileyZavala > h4 {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -13,7 +14,8 @@
   text-transform: uppercase;
   color: #4f42c9;
 }
-.aedikClothingHero h1 {
+
+.rileyZavala > h1 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -25,7 +27,7 @@
   margin-bottom: 50px;
 }
 
-.aedikClothingHero h2 {
+.rileyZavala > h2 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -34,10 +36,11 @@
   letter-spacing: -0.01em;
   text-transform: capitalize;
   color: #ffffff;
-  margin-top: 50px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
-.aedikClothingHero p {
+
+.rileyZavala > p {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -46,61 +49,37 @@
   text-transform: capitalize;
   color: #e3ecff;
   opacity: 0.8;
-  margin-bottom: 50px;
-}
-
-.videography {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 120%;
-  letter-spacing: -0.01em;
-  text-transform: capitalize;
-  color: #ffffff;
-  margin-top: 138px;
   margin-bottom: 30px;
 }
 
-.aedikClothingVideo {
-  width: 100%;
-}
-
-.aedikEndImages {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-top: 20px;
+.rileyZavala > p > a {
+  color: #4f42c9;
 }
 
 @media only screen and (max-width: 576px) {
-  .aedikClothingHero {
+  .rileyZavala {
     padding: 50px 0px;
   }
-  .aedikClothingHero {
+  .rileyZavala {
     width: 100%;
   }
-  .aedikEndImages {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .aedikClothingHero h4 {
+  .rileyZavala > h4 {
     font-size: 14px;
   }
-  .aedikClothingHero h1 {
+  .rileyZavala > h1 {
     font-size: 32px;
   }
-  .aedikClothingHero h2 {
+  .rileyZavala > h2 {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .aedikClothingHero {
+  .rileyZavala {
     width: 100%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .aedikClothingHero {
+  .rileyZavala {
     width: 100%;
   }
 }

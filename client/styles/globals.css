@@ -156,16 +156,124 @@ input[type="number"] {
 
 /* aedik clothing slider */
 .custom-indicator {
-  bottom: -52px !important;
+  bottom: -60px !important;
 }
 .custom-indicator li {
-  width: 149px;
+  width: 159px;
   height: 50px;
   filter: grayscale(100%);
+  margin: 0px;
 }
 
 .custom-indicator li.slick-active {
   filter: grayscale(0%);
+}
+
+.aedikSlider > .slick-slider > .slick-prev {
+  left: -2px;
+  background: rgba(0, 0, 0, 0.12) !important;
+  padding: 22px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.aedikSlider > .slick-slider > .slick-next {
+  background: rgba(0, 0, 0, 0.12) !important;
+  right: -2px;
+  padding: 22px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .custom-indicator li {
+    width: 49px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .custom-indicator li {
+    width: 116px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .custom-indicator li {
+    width: 115px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  .custom-indicator li {
+    width: 156px;
+  }
+}
+
+/* Riley Zavala Slider */
+.custom-indicators {
+  bottom: -98px !important;
+}
+
+.custom-indicators li {
+  width: 80px;
+  filter: grayscale(100%);
+  margin: 0px;
+}
+
+.custom-indicators li.slick-active {
+  filter: grayscale(0%);
+}
+
+.rileyZavalaSlider {
+  margin-bottom: 130px;
+}
+
+.rileyZavalaSlider > .slick-slider > .slick-prev {
+  left: -2px;
+  background: rgba(0, 0, 0, 0.12) !important;
+  padding: 22px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.rileyZavalaSlider > .slick-slider > .slick-next {
+  background: rgba(0, 0, 0, 0.12) !important;
+  right: -2px;
+  padding: 22px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .custom-indicators li {
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .custom-indicators li {
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .custom-indicators li {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  .custom-indicators li {
+    width: 156px;
+  }
 }
 
 /* Abstract left and right */

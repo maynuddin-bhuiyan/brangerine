@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 
-const AedikClothingSlider = () => {
+const RileyZavalaSlider = () => {
     const settings = {
       customPaging: function(i) {
         return (
@@ -11,7 +11,7 @@ const AedikClothingSlider = () => {
         );
       },
       dots: true,
-      dotsClass: "slick-dots slick-thumb custom-indicator",
+      dotsClass: "slick-dots slick-thumb custom-indicators",
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -21,31 +21,15 @@ const AedikClothingSlider = () => {
     const data = [
         {
             id: 1,
-            image: "/images/CaseStudies/project 3/abstract01.jpg"
+            image: "/images/CaseStudies/project 5/chasing_ghosts2.png"
         },
         {
-            id: 1,
-            image: "/images/CaseStudies/project 3/abstract02.jpg"
-        },
-        {
-            id: 1,
-            image: "/images/CaseStudies/project 3/abstract03.jpg"
-        },
-        {
-            id: 1,
-            image: "/images/CaseStudies/project 3/abstract04.jpg"
-        },
-        {
-            id: 1,
-            image: "/images/CaseStudies/project 3/abstract05.jpg"
-        },
-        {
-            id: 1,
-            image: "/images/CaseStudies/project 3/abstract06.jpg"
+            id: 2,
+            image: "/images/CaseStudies/project 5/chasing_ghostsback2.png"
         },
     ]
     return (
-        <div className="aedikSlider">
+        <div className="rileyZavalaSlider">
             <Slider {...settings} >
                 {
                     data.map((item, index) => (
@@ -59,4 +43,4 @@ const AedikClothingSlider = () => {
     );
 };
 
-export default AedikClothingSlider;
+export default RileyZavalaSlider;
