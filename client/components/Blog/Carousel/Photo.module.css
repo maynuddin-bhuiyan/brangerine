@@ -1,0 +1,7 @@
+.photo_container{
+    background: url('/images/blog/slide1.jpeg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
+}

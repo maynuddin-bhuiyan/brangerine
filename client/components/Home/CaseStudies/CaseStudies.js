@@ -90,7 +90,6 @@ const CaseStudies = () => {
           <Slider {...settings} ref={CaseStudiesSlider}>
             {data?.map((item, i) => (
               <div className="row d-flex align-items-center" key={item?.id}>
-                
                 <div
                   className={`${styles.StudieCarouselCard}`}
                   onMouseOut={() => setShow(null)}
