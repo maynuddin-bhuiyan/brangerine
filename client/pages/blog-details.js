@@ -6,11 +6,11 @@ import Navbar from "../components/shared/Navbar/Navbar";
 
 export default function blogDetails1() {
   return (
-    <div>      
-        <Navbar />        
+    <div>
+      <Navbar />
       <BlogDetailsHero />
-      <BlogComments/>
-        <Footer />
+      <BlogComments />
+      <Footer />
     </div>
   );
 }
