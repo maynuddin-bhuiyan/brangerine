@@ -6,6 +6,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 16,
@@ -126,6 +141,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 17,
@@ -134,6 +150,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 18,
@@ -142,6 +159,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 19,
@@ -150,6 +168,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 20,
@@ -158,6 +177,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 21,
@@ -166,6 +186,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 22,
@@ -174,6 +195,7 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
   {
     id: 23,
@@ -182,5 +204,6 @@ export const posts = [
     author: "DIANNE RUSSEL",
     date: "OCTOBER 25,2022",
     category: "SPORTS",
+    href: '/blog-details'
   },
 ];
