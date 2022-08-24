@@ -3,8 +3,7 @@ import { Col, Form, Row } from "react-bootstrap";
 import styles from "./BlogComments.module.css";
 
 const BlogComments = () => {
-  useState
-  const data = [
+  const [data, setData] = useState([
     {
       id: 1,
       image: "/images/BlogDetails1/Ellipse 7.png",
@@ -37,7 +36,7 @@ const BlogComments = () => {
       likes: "312",
       dislikes: "12",
     },
-  ];
+  ]);
 
   const inputs = [
     {
@@ -62,8 +61,6 @@ const BlogComments = () => {
     },
   ];
 
-  const [dep, setDep] = useState(null);
-
   const handleSubmitComment = (e) => {
     e.preventDefault();
     try {
@@ -74,22 +71,20 @@ const BlogComments = () => {
       comment.dislikes = 0;
       comment.image = "/images/BlogDetails1/Ellipse 7.png";
       comment.id = data.length + 1;
-      data.push(comment);
-      console.log(data);
-      setDep(Math.random());
+      setData([...data, comment]);
+      // reset the form
+      e.target.reset();
     } catch (error) {
       console.log(error);
     }
   }
 
-  useEffect(() => {
-    console.log(data);
-  }, [dep]);
+
   return (
     <div className="container">
       <div className={styles.blogComments}>
         <div className={styles.blogHeader}>
-          <h1>Comments (5)</h1>
+          <h1>Comments ({data.length})</h1>
           <div className={styles.blogHeaderTop}>
             <h4>Top comments</h4>
             <span>
@@ -127,7 +122,7 @@ const BlogComments = () => {
         </div>
 
         <div className={styles.replyForm}>
-          <h1>Reply Comments</h1>
+          <h1>Comments</h1>
           <div>
             <form onSubmit={(e) => handleSubmitComment(e)} id="contact-form">
               <Row>
