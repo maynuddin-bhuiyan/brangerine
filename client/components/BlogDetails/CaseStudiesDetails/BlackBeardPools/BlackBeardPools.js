@@ -1,8 +1,20 @@
 import Image from "next/image";
 import React from "react";
+import Comments from "../Comments/Comments";
+import NextPrevious from "../NextPrevious/NextPrevious";
 import styles from "./BlackBeardPools.module.css";
 
 const BlackBeardPools = () => {
+  const data = {
+    image1: "/images/CaseStudies/pin.png",
+    image2: "/images/CaseStudies/Rectangle 466.png",
+    preLink: "/cs-pinnacle",
+    nextLink: "/cs-aedikclothing",
+    preText: "Pinnacle - Rise To The Top",
+    nextText: "Aedik Clothing - Streetwear",
+    comment: "Brangerine did the best job with listening and bringing what I was looking for in a logo.",
+    commentator: "— Andrew 'BlackBeard' Hinojosa"
+  }
   return (
     <div className="container">
       <div className={styles.BlackBeardPools}>
@@ -30,7 +42,13 @@ const BlackBeardPools = () => {
             height={637}
           />
         </div>
-              <h3>BUSINESS CARDS</h3>
+        <h3>BUSINESS CARDS</h3>
+        <Comments comment={data.comment} commentator={data.commentator}/>
+        
+        <div className={styles.next}>
+          <NextPrevious image1={data.image1} image2={data.image2} preLink={data.preLink} nextLink={data.nextLink} preText={data.preText} nextText={data.nextText} />
+          
+        </div>
       </div>
     </div>
   );

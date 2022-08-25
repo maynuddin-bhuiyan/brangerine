@@ -1,7 +1,18 @@
 .ContactHeroMain {
   position: relative;
+  z-index: 10;
 }
 
+.abstractLeft {
+  position: absolute;
+  width: 478px;
+  height: 478px;
+  left: -239px;
+  top: 210px;
+  background: #4f2416;
+  filter: blur(250px);
+  z-index: -1;
+}
 
 .contactHero {
   margin: 100px 0px 50px 0px;
@@ -11,7 +22,7 @@
   z-index: 10;
 }
 
-.contactHero>h5 {
+.contactHero > h5 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
@@ -23,7 +34,7 @@
   margin-bottom: 20px;
 }
 
-.contactHero>h1 {
+.contactHero > h1 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
@@ -34,7 +45,7 @@
   margin-bottom: 60px;
 }
 
-.contactHero>p {
+.contactHero > p {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -85,9 +96,6 @@
   margin-bottom: 0px;
 }
 
-
-
-
 @media only screen and (max-width: 576px) {
   .contactHero {
     margin: 50px 0px 50px 0px;
@@ -96,17 +104,17 @@
     background-repeat: no-repeat;
   }
 
-  .contactHero>h5 {
+  .contactHero > h5 {
     font-size: 14px;
   }
 
-  .contactHero>h1 {
+  .contactHero > h1 {
     font-size: 32px;
     line-height: 120%;
     margin-bottom: 30px;
   }
 
-  .contactHero>p {
+  .contactHero > p {
     padding: 0px 0px;
     font-size: 18px;
     line-height: 140%;
@@ -139,14 +147,17 @@
     margin-left: 10px;
     /* width: 100%; */
   }
+  .abstractLeft {
+    opacity: 0.2;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .contactHero>h1 {
+  .contactHero > h1 {
     font-size: 64px;
   }
 
-  .contactHero>p {
+  .contactHero > p {
     padding: 0px 74px;
 
     margin-bottom: 50px;
@@ -174,11 +185,11 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .contactHero>h1 {
+  .contactHero > h1 {
     font-size: 64px;
   }
 
-  .contactHero>p {
+  .contactHero > p {
     padding: 0px 187px;
     margin-bottom: 50px;
   }
@@ -197,7 +208,7 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  .contactHero>p {
+  .contactHero > p {
     padding: 0px 100px;
     margin-bottom: 50px;
   }

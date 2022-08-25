@@ -64,8 +64,12 @@ const ContactForm = () => {
     e.preventDefault();
   };
   return (
-    <div className="container">
+    <div  className={styles.contactFormMain}>
+      <div className={styles.abstractRight}></div>
+            <div className={styles.abstractMore}></div>
+      <div className="container">
       <div className={styles.contactForm}>
+         
         
         <div>
           <iframe
@@ -179,6 +183,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };

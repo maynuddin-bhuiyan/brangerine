@@ -1,8 +1,20 @@
 import Image from "next/image";
 import React from "react";
+import Comments from "../Comments/Comments";
+import NextPrevious from "../NextPrevious/NextPrevious";
 import styles from "./Motivv.module.css";
 
 const Motivv = () => {
+   const data = {
+    image1: "/images/CaseStudies/Rectangle 466.png",
+    image2: "/images/CaseStudies/chasing.png",
+    preLink: "/cs-aedikclothing",
+    nextLink: "/cs-rileyzavala",
+    preText: "Aedik Clothing - Streetwear",
+    nextText: "Riley Zavala - Independent Artist",
+     comment: "Man! Words can’t even explain how happy and satisfied I am with my logo for my brand from here. They gave me a deadline of when he would have things and they met them! Jake Flores knows what he is doing and is highly recommended! Thanks again Brangerine for your services!",
+    commentator: "— Derrick Jenkins"
+  }
   return (
     <div className="container">
       <div className={styles.motivv}>
@@ -71,6 +83,8 @@ const Motivv = () => {
           </div>
         </div>
 
+        <Comments comment={data.comment} commentator={data.commentator}/>
+
               <div>
                     <Image
               src="/images/CaseStudies/project 4/websitemock.png"
@@ -90,7 +104,8 @@ const Motivv = () => {
               width={461}
               height={101}
             />
-              </div>
+        </div>
+         <NextPrevious image1={data.image1} image2={data.image2} preLink={data.preLink} nextLink={data.nextLink} preText={data.preText}nextText={data.nextText} />
       </div>
     </div>
   );

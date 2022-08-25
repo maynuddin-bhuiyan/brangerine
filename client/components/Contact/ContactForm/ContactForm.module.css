@@ -1,13 +1,44 @@
+.contactFormMain {
+  position: relative;
+  z-index: 10;
+}
+
+.abstractRight {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  right: -500px !important;
+  top: 16px;
+  background: #4f42c9;
+  opacity: 0.5;
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.abstractMore {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  left: -402px;
+  top: 100px;
+  background: #4f42c9;
+  opacity: 0.2;
+  filter: blur(200px);
+  z-index: -1;
+}
+
 .contactForm {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 50px 0px;
   grid-gap: 80px;
+  z-index: 10;
 }
 
 .map {
   width: 100%;
   height: 100%;
+  z-index: 10;
 }
 
 .formGroup {
@@ -140,6 +171,13 @@
   }
   .submitButton {
     margin-bottom: 20px;
+  }
+  .abstractRight {
+    opacity: 0.2;
+  }
+
+  .abstractMore {
+    opacity: 0.2;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {

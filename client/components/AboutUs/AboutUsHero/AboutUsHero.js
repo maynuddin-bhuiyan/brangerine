@@ -12,6 +12,7 @@ const AboutUsHero = () => {
     <div className={styles.aboutUsHeroMain}>
       <div className={styles.abstractLeft}></div>
       <div className={styles.abstractRight}></div>
+      <div className={styles.abstractMore}></div>
       <div className="container">
         <div className={styles.aboutUsHero}>
           <h5>About us</h5>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import NextPrevious from "../NextPrevious/NextPrevious";
 import styles from "./StudiesDetailsHero.module.css";
 
 const StudiesDetailsHero = () => {
@@ -37,6 +38,16 @@ const StudiesDetailsHero = () => {
     },
   ];
 
+    const data = {
+    image1: "/images/CaseStudies/mac.png",
+    image2: "/images/CaseStudies/Rectangle 25.png",
+    preLink: "/cs-macg",
+    nextLink: "/cs-blackbeardpools",
+    preText: "Mac G - The Barber",
+    nextText: "Blackbeard Pools - Full Service Pool Cleaning"
+
+  }
+
   return (
     <div className={styles.StudiesDetailsHero}>
       {/* Case Studies Details Hero Part  */}
@@ -48,12 +59,14 @@ const StudiesDetailsHero = () => {
       {/* Case Studies Details Main Image  */}
       <div className={`container`}>
         <div className="row">
-          <div className="col-lg-12 col-sm-12 col-md-12 text-center">
-            <Image
+          <div className="col-lg-12 col-sm-12 col-md-12">
+            <div className="text-center">
+              <Image
               width="946"
               height="518"
               src="/images/CaseStudies/Component 2.jpg"
             />
+            </div>
 
             {/* Case Studies Details Information  */}
 
@@ -100,7 +113,7 @@ const StudiesDetailsHero = () => {
 
             {/* Details project  */}
             <div className={styles.projectInfo}>
-              <div className={styles.projectcard}>
+              {/* <div className={styles.projectcard}>
                 <div className={styles.projectImg}>
                   <Image
                     width="80"
@@ -144,8 +157,11 @@ const StudiesDetailsHero = () => {
                   </div>
                   <p>More much randomly tentative this much this...</p>
                 </div>
-              </div>
+              </div> */}
+               <NextPrevious image1={data.image1} image2={data.image2} preLink={data.preLink} nextLink={data.nextLink} preText={data.preText}nextText={data.nextText} />
+               
             </div>
+            
           </div>
         </div>
       </div>
