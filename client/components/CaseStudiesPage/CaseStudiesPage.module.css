@@ -2,6 +2,11 @@
   padding: 100px 0px;
 }
 
+.caseStudiesMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .StudiesHeroSec {
   margin: 0 auto !important;
 }
@@ -31,7 +36,7 @@
 .StudiesHeroSec .StudieCard {
   cursor: pointer;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .StudieCard img {
@@ -49,7 +54,7 @@
   justify-content: space-between;
   position: absolute;
   left: 50%;
-  bottom: 0px;
+  bottom: -20px;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   font-family: "Swiss 721", sans-serif;
@@ -171,8 +176,14 @@
     width: max-content !important;
   }
 
+  .StudieButton {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
   .StudieButton i {
-    font-size: 15px;
+    font-size: 14px;
+    margin-left: 5px;
   }
 
   #PaginationButton {
@@ -188,5 +199,17 @@
 
   .PaginationButton {
     padding: 10px 15px !important;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .StudieButton {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .StudieButton i {
+    font-size: 14px;
+    margin-left: 5px;
   }
 }

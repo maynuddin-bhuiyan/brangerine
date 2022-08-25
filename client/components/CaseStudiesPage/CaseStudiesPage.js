@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from "react";
 import { caseStudiesData } from "../../data/casestudiesdata";
 import styles from "./CaseStudiesPage.module.css";
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 const CaseStudiesPage = () => {
   const router = useRouter();
@@ -23,18 +23,18 @@ const CaseStudiesPage = () => {
       <h3>PAST PROJECTS</h3>
       <h1>Case Studies</h1>
       <div className={`container ${styles.StudiesHeroSec}`}>
-        <div className="row">
+        <div className={`row `}>
 
           {caseStudiesData[currPage]?.data?.map((item, i) => (
-            <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center" key={item?.id}>
+            <div className={`col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center`} key={item?.id}>
               <div
                 className={`${styles.StudieCard}`}
                 onMouseOut={() => setShow(null)}
                 onMouseOver={() => setShow(item?.id)}
               >
                 <Image
-                  width="665"
-                  height="385"
+                  width="600"
+                  height="407"
                   src={item.id === show ? item?.hoverImage : item?.image}
                 />
 
