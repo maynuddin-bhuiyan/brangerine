@@ -2,9 +2,11 @@ import React from 'react'
 import styles from './Photo.module.css'
 import Image from 'next/image'
 
-export default function Photo() {
+export default function Photo({photo}) {
+  const { category,title,author,date,image } = photo
+  console.log(image)
   return (
-    <div className={styles.photo_container}>
+    <div className={`${styles.photo_container} ${image}`}>
         <div className={styles.category_container}>
             <div className={styles.category}>
                 TECHNOLOGY
@@ -20,6 +22,7 @@ export default function Photo() {
                 src='/images/blog/date.svg'
                 width={20}
                 height={20}
+                className={styles.calender}
             />
             <p className={styles.date}>October 25, 2022</p>
           </div>
