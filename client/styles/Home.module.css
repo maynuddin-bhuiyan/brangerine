@@ -7,6 +7,42 @@
   background-size: cover;
   background-position: center;
 }
-.blog_container{
+.blog_container {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1162px) {
+  .headerWrapper {
+    padding-bottom: 382px;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .headerWrapper {
+    padding-bottom: 321px;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .headerWrapper {
+    padding-bottom: 298px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .headerWrapper {
+    padding-bottom: 231px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerWrapper {
+    padding-bottom: 168px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headerWrapper {
+    padding-bottom: 121px;
+  }
 }

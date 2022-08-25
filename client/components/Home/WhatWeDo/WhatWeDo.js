@@ -31,7 +31,8 @@ const WhatWeDo = () => {
 
   return (
     <div className={styles.WhatWeDo}>
-      <div className={styles.leftShap}></div>
+      <div className="abstractRight"></div>
+      <div className="abstractLeft"></div>
       <h3>What We Do</h3>
       <h1>In what area do you need assistance</h1>
       <div className={`container`}>
@@ -78,7 +79,7 @@ const WhatWeDo = () => {
                       // id={`flush-heading${item?.id}`}
                     >
                       <button
-                        className={`accordion-button`}
+                        className={`accordion-button collapsed`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#flush-collapse${item.id}`}
@@ -100,7 +101,7 @@ const WhatWeDo = () => {
                       >
                         {item?.text}
                         <a href="/" target="_blank" rel="noreferrer">
-                          Learn More 
+                          Learn More
                         </a>
                       </div>
                     </div>

@@ -1,0 +1,50 @@
+.aedikClothingHero {
+  width: 956px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+.aedikClothingHero h4 {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4f42c9;
+}
+.aedikClothingHero h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.aedikClothingHero h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.aedikClothingHero p {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
