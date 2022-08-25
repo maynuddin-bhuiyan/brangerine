@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styles from "./BlogDetailsHero.module.css";
 
@@ -23,6 +24,7 @@ const BlogDetailsHero = ({details}) => {
       text: "By Dianne Russell",
       data: "October 25, 2022",
       titel: "Like meadowlark while onto this this that dully some far wound",
+      href: '/blog-details',
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ const BlogDetailsHero = ({details}) => {
       text: "By Dianne Russell",
       data: "October 25, 2022",
       titel: "Literal crud far conservatively perfect classically supreme",
+      href: '/blog-details',
     },
   ];
 
@@ -38,16 +41,15 @@ const BlogDetailsHero = ({details}) => {
     <div className={styles.blogDetailsHero}>
       {/* Blog Details Hero Part  */}
       <div className={styles.blogHeaderText}>
-        <h3>{details.title}</h3>
+        <h3>{details?.subtitle}</h3>        
         <h1>
-          More much randomly tentative this much this sloth cliquishly far
-          randomly More
+        {details?.title}
         </h1>
         <div className={styles.blogMedia}>
           <div className={styles.mediaData}>
-            <p>By Dianne Russell</p>
+            <p>{details?.author}</p>
             <i className="ri-calendar-2-line"></i>
-            <p>October 25, 2022</p>
+            <p>{details?.date}</p>
           </div>
           <div className={styles.mediaButton}>
             <button>
@@ -66,25 +68,16 @@ const BlogDetailsHero = ({details}) => {
             <Image
               width="950"
               height="520"
-              src="/images/BlogDetails1/COVERART+OPENSEA.png"
+              src={details?.src}
             />
 
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
               <p>
-                Eleifend urna ipsum ornare vitae mauris. In auctor mi arcu
-                pulvinar massa. Aliquet egestas ullamcorper integer vulputate
-                sodales cursus. Interdum venenatis vestibulum et cum sit turpis
-                facilisi tortor adipiscing arcu pulvinar massa. Aliquet egestas
-                sodales.
+              {details?.text1}
               </p>
               <p>
-                Eu nisi mattis neque lectus euismod nulla venenatis congue
-                aliquam. Ut duis dignissim nisl, convallis dui. Velit ipsum,
-                ullamcorper dictumst amet sed nulla ipsum et. Porta nec nulla
-                accumsan in non non ut in. Sem quisque sit sed eget non mollis.
-                Feugiat sit semper tellus, id. Mauris sed commodo posuere et.
-                Sed accumsan aliquam non ac quisque quis mauris.
+              {details?.text2}
               </p>
             </div>
 
@@ -101,24 +94,10 @@ const BlogDetailsHero = ({details}) => {
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
               <p>
-                {details.title}
-                <a href="/" target="_blank" rel="noreferrer">
-                  Cursus Tristique
-                </a>{" "}
-                amet, mi aliquet iaculis nunc, lectus blandit libero. Lectus a
-                enim urna eget amet ac. Et integer curabitur viverra convallis.
-                A at viverra nibh in luctus amet magna aliquet id. Et nulla eu,
-                hendrerit faucibus.{" "}
+              {details?.text3}
               </p>
               <p>
-                est aliquam elementum eget. Tristique risus, platea sapien
-                consectetur lacinia arcu, scelerisque{" "}
-                <a href="/" target="_blank" rel="noreferrer">
-                  Cursus Elementum
-                </a>
-                . Dolor egestas convallis varius sit pulvinar. Viverra in
-                maecenas hendrerit sed feugiat sem sagittis. Iaculis ullamcorper
-                amet nunc, dictum amet. Elit libero pulvinar posuere vitae.
+              {details?.text4}
               </p>
             </div>
 
@@ -184,6 +163,7 @@ const BlogDetailsHero = ({details}) => {
               <h2>Related Posts</h2>
               <div className={styles.PostsCard}>
                 {postsData?.map((post, i) => (
+                  <Link href={`${post.href}/${post.id}`} passHref>
                   <div className={styles.Icon} key={post?.id}>
                     <Image width="360" height="195" src={post?.img} />
                     <h3>{post?.subTitel}</h3>
@@ -195,6 +175,7 @@ const BlogDetailsHero = ({details}) => {
                       <p>{post?.data}</p>
                     </div>
                   </div>
+                  </Link>
                 ))}
               </div>
             </div>
