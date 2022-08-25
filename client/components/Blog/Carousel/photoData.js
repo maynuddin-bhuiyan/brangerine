@@ -48,7 +48,7 @@ export const photos = [
         image:'slide2'
     },
     {
-        id:6,
+        id:7,
         title:"Be Bold and Stand Out!",
         category:"SPORTS",
         author:"DIANNE RUSSEL",

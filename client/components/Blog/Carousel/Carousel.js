@@ -10,17 +10,17 @@ export default function Carousel() {
       setWidth(window.innerWidth);
     }
   }, []);
-  // const dotCondition =
-  //   width > 768
-  //     ? {
-  //         next: 2,
-  //       }
-  //     : {
-  //       current:1,
-  //       next:2
-  //     };
-  const [sliderIndex, setSliderIndex] = useState({next:2});
-  console.log("SLIDER INDEX", sliderIndex);
+  const dotCondition =
+    width > 768
+      ? {
+          next: 2,
+        }
+      : {
+        current:1,
+        next:2
+      };
+  const [sliderIndex, setSliderIndex] = useState(dotCondition);
+  // console.log("SLIDER INDEX", sliderIndex);
 
   const PhotoSlider = createRef();
   const settings = {
@@ -37,33 +37,17 @@ export default function Carousel() {
         }
       }
     },
-    // afterChange: (i) => {
-    //   if (width) {
-    //     if (width < 768) {
-    //       if( typeof sliderIndex === "object" && sliderIndex !== null){
-    //         setSliderIndex({
-    //           current: i+1
-    //         })
-    //       }
-    //     }
-    //   }
-    // },
-    // appendDots: (dots) => (
-    //   <div
-    //     style={{
-    //       backgroundColor: "",
-    //       borderRadius: "20px",
-    //       padding: "10px",
-    //     }}
-    //   >
-    //     <ul style={{ width: "8px", height: "8px", background: "#606060}" }}>
-    //       {dots}
-    //     </ul>
-    //   </div>
-    // ),
-    // afterChange: (current, next) => {
-    //   setSliderIndex({ current: current + 1, next });
-    // },
+    afterChange: (i) => {
+      if (width) {
+        if (width < 768) {
+          if( typeof sliderIndex === "object" && sliderIndex !== null){
+            setSliderIndex({
+              current: i+1
+            })
+          }
+        }
+      }
+    },
     responsive: [
       {
         breakpoint: 1024,
