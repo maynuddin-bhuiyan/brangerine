@@ -20,7 +20,7 @@ export default function Carousel() {
         next:2
       };
   const [sliderIndex, setSliderIndex] = useState(dotCondition);
-  console.log("SLIDER INDEX", sliderIndex);
+  // console.log("SLIDER INDEX", sliderIndex);
 
   const PhotoSlider = createRef();
   const settings = {
@@ -48,22 +48,6 @@ export default function Carousel() {
         }
       }
     },
-    // appendDots: (dots) => (
-    //   <div
-    //     style={{
-    //       backgroundColor: "",
-    //       borderRadius: "20px",
-    //       padding: "10px",
-    //     }}
-    //   >
-    //     <ul style={{ width: "8px", height: "8px", background: "#606060}" }}>
-    //       {dots}
-    //     </ul>
-    //   </div>
-    // ),
-    // afterChange: (current, next) => {
-    //   setSliderIndex({ current: current + 1, next });
-    // },
     responsive: [
       {
         breakpoint: 1024,
@@ -111,6 +95,7 @@ export default function Carousel() {
                 gotoPrev={gotoPrev}
                 gotoNext={gotoNext}
                 sliderIndex={sliderIndex}
+                length={photos.length}
               />
             ))}
           </Slider>

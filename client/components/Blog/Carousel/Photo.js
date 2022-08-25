@@ -9,8 +9,9 @@ export default function Photo({
   gotoNext,
   index,
   sliderIndex,
+  length
 }) {
-  const { category, title, author, date, image,id } = photo;
+  const { category, title, author, date, image, id } = photo;
   // console.log(index,  "sliderIndex")
   return (
     <div className={`${styles.photo_container} ${image} common_slide`}>
@@ -33,7 +34,7 @@ export default function Photo({
 
       {/* btns */}
       {sliderIndex?.next == photo.id ||
-      (photo.id == 1 && sliderIndex?.next !== 6 && sliderIndex?.next !== 2) ? (
+      (photo.id == 1 && sliderIndex?.next !== length && sliderIndex?.next !== 2) ? (
         <div className={styles.slider_buttons}>
           <button
             onClick={() => gotoPrev()}
