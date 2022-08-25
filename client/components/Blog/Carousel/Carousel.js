@@ -111,6 +111,7 @@ export default function Carousel() {
                 gotoPrev={gotoPrev}
                 gotoNext={gotoNext}
                 sliderIndex={sliderIndex}
+                length={photos.length}
               />
             ))}
           </Slider>
