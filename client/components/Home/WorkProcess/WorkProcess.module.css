@@ -1,6 +1,7 @@
 .workProcess {
   display: flex;
   margin-top: 100px;
+  height: 800px;
 }
 
 .workProcessHeadMain {
@@ -100,13 +101,13 @@
 
 .workProcessInfo {
   width: 60%;
-  height: 1378px;
+  height: 1448px;
 }
 
 /* Scrollbar */
 .scrollbar {
   margin-left: 30px;
-  height: 95%;
+  height: 55%;
   overflow-y: scroll;
 }
 
@@ -119,7 +120,8 @@
   align-items: center;
 }
 
-.scrollInfoCardInfo {}
+.scrollInfoCardInfo {
+}
 
 .scrollInfoCardTitle {
   font-family: "Jost";
@@ -171,6 +173,7 @@
   .workProcess {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .workProcessHead:after {
@@ -250,6 +253,7 @@
   .workProcess {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .workProcessHead:after {
@@ -311,6 +315,7 @@
   .workProcess {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .workProcessHead:after {
