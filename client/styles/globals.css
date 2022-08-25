@@ -154,12 +154,18 @@ input[type="number"] {
 }
 .slide4 {
   background: url("/images/blog/slide4.jpg");
+
 }
 .slide5 {
   background: url("/images/blog/slide5.jpeg");
 }
 .slide6 {
   background: url("/images/blog/slide6.png");
+}
+
+.common_slide{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* FAQ */
 .accordion-item {
