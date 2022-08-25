@@ -5,14 +5,15 @@ import Slider from "react-slick";
 import { photos } from './photoData'
 export default function Carousel() {
   const [width, setWidth] = useState(0)
+  const[active,setActive] = useState(0)
+  const [sliderIndex, setSliderIndex] = useState({
+    next: 2
+  });
   useEffect(() => {
     if (typeof window !== undefined) {
       setWidth(window.innerWidth)
     }
   }, []);
-  const [sliderIndex, setSliderIndex] = useState({
-    next: 2
-  });
   const PhotoSlider = createRef();
   const settings = {
     dots: width <= 768 ? true : false,

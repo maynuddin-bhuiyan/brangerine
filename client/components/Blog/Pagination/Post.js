@@ -5,7 +5,7 @@ import styles from "./Post.module.css";
 import Link from "next/link";
 
 export default function Post({ post }) {
-  const { category, title, date, author, src, href } = post;
+  const { category, title, date, author, src, href,id } = post;
   return (
     <Col md={4} sm={6} xs={12}>
       <div className={styles.post_container}>
@@ -16,7 +16,7 @@ export default function Post({ post }) {
           height={197}
         />
         <div className={styles.category}>{category}</div>
-        <Link href={href}>
+        <Link href={`${href}/${id}`}>
           <div className={styles.title}>{title}</div>
         </Link>
         <div className={styles.others}>

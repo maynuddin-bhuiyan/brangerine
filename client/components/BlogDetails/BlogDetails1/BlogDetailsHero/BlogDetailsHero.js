@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./BlogDetailsHero.module.css";
 
-const BlogDetailsHero = () => {
+const BlogDetailsHero = ({details}) => {
   // Blog Details Social Media Data
   const data = [
     { id: 1, img: "/images/BlogDetails1/FB.svg" },
@@ -38,7 +38,7 @@ const BlogDetailsHero = () => {
     <div className={styles.blogDetailsHero}>
       {/* Blog Details Hero Part  */}
       <div className={styles.blogHeaderText}>
-        <h3>BUSINESS ADVICE, ORGANIZING</h3>
+        <h3>{details.title}</h3>
         <h1>
           More much randomly tentative this much this sloth cliquishly far
           randomly More
@@ -101,9 +101,7 @@ const BlogDetailsHero = () => {
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
               <p>
-                Et mi nullam pulvinar enim massa. In non mattis proin purus ut.
-                Tincidunt magna amet, a, nunc. Ut magna accumsan, augue nam in
-                pellentesque.{" "}
+                {details.title}
                 <a href="/" target="_blank" rel="noreferrer">
                   Cursus Tristique
                 </a>{" "}

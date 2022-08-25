@@ -53,7 +53,7 @@ export default function Pagination() {
         <div className={`container ${styles.pagination}`}>
           <div className="row">
             {post[currPage].map((post) => (
-              <Post post={post} />
+              <Post id={post.id} post={post} />
             ))}
           </div>
           <div className="row">
