@@ -18,13 +18,7 @@ export default function Photo({ photo, gotoPrev, gotoNext, index, sliderIndex })
       <div className={styles.desc}>
         <p className={styles.author}>By Dianne Russell</p>
         <div className={styles.date_details}>
-          <Image
-            src='/images/blog/date.svg'
-            width={20}
-            height={20}
-            className={styles.calender}
-          />
-          <p className={styles.date}>October 25, 2022</p>
+          <p className={styles.date}><i class="ri-calendar-2-line mt-3"></i> October 25, 2022</p>
         </div>
       </div>
 
