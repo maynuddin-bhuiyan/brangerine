@@ -4,7 +4,8 @@
     justify-content: space-between;
     align-self: flex-start;
     gap: 10px;
-    margin:10px
+    margin: 10px;
+    cursor: pointer;
 }
 
 .category {
@@ -30,8 +31,9 @@
     text-transform: capitalize;
     color: #E3ECFF;
 }
-.others{
-    display:flex;
-    flex-direction:row;
+
+.others {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
