@@ -3,7 +3,7 @@
 }
 
 .CasesHeaderText {
-  width: 730px;
+  width: 752px;
   margin: 0 auto !important;
   margin-bottom: 40px !important;
 }
@@ -60,7 +60,7 @@
 }
 
 .InformationMore {
-  width: 730px;
+  width: 752px;
   margin: 0 auto !important;
   margin-bottom: 40px !important;
   text-align: left !important;
@@ -101,7 +101,7 @@
 }
 
 .projectInfo {
-  width: 730px;
+  width: 985px;
   margin: 0 auto !important;
   /* margin-bottom: 40px !important;
     text-align: center !important;
@@ -150,7 +150,7 @@
   }
 
   .projectInfo {
-    width: 600px !important;
+    width: 100% !important;
   }
 }
 
@@ -190,7 +190,14 @@
   }
 
   .projectInfo {
-    width: auto !important;
+    width: 100% !important;
+    padding: 10px 20px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .projectInfo {
+    width: 100% !important;
     padding: 10px 20px !important;
   }
 }

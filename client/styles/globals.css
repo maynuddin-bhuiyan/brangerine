@@ -154,12 +154,21 @@ input[type="number"] {
 }
 .slide4 {
   background: url("/images/blog/slide4.jpg");
+
 }
 .slide5 {
   background: url("/images/blog/slide5.jpeg");
 }
 .slide6 {
   background: url("/images/blog/slide6.png");
+}
+.slide7 {
+  background: url("/images/blog/post.jpeg");
+}
+
+.common_slide{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* FAQ */
 .accordion-item {
@@ -326,4 +335,18 @@ input[type="number"] {
   background: #4f42c9;
   filter: blur(300px);
   z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .abstractRight {
+    opacity: 0.2;
+  }
+
+  .abstractLeft {
+    opacity: 0.2;
+  }
+
+  .abstractMore {
+    opacity: 0.2;
+  }
 }
