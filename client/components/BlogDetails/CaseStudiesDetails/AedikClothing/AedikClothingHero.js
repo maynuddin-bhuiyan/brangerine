@@ -6,7 +6,7 @@ import AedikClothingSlider from "./AedikClothingSlider";
 
 const AedikClothingHero = () => {
   const data = {
-    image1: "/images/CaseStudies/Rectangle 25.png",
+    image1: "/images/CaseStudies/beard.png",
     image2: "/images/CaseStudies/motiv.png",
     preLink: "/cs-blackbeardpools",
     nextLink: "/cs-motivv",

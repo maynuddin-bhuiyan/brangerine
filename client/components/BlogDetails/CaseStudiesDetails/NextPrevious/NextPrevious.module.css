@@ -58,3 +58,16 @@
     padding-left: 10px;
   }
 }
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .nextPreviousImage {
+    /* width: 110px; */
+  }
+  .nextPreviousContainer:nth-child(2) {
+    border-left: 0px solid #383838;
+    padding-left: 0px;
+  }
+  .projectName {
+    font-size: 13px;
+  }
+}

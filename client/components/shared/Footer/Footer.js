@@ -29,12 +29,12 @@ function Footer() {
 
         <div className={styles.footerInfos}>
           <div className={styles.footerLinks}>
-            <a href="#">Home</a>
-            <a href="#">Service</a>
-            <a href="#">Our work</a>
-            <a href="#">Article</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
+            <a href="/">Home</a>
+            <a href="/">Service</a>
+            <a href="/case-studies">Our work</a>
+            <a href="/blog">Article</a>
+            <a href="/about">About us</a>
+            <a href="/contact">Contact us</a>
           </div>
           <div className={styles.footerAddress}>
             <h5>Address:</h5>
@@ -43,18 +43,18 @@ function Footer() {
             <p className={styles.footerAddressP2}>661.431.5675 </p>
             <p className={styles.footerAddressP3}>jake@brangerine.com</p>
             <div className={styles.socials}>
-              <a href="#">
+              <a href="https://www.facebook.com/brangerine">
                 {" "}
                 <i className="ri-facebook-fill"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/brangerine/">
                 <i className="ri-instagram-line"></i>
               </a>
-              <a href="#">
+              <a href="https://twitter.com/brangerine">
                 {" "}
                 <i className="ri-twitter-fill"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/brangerine/">
                 {" "}
                 <i className="ri-linkedin-box-fill"></i>
               </a>
