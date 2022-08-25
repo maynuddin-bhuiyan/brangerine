@@ -168,7 +168,6 @@ const BlogDetailsHero = ({details}) => {
                     <Image width="360" height="195" src={post?.img} />
                     <h3>{post?.subTitel}</h3>
                     <h1>{post?.titel}</h1>
-
                     <div className={styles.mediaData}>
                       <p>{post?.text}</p>
                       <i className="ri-calendar-2-line"></i>
