@@ -1,0 +1,206 @@
+.motivv {
+  width: 956px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+.motivv > h4 {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4f42c9;
+}
+.motivv > h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.workTitle {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.workList > li {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+}
+
+.workList > li::marker {
+  color: #4f42c9;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.logoInfo > h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.logoInfo > p {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+}
+.symbol {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.symbolImage {
+  width: 56%;
+}
+
+.symbolInfo > h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.symbolInfo > p {
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+}
+
+.website > h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.website > p {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+}
+
+.website > p > a {
+  color: #4f42c9;
+}
+
+.goGetITLogo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .motivv {
+    width: 100%;
+    padding: 50px 0px;
+  }
+  .motivv > h4 {
+    font-size: 14px;
+  }
+  .motivv > h1 {
+    font-size: 32px;
+  }
+  .workTitle {
+    font-size: 24px;
+  }
+  .logoInfo > h2 {
+    font-size: 24px;
+  }
+  .symbolInfo > h2 {
+    font-size: 24px;
+  }
+  .website > h2 {
+    font-size: 24px;
+  }
+  .work {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .logo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .symbol {
+    display: flex;
+    flex-direction: column;
+  }
+  .symbolImage {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .motivv {
+    width: 100%;
+  }
+  .symbolImage {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .motivv {
+    width: 100%;
+  }
+}

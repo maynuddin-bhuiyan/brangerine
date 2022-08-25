@@ -1,4 +1,5 @@
-import StudiesDetailsHero from "../components/BlogDetails/CaseStudiesDetails/StudiesDetailsHero";
+
+import StudiesDetailsHero from "../components/BlogDetails/CaseStudiesDetails/Pinnacle/StudiesDetailsHero";
 import Footer from "../components/shared/Footer/Footer";
 import Navbar from "../components/shared/Navbar/Navbar";
 

@@ -1,9 +1,10 @@
-.aedikClothingHero {
+.macG {
   width: 956px;
   margin: 0 auto;
   padding: 100px 0px;
 }
-.aedikClothingHero h4 {
+
+.macG > h4 {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -13,7 +14,7 @@
   text-transform: uppercase;
   color: #4f42c9;
 }
-.aedikClothingHero h1 {
+.macG > h1 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -25,7 +26,11 @@
   margin-bottom: 50px;
 }
 
-.aedikClothingHero h2 {
+.macGImage {
+  text-align: center;
+}
+
+.macG > h2 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -37,7 +42,8 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.aedikClothingHero p {
+
+.macG > p {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -49,58 +55,30 @@
   margin-bottom: 50px;
 }
 
-.videography {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 120%;
-  letter-spacing: -0.01em;
-  text-transform: capitalize;
-  color: #ffffff;
-  margin-top: 138px;
-  margin-bottom: 30px;
-}
-
-.aedikClothingVideo {
-  width: 100%;
-}
-
-.aedikEndImages {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-top: 20px;
-}
-
 @media only screen and (max-width: 576px) {
-  .aedikClothingHero {
+  .macG {
     padding: 50px 0px;
   }
-  .aedikClothingHero {
-    width: 100%;
-  }
-  .aedikEndImages {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .aedikClothingHero h4 {
+  .macG > h4 {
     font-size: 14px;
   }
-  .aedikClothingHero h1 {
+  .macG > h1 {
     font-size: 32px;
   }
-  .aedikClothingHero h2 {
+  .macG > h2 {
     font-size: 24px;
+  }
+  .macG {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .aedikClothingHero {
+  .macG {
     width: 100%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .aedikClothingHero {
+  .macG {
     width: 100%;
   }
 }
