@@ -14,7 +14,7 @@ export default function Post({ post }) {
           src={src}
           alt="photo"
           width={331}
-          height={203}
+          height={228}
         />
         <div className={styles.category}>{category}</div>
        
