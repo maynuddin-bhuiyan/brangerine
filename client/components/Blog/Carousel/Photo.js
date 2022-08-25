@@ -10,7 +10,7 @@ export default function Photo({
   index,
   sliderIndex,
 }) {
-  const { category, title, author, date, image,id } = photo;
+  const { category, title, author, date, image, id } = photo;
   // console.log(index,  "sliderIndex")
   return (
     <div className={`${styles.photo_container} ${image} common_slide`}>

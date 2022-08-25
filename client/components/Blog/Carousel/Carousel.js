@@ -10,16 +10,16 @@ export default function Carousel() {
       setWidth(window.innerWidth);
     }
   }, []);
-  const dotCondition =
-    width > 768
-      ? {
-          next: 2,
-        }
-      : {
-        current:1,
-        next:2
-      };
-  const [sliderIndex, setSliderIndex] = useState(dotCondition);
+  // const dotCondition =
+  //   width > 768
+  //     ? {
+  //         next: 2,
+  //       }
+  //     : {
+  //       current:1,
+  //       next:2
+  //     };
+  const [sliderIndex, setSliderIndex] = useState({next:2});
   console.log("SLIDER INDEX", sliderIndex);
 
   const PhotoSlider = createRef();
@@ -37,17 +37,17 @@ export default function Carousel() {
         }
       }
     },
-    afterChange: (i) => {
-      if (width) {
-        if (width < 768) {
-          if( typeof sliderIndex === "object" && sliderIndex !== null){
-            setSliderIndex({
-              current: i+1
-            })
-          }
-        }
-      }
-    },
+    // afterChange: (i) => {
+    //   if (width) {
+    //     if (width < 768) {
+    //       if( typeof sliderIndex === "object" && sliderIndex !== null){
+    //         setSliderIndex({
+    //           current: i+1
+    //         })
+    //       }
+    //     }
+    //   }
+    // },
     // appendDots: (dots) => (
     //   <div
     //     style={{
