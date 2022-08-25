@@ -23,10 +23,10 @@ export default function Photo({
           </div>
         </Link>
         <div className={styles.desc}>
-          <p className={styles.author}>By Dianne Russell</p>
+          <p className={styles.author}>{author}</p>
           <div className={styles.date_details}>
             <p className={styles.date}>
-              <i class="ri-calendar-2-line mt-3"></i> October 25, 2022
+              <i class="ri-calendar-2-line mt-3"></i> {date}
             </p>
           </div>
         </div>
