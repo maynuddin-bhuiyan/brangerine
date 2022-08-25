@@ -2,18 +2,26 @@ import React, { createRef, useEffect, useState } from "react";
 import styles from "./Carousel.module.css";
 import Photo from "./Photo";
 import Slider from "react-slick";
-import { photos } from './photoData'
+import { photos } from "./photoData";
 export default function Carousel() {
-  const [width, setWidth] = useState(0)
-  const[active,setActive] = useState(0)
-  const [sliderIndex, setSliderIndex] = useState({
-    next: 2
-  });
+  const [width, setWidth] = useState(0);
   useEffect(() => {
     if (typeof window !== undefined) {
-      setWidth(window.innerWidth)
+      setWidth(window.innerWidth);
     }
   }, []);
+  const dotCondition =
+    width > 768
+      ? {
+          next: 2,
+        }
+      : {
+        current:1,
+        next:2
+      };
+  const [sliderIndex, setSliderIndex] = useState(dotCondition);
+  console.log("SLIDER INDEX", sliderIndex);
+
   const PhotoSlider = createRef();
   const settings = {
     dots: width <= 768 ? true : false,
@@ -23,8 +31,36 @@ export default function Carousel() {
     slidesToShow: 2.35,
     slidesToScroll: 1,
     beforeChange: (current, next) => {
-      setSliderIndex({ current, next: next + 2 });
+      if (width) {
+        if (width > 768) {
+          setSliderIndex({ current, next: next + 2 });
+        }
+      }
     },
+    afterChange: (i) => {
+      if (width) {
+        if (width < 768) {
+          if( typeof sliderIndex === "object" && sliderIndex !== null){
+            setSliderIndex({
+              current: i+1
+            })
+          }
+        }
+      }
+    },
+    // appendDots: (dots) => (
+    //   <div
+    //     style={{
+    //       backgroundColor: "",
+    //       borderRadius: "20px",
+    //       padding: "10px",
+    //     }}
+    //   >
+    //     <ul style={{ width: "8px", height: "8px", background: "#606060}" }}>
+    //       {dots}
+    //     </ul>
+    //   </div>
+    // ),
     // afterChange: (current, next) => {
     //   setSliderIndex({ current: current + 1, next });
     // },
@@ -42,7 +78,7 @@ export default function Carousel() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
         },
       },
       {
@@ -50,37 +86,65 @@ export default function Carousel() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
         },
       },
     ],
   };
-  console.log(settings)
   const gotoNext = () => {
     PhotoSlider.current.slickNext();
-    console.log(sliderIndex, "sliderIndex");
   };
 
   const gotoPrev = () => {
     PhotoSlider.current.slickPrev();
-    console.log(sliderIndex, "sliderIndex");
   };
-  return (
-    <div className={styles.carousel_container}>
-      <Slider {...settings} ref={PhotoSlider}>
-        {
-          photos.map((photo, index) => (
-            <Photo
-              id={photo.id}
-              index={index}
-              photo={photo}
-              gotoPrev={gotoPrev}
-              gotoNext={gotoNext}
-              sliderIndex={sliderIndex}
-            />
-          ))
-        }
-      </Slider>
-    </div>
-  )
+  if (width) {
+    if (width > 768) {
+      return (
+        <div className={styles.carousel_container}>
+          <Slider {...settings} ref={PhotoSlider}>
+            {photos.map((photo, index) => (
+              <Photo
+                id={photo.id}
+                index={index}
+                photo={photo}
+                gotoPrev={gotoPrev}
+                gotoNext={gotoNext}
+                sliderIndex={sliderIndex}
+              />
+            ))}
+          </Slider>
+        </div>
+      );
+    } else {
+      return (
+        <div className={styles.container_dots}>
+          <div className={styles.carousel_container}>
+            <Slider {...settings} ref={PhotoSlider}>
+              {photos.map((photo, index) => (
+                <Photo
+                  id={photo.id}
+                  index={index}
+                  photo={photo}
+                  gotoPrev={gotoPrev}
+                  gotoNext={gotoNext}
+                  sliderIndex={sliderIndex}
+                />
+              ))}
+            </Slider>
+          </div>
+          <div className={styles.dots}>
+            {photos.map((photo) => (
+              <div
+                id={photo.id}
+                className={`${styles.dot} ${
+                  Number(photo.id) === sliderIndex.current ? styles.big_dot : ""
+                }`}
+              ></div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+  }
 }
