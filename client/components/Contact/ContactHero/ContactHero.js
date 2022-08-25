@@ -24,8 +24,8 @@ const ContactHero = () => {
     ]
     return (
         <div className={styles.ContactHeroMain}>
-            <div className="abstractRight"></div>
-            <div className="abstractLeft"></div>
+            <div className={styles.abstractLeft}></div>
+     
             <>
             <div className='container'>
             <div className={styles.contactHero}> 

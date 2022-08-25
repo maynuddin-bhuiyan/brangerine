@@ -1,111 +1,109 @@
 .StudiesDetailsHero {
-    padding: 100px 0px;
+  padding: 100px 0px;
 }
 
 .CasesHeaderText {
-    width: 730px;
-    margin: 0 auto !important;
-    margin-bottom: 40px !important;
+  width: 730px;
+  margin: 0 auto !important;
+  margin-bottom: 40px !important;
 }
 
 .CasesHeaderText h3 {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Swiss 721", sans-serif;
-    text-align: left;
-    color: #4F42C9;
-    line-height: 32px;
-    letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Swiss 721", sans-serif;
+  text-align: left;
+  color: #4f42c9;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 
 .CasesHeaderText h1 {
-    font-size: 48px;
-    font-weight: 700;
-    font-family: "Jost";
-    text-align: left;
-    color: #FFFFFF;
-    line-height: 58px;
-    letter-spacing: -1%;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Jost";
+  text-align: left;
+  color: #ffffff;
+  line-height: 58px;
+  letter-spacing: -1%;
+  text-transform: capitalize;
+  margin-bottom: 15px;
 }
 
 .DetailsInformation {
-    width: 730px;
-    margin: 0 auto !important;
-    margin-bottom: 40px !important;
-    text-align: left !important;
+  width: 730px;
+  margin: 0 auto !important;
+  margin-bottom: 40px !important;
+  text-align: left !important;
 }
 
 .DetailsInformation h2 {
-    font-size: 28px;
-    font-weight: 700;
-    font-family: "Jost";
-    text-align: left;
-    color: #FFFFFF;
-    line-height: 34px;
-    letter-spacing: -1%;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Jost";
+  text-align: left;
+  color: #ffffff;
+  line-height: 34px;
+  letter-spacing: -1%;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .DetailsInformation p {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Swiss 721", sans-serif;
-    text-align: left;
-    color: #FFFFFF;
-    line-height: 28px;
-    margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Swiss 721", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  line-height: 28px;
+  margin-bottom: 40px;
 }
 
-
 .InformationMore {
-    width: 730px;
-    margin: 0 auto !important;
-    margin-bottom: 40px !important;
-    text-align: left !important;
+  width: 730px;
+  margin: 0 auto !important;
+  margin-bottom: 40px !important;
+  text-align: left !important;
 }
 
 .ViewInfo {
-    width: 730px;
-    margin: 0 auto !important;
-    margin-bottom: 40px !important;
-    text-align: center !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  width: 730px;
+  margin: 0 auto !important;
+  margin-bottom: 40px !important;
+  text-align: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-
 .InfoDetails img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .ViewInfoDetails img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .InfoDetails h2 {
-    font-size: 28px;
-    font-weight: 700;
-    font-family: "Jost";
-    text-align: left;
-    color: #FFFFFF;
-    line-height: 34px;
-    letter-spacing: -1%;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Jost";
+  text-align: left;
+  color: #ffffff;
+  line-height: 34px;
+  letter-spacing: -1%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .projectInfo {
-    width: 730px;
-    margin: 0 auto !important;
-    margin-bottom: 40px !important;
+  width: 730px;
+  margin: 0 auto !important;
+  /* margin-bottom: 40px !important;
     text-align: center !important;
     display: flex;
     align-items: center;
@@ -113,90 +111,86 @@
     gap: 20px;
     padding: 40px 0px;
     border-top: 1px solid #383838;
-    border-bottom: 1px solid #383838;
+    border-bottom: 1px solid #383838; */
 }
 
-.projectcard {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* .projectcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .projectText {
-    text-align: left !important;
+  text-align: left !important;
 }
 
 .projectImg {
-    margin-right: 20px;
-}
-
+  margin-right: 20px;
+} */
 
 @media only screen and (min-width: 577px) and (max-width: 900px) {
-    .StudiesDetailsHero {
-        padding: 40px 0px;
-    }
+  .StudiesDetailsHero {
+    padding: 40px 0px;
+  }
 
-    .CasesHeaderText {
-        width: 600px !important;
-    }
+  .CasesHeaderText {
+    width: 600px !important;
+  }
 
-    .DetailsInformation {
-        width: 600px !important;
-    }
+  .DetailsInformation {
+    width: 600px !important;
+  }
 
-    .InformationMore {
-        width: 600px !important;
-    }
+  .InformationMore {
+    width: 600px !important;
+  }
 
-    .ViewInfo {
-        width: 600px !important;
-    }
+  .ViewInfo {
+    width: 600px !important;
+  }
 
-    .projectInfo {
-        width: 600px !important;
-    }
-
+  .projectInfo {
+    width: 600px !important;
+  }
 }
 
-
 @media only screen and (max-width: 576px) {
-    .StudiesDetailsHero {
-        padding: 40px 0px;
-    }
+  .StudiesDetailsHero {
+    padding: 40px 0px;
+  }
 
-    .CasesHeaderText {
-        width: auto !important;
-        padding: 0px 10px;
-    }
+  .CasesHeaderText {
+    width: auto !important;
+    padding: 0px 10px;
+  }
 
-    .CasesHeaderText h3 {
-        font-size: 15px !important;
-    }
+  .CasesHeaderText h3 {
+    font-size: 15px !important;
+  }
 
-    .CasesHeaderText h1 {
-        font-size: 32px !important;
-        line-height: 40px !important;
-    }
+  .CasesHeaderText h1 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
 
-    .DetailsInformation {
-        width: auto !important;
-    }
+  .DetailsInformation {
+    width: auto !important;
+  }
 
-    .InformationMore {
-        width: auto !important;
-    }
+  .InformationMore {
+    width: auto !important;
+  }
 
-    .ViewInfo {
-        width: auto !important;
-    }
+  .ViewInfo {
+    width: auto !important;
+  }
 
-    .RelatedPosts {
-        width: auto !important;
+  .RelatedPosts {
+    width: auto !important;
+  }
 
-    }
-
-    .projectInfo {
-        width: auto !important;
-        padding: 10px 20px !important;
-    }
+  .projectInfo {
+    width: auto !important;
+    padding: 10px 20px !important;
+  }
 }

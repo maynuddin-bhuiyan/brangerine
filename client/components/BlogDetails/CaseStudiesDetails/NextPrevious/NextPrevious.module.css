@@ -1,0 +1,60 @@
+.nextPrevious {
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #383838;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 35px 0px;
+  margin-top: 50px;
+}
+
+.linkText {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #4f42c9;
+  text-decoration: none;
+}
+
+.linkText:hover {
+  color: #4f42c9;
+}
+
+.nextPreviousContainer {
+  display: flex;
+}
+
+.nextPreviousContainer:nth-child(2) {
+  border-left: 1px solid #383838;
+  padding-left: 40px;
+}
+
+.projectName {
+  font-family: "Swiss 721", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #e3ecff;
+  margin-top: 10px;
+}
+
+.nextPreviousImage {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .nextPreviousImage {
+    display: none;
+  }
+  .nextPreviousContainer:nth-child(1) {
+    padding-right: 10px;
+  }
+  .nextPreviousContainer:nth-child(2) {
+    border-left: 1px solid #383838;
+    padding-left: 10px;
+  }
+}

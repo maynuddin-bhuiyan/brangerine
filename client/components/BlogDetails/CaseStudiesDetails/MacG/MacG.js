@@ -1,8 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import NextPrevious from "../NextPrevious/NextPrevious";
 import styles from "./MacG.module.css";
 
 const MacG = () => {
+    const data = {
+    image1: "/images/CaseStudies/chasing.png",
+    image2: "/images/CaseStudies/pin.png",
+    preLink: "/cs-rileyzavala",
+    nextLink: "/cs-pinnacle",
+    preText: "Riley Zavala - Independent Artist",
+    nextText: "Pinnacle - Rise To The Top"
+  }
   return (
     <div className="container">
       <div className={styles.macG}>
@@ -22,6 +31,7 @@ const MacG = () => {
           width={956}
           height={637}
         />
+        <NextPrevious image1={data.image1} image2={data.image2} preLink={data.preLink} nextLink={data.nextLink} preText={data.preText}nextText={data.nextText} />
       </div>
     </div>
   );

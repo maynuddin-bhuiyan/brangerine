@@ -1,9 +1,19 @@
 import Image from "next/image";
 import React from "react";
+import NextPrevious from "../NextPrevious/NextPrevious";
 import styles from "./AedikClothingHero.module.css";
 import AedikClothingSlider from "./AedikClothingSlider";
 
 const AedikClothingHero = () => {
+  const data = {
+    image1: "/images/CaseStudies/Rectangle 25.png",
+    image2: "/images/CaseStudies/motiv.png",
+    preLink: "/cs-blackbeardpools",
+    nextLink: "/cs-motivv",
+    preText: "Blackbeard Pools - Full Service Pool Cleaning",
+    nextText: "Motivv - Fitness Apparel"
+
+  }
   return (
     <div className="container">
       <div className={styles.aedikClothingHero}>
@@ -54,6 +64,7 @@ const AedikClothingHero = () => {
           height={224}
           />
         </div>
+        <NextPrevious image1={data.image1} image2={data.image2} preLink={data.preLink} nextLink={data.nextLink} preText={data.preText}nextText={data.nextText} />
       </div>
     </div>
   );

@@ -8,22 +8,33 @@
   width: 478px;
   height: 478px;
   left: -239px;
-  top: 377px;
+  top: 210px;
   background: #4f2416;
   filter: blur(250px);
   z-index: 1;
 }
 
-/* .abstractRight {
+.abstractRight {
   position: absolute;
   width: 792px;
   height: 792px;
-  right: 0% !important;
+  right: -500px !important;
   top: 616px;
   background: #4f42c9;
   opacity: 0.5;
   filter: blur(250px);
-} */
+}
+
+.abstractMore {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  left: -402px;
+  top: 1200px;
+  background: #4f42c9;
+  opacity: 0.2;
+  filter: blur(200px);
+}
 
 .aboutUsHero {
   margin: 50px 0px;
@@ -128,6 +139,18 @@
     width: 100%;
     z-index: 3 !important;
     float: left;
+  }
+  .abstractLeft {
+    opacity: 0.2;
+  }
+
+  .abstractRight {
+    opacity: 0.2;
+  }
+
+  .abstractMore {
+    opacity: 0.2;
+    top: 1400px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
