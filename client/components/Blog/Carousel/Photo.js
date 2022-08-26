@@ -12,9 +12,15 @@ export default function Photo({
   length
 }) {
   const { category, title, author, date, image, id } = photo;
-  // console.log(index,  "sliderIndex")
+
+  console.log(sliderIndex,"sliderIndex")
+
+  // if(sliderIndex.next !== id){
+
+  //   console.log(id, "index")
+  // }
   return (
-    <div className={`${styles.photo_container} ${image} common_slide`}>
+    <div className={`${styles.photo_container} ${image} common_slide  ${(sliderIndex?.next === id) || (sliderIndex.next ===length+1 && id === 1 && (sliderIndex.current === length-2 || sliderIndex.current === 0) ) ?  '':'fade'}`}>
         <div className={styles.category_container}>
           <div className={styles.category}>{category}</div>
         </div>
@@ -31,7 +37,6 @@ export default function Photo({
             </p>
           </div>
         </div>
-
       {/* btns */}
       {sliderIndex?.next == photo.id ||
       (photo.id == 1 && sliderIndex?.next !== length && sliderIndex?.next !== 2) ? (

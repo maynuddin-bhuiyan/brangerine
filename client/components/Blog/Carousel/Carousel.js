@@ -90,7 +90,7 @@ export default function Carousel() {
           <Slider {...settings} ref={PhotoSlider}>
             {photos.map((photo, index) => (
               <Photo
-                id={photo.id}
+                key={photo.id}
                 index={index}
                 photo={photo}
                 gotoPrev={gotoPrev}

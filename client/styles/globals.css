@@ -167,8 +167,14 @@ input[type="number"] {
 }
 
 .common_slide{
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.fade{
+  opacity: 0.5 !important;
 }
 /* FAQ */
 .accordion-item {
