@@ -5,6 +5,7 @@
 
 .CaseStudiesPart {
   position: relative;
+  padding-left: 550px;
 }
 
 .CaseStudies h3 {
@@ -34,7 +35,8 @@
   position: absolute;
   right: 0;
   top: 65px;
-  justify-content: end;
+  justify-content: center;
+  left: 25%;
 }
 
 .StudieSlideButton button {
@@ -63,7 +65,7 @@
 .StudieCarouselCard {
   cursor: pointer;
   position: relative;
-  height: 400px;
+  height: 410px;
 }
 
 .CaseStudiesPart .StudieButton {
@@ -97,6 +99,12 @@
   margin-left: 10px;
 }
 
+@media only screen and (min-width: 1111px) and (max-width: 2000px) {
+  .CaseStudiesPart {
+    padding-left: 50px;
+  }
+}
+
 @media only screen and (min-width: 770px) and (max-width: 1100px) {
   .StudieSlideButton button {
     margin-right: 20px;
@@ -109,11 +117,19 @@
   .CaseStudiesPart .StudieButton {
     width: 220px !important;
   }
+
+  .CaseStudiesPart {
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .StudieSlideButton button {
     margin-right: 20px;
+  }
+
+  .StudieSlideButton {
+    left: 30%;
   }
 
   .StudieCarouselCard {
@@ -123,9 +139,15 @@
   .CaseStudiesPart .StudieButton {
     width: 220px !important;
   }
+  .CaseStudiesPart {
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  .CaseStudiesPart {
+    padding-left: 20px;
+  }
   .CaseStudies {
     padding: 50px 0px 0px !important;
   }
@@ -150,6 +172,7 @@
   .StudieSlideButton {
     top: 35px;
     right: -15px;
+    left: 33%;
   }
 
   .StudieSlideButton button {
@@ -166,6 +189,9 @@
     width: 220px !important;
     bottom: 0px;
   }
+  .CaseStudiesPart {
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -178,5 +204,12 @@
   .StudieSlideButton {
     top: 45px;
     right: -10px;
+    left: 33%;
+  }
+  .CaseStudiesPart {
+    padding-left: 50px;
+  }
+  .CaseStudiesPart {
+    padding-left: 20px;
   }
 }
