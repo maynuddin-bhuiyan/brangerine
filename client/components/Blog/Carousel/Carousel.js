@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { photos } from "./photoData";
 export default function Carousel() {
   const [width, setWidth] = useState(0);
+  const PhotoSlider = createRef();
   useEffect(() => {
     if (typeof window !== undefined) {
       setWidth(window.innerWidth);
@@ -16,18 +17,19 @@ export default function Carousel() {
           next: 2,
         }
       : {
-        current:1,
-        next:2
-      };
+          current: 1,
+          next: 2,
+        };
   const [sliderIndex, setSliderIndex] = useState(dotCondition);
   // console.log("SLIDER INDEX", sliderIndex);
-
-  const PhotoSlider = createRef();
   const settings = {
     dots: width <= 768 ? true : false,
+    speed: 1500,
+    autoplay: true,
     arrows: false,
     infinite: true,
     speed: 500,
+    swipe: width <= 768 ? true : false,
     slidesToShow: 2.35,
     slidesToScroll: 1,
     beforeChange: (current, next) => {
@@ -40,10 +42,10 @@ export default function Carousel() {
     afterChange: (i) => {
       if (width) {
         if (width < 768) {
-          if( typeof sliderIndex === "object" && sliderIndex !== null){
+          if (typeof sliderIndex === "object" && sliderIndex !== null) {
             setSliderIndex({
-              current: i+1
-            })
+              current: i + 1,
+            });
           }
         }
       }
@@ -52,7 +54,7 @@ export default function Carousel() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2.35,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
         },
@@ -89,7 +91,7 @@ export default function Carousel() {
           <Slider {...settings} ref={PhotoSlider}>
             {photos.map((photo, index) => (
               <Photo
-                id={photo.id}
+                key={photo.id}
                 index={index}
                 photo={photo}
                 gotoPrev={gotoPrev}

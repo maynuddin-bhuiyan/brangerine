@@ -9,32 +9,41 @@ export default function Photo({
   gotoNext,
   index,
   sliderIndex,
-  length
+  length,
 }) {
   const { category, title, author, date, image, id } = photo;
-  // console.log(index,  "sliderIndex")
-  return (
-    <div className={`${styles.photo_container} ${image} common_slide`}>
-        <div className={styles.category_container}>
-          <div className={styles.category}>{category}</div>
-        </div>
-        <Link href={`blog-details/${id}`}>
-          <div className={styles.title}>
-            {title}
-          </div>
-        </Link>
-        <div className={styles.desc}>
-          <p className={styles.author}>{author}</p>
-          <div className={styles.date_details}>
-            <p className={styles.date}>
-              <i class="ri-calendar-2-line mt-3"></i> {date}
-            </p>
-          </div>
-        </div>
 
+  const x = length % 2 === 0 ? 1 : 2;
+  return (
+    <div
+      className={`${styles.photo_container} ${image} common_slide  ${
+        sliderIndex?.next === id ||
+        (sliderIndex.next === length + 1 &&
+          id === 1 &&
+          (sliderIndex.current === length - x || sliderIndex.current === 0))
+          ? ""
+          : "fade"
+      }`}
+    >
+      <div className={styles.category_container}>
+        <div className={styles.category}>{category}</div>
+      </div>
+      <Link href={`blog-details/${id}`}>
+        <div className={styles.title}>{title}</div>
+      </Link>
+      <div className={styles.desc}>
+        <p className={styles.author}>{author}</p>
+        <div className={styles.date_details}>
+          <p className={styles.date}>
+            <i class="ri-calendar-2-line mt-3"></i> {date}
+          </p>
+        </div>
+      </div>
       {/* btns */}
       {sliderIndex?.next == photo.id ||
-      (photo.id == 1 && sliderIndex?.next !== length && sliderIndex?.next !== 2) ? (
+      (photo.id == 1 &&
+        sliderIndex?.next !== length &&
+        sliderIndex?.next !== 2) ? (
         <div className={styles.slider_buttons}>
           <button
             onClick={() => gotoPrev()}
