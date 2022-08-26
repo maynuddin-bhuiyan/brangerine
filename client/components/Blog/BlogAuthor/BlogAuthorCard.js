@@ -3,15 +3,15 @@ import { posts } from "../pageContent";
 import Post from "../Pagination/Post";
 import styles from "./BlogAuthorCard.module.css";
 
-const BlogAuthorCard = () => {
+const BlogAuthorCard = ({ authorPosts }) => {
   return (
     <div className={`container ${styles.blogAuthorCard}`}>
-      <div className="row">            
+      <div className="row">
         <div className={`${styles.authorCard}`}>
-          {posts?.slice(0, 6)?.map((details) => (
+          {authorPosts?.map((details) => (
             <Post
               id={details.id}
-              post={details}              
+              post={details}
             />
           ))}
         </div>
