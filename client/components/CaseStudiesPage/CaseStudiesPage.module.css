@@ -1,5 +1,38 @@
 .CaseStudiesHeroSec {
   padding: 100px 0px;
+  position: relative;
+}
+
+.abstractLeft {
+  position: absolute;
+  width: 478px;
+  height: 478px;
+  left: -239px;
+  top: 210px;
+  background: #4f2416;
+  filter: blur(250px);
+}
+
+.abstractRight {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  right: -500px !important;
+  top: 616px;
+  background: #4f42c9;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+
+.abstractMore {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  left: -402px;
+  top: 1200px;
+  background: #4f42c9;
+  opacity: 0.2;
+  filter: blur(200px);
 }
 
 .caseStudiesMain {
@@ -199,6 +232,17 @@
 
   .PaginationButton {
     padding: 10px 15px !important;
+  }
+  .abstractLeft {
+    opacity: 0.2;
+  }
+
+  .abstractRight {
+    opacity: 0.2;
+  }
+
+  .abstractMore {
+    opacity: 0.2;
   }
 }
 

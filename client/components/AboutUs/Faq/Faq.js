@@ -46,39 +46,110 @@ const Faq = () => {
           </a>
         </div>
         <div className={`col-lg-7 col-md-7 col-sm-12`}>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            {data.map((item, index) => (
-              <div
-                class={`accordion-item accordionItem ${styles.accordionItem}`}
-                key={item?.id}
+          <div class="accordion" id="accordionExample">
+            <div class={`accordion-item accordionItem ${styles.accordionItem}`}>
+              <h2
+                class={`accordion-header ${styles.accordionHeader}`}
+                id="headingOne"
               >
-                <h2
-                  class={`accordion-header ${styles.accordionHeader}`}
-                  id={`flush-heading${item.id}`}
+                <button
+                  class={`accordion-button ${styles.accordionButton}`}
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
                 >
-                  <button
-                    class={`accordion-button collapsed ${styles.accordionButton}`}
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#flush-collapse${item.id} `}
-                    aria-expanded="false"
-                    aria-controls={`flush-collapse${item.id}`}
-                  >
-                    {item.number} {item.title}
-                  </button>
-                </h2>
-                <div
-                  id={`flush-collapse${item.id}`}
-                  class={`accordion-collapse collapse ${styles.accordionBody}`}
-                  aria-labelledby={`flush-heading${item.id}`}
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class={`accordion-body ${styles.accordionBodyText}`}>
-                    {item.text} <a href="/contact" target="_blank">{item.linkText}</a>{" "}
-                  </div>
+                  01 BRAND DEVELOPMENT
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class={`accordion-collapse collapse show ${styles.accordionBody}`}
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class={`accordion-body ${styles.accordionBodyText}`}>
+                  Give your brand life that will stand the test of time.
+                  Effective branding is more than just a pretty logo; it tells
+                  your story, proves your identity, and establishes your
+                  personality. If you find yourself still pushing for sales,
+                  perhaps it's time to push that orange button and request an
+                  appointment today.
+                  <a href="/contact" target="_blank">
+                    Learn More
+                  </a>
                 </div>
               </div>
-            ))}
+            </div>
+            <div class={`accordion-item accordionItem ${styles.accordionItem}`}>
+              <h2
+                class={`accordion-header ${styles.accordionHeader}`}
+                id="headingTwo"
+              >
+                <button
+                  class={`accordion-button collapsed ${styles.accordionButton}`}
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  02 BUSINESS CONSULTING
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class={`accordion-collapse collapse ${styles.accordionBody}`}
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class={`accordion-body ${styles.accordionBodyText}`}>
+                   With the business world constantly changing, some are forced
+                  to either take action or face the reality of closing the doors
+                  to their business. We saw an opportunity that could
+                  potentially save jobs & families alike. Remember the
+                  excitement you had when you first started?
+                  <a href="/contact" target="_blank">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class={`accordion-item accordionItem ${styles.accordionItem}`}>
+              <h2
+                class={`accordion-header ${styles.accordionHeader}`}
+                id="headingThree"
+              >
+                <button
+                  class={`accordion-button collapsed ${styles.accordionButton}`}
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                 03 VIDEOGRAPHY
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class={`accordion-collapse collapse ${styles.accordionBody}`}
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class={`accordion-body ${styles.accordionBodyText}`}>
+                  Motion creates emotion, and the key to selling any product is
+                  to get your audience emotionally bought in first. A short film
+                  could tell a story and captivate the audience at the same
+                  time. The possibilities are endless but the availabilities are
+                  limited. Book your appointment today.
+                  <a href="/contact" target="_blank">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

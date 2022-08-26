@@ -1,5 +1,5 @@
 .testimonials {
-  margin: 100px 0px;
+  margin: 100px 0px 250px 0px;
 }
 .testimonials h5 {
   font-family: "Jost";
@@ -92,6 +92,9 @@
   .sliderDiv > img {
     margin-bottom: 40px;
     width: 100%;
+  }
+  .sliderDiv {
+    margin: 0px 0px;
   }
 }
 

@@ -21,9 +21,11 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className={`nav-link active me-5 ${styles.navItem}`} aria-current="page" href="#">Service</a>
-                        </li>
+                        <Link href='/'>
+                            <li className="nav-item">
+                                <a className={`nav-link active me-5 ${styles.navItem}`} aria-current="page" href="#">Service</a>
+                            </li>
+                        </Link>
                         <Link href='/case-studies'>
                             <li className="nav-item">
                                 <a className={`nav-link active me-5 ${styles.navItem}`} aria-current="page" href="#">Our Work</a>
