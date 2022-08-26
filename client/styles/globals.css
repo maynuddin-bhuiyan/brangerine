@@ -41,13 +41,13 @@ body {
 }
 
 .accordion-button::after {
-  background: url(../public/images/WhatWeDo/Vector.svg) !important;
+  background: url("/images/WhatWeDo/Vector.svg") !important;
   background-repeat: no-repeat !important;
   margin-top: 5px;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background: url(../public/images/WhatWeDo/subtract-line.svg) !important;
+  background: url("/images/WhatWeDo/subtract-line.svg") !important;
   background-repeat: no-repeat !important;
   margin-top: 5px;
 }
@@ -154,7 +154,6 @@ input[type="number"] {
 }
 .slide4 {
   background: url("/images/blog/slide4.jpg");
-
 }
 .slide5 {
   background: url("/images/blog/slide5.jpeg");
@@ -166,7 +165,7 @@ input[type="number"] {
   background: url("/images/blog/post.jpeg");
 }
 
-.common_slide{
+.common_slide {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -348,5 +347,26 @@ input[type="number"] {
 
   .abstractMore {
     opacity: 0.2;
+  }
+}
+
+/* Case Studies SLider Home Page */
+.slickSlider > .slick-list {
+  width: 2000px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .slickSlider > .slick-list {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .slickSlider > .slick-list {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .slickSlider > .slick-list {
+    width: 100% !important;
   }
 }

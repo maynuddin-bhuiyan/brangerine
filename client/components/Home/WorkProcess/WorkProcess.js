@@ -43,7 +43,8 @@ const WorkProcess = () => {
   ];
   return (
     <div className="container">
-      <div className={styles.workProcess}>
+       {/* <div className={styles.scrollbar} id={styles.scrollbar_style}> */}
+        <div className={styles.workProcess}>
         <div className={styles.workProcessHeadMain}>
           <div className={styles.workProcessHead}>
             <h1>Our Working Process</h1>
@@ -52,7 +53,7 @@ const WorkProcess = () => {
               businesses need a cohesive plan that incorporates research,
               branding and design.{" "}
             </p>
-            <a className={styles.learnButton} href="#" target="_blank" rel="noreferrer">
+            <a className={styles.learnButton} href="/about" target="_blank" rel="noreferrer">
               <i className="ri-arrow-right-up-line"></i>
               <span>Learn More About Us</span>
             </a>
@@ -76,6 +77,7 @@ const WorkProcess = () => {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };
