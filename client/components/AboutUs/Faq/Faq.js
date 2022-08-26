@@ -60,7 +60,7 @@ const Faq = () => {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  BRAND DEVELOPMENT
+                  01 BRAND DEVELOPMENT
                 </button>
               </h2>
               <div
@@ -95,7 +95,7 @@ const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  BUSINESS CONSULTING
+                  02 BUSINESS CONSULTING
                 </button>
               </h2>
               <div
@@ -105,7 +105,7 @@ const Faq = () => {
                 data-bs-parent="#accordionExample"
               >
                 <div class={`accordion-body ${styles.accordionBodyText}`}>
-                  With the business world constantly changing, some are forced
+                   With the business world constantly changing, some are forced
                   to either take action or face the reality of closing the doors
                   to their business. We saw an opportunity that could
                   potentially save jobs & families alike. Remember the
@@ -129,7 +129,7 @@ const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  VIDEOGRAPHY
+                 03 VIDEOGRAPHY
                 </button>
               </h2>
               <div
