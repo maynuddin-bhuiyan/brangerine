@@ -4,7 +4,7 @@
     justify-content: flex-end;
     align-items: center;
     height: 504px;
-    margin: 30px;
+    margin: 20px;
     position: relative;
     transition: transform .2s;
 }

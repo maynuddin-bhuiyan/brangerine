@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { photos } from "./photoData";
 export default function Carousel() {
   const [width, setWidth] = useState(0);
+  const PhotoSlider = createRef();
   useEffect(() => {
     if (typeof window !== undefined) {
       setWidth(window.innerWidth);
@@ -21,10 +22,10 @@ export default function Carousel() {
         };
   const [sliderIndex, setSliderIndex] = useState(dotCondition);
   // console.log("SLIDER INDEX", sliderIndex);
-
-  const PhotoSlider = createRef();
   const settings = {
     dots: width <= 768 ? true : false,
+    speed: 1500,
+    autoplay: true,
     arrows: false,
     infinite: true,
     speed: 500,
