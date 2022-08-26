@@ -20,6 +20,9 @@ const CaseStudiesPage = () => {
 
   return (
     <div className={styles.CaseStudiesHeroSec}>
+       <div className={styles.abstractLeft}></div>
+      <div className={styles.abstractRight}></div>
+      <div className={styles.abstractMore}></div>
       <h3>PAST PROJECTS</h3>
       <h1>Case Studies</h1>
       <div className={`container ${styles.StudiesHeroSec}`}>
