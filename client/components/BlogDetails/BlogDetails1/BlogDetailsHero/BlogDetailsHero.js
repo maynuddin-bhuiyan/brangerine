@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./BlogDetailsHero.module.css";
 
-const BlogDetailsHero = ({details}) => {
+const BlogDetailsHero = ({ details }) => {
   // Blog Details Social Media Data
   const data = [
     { id: 1, img: "/images/BlogDetails1/FB.svg" },
@@ -41,13 +41,13 @@ const BlogDetailsHero = ({details}) => {
     <div className={styles.blogDetailsHero}>
       {/* Blog Details Hero Part  */}
       <div className={styles.blogHeaderText}>
-        <h3>{details?.subtitle}</h3>        
+        <h3>{details?.subtitle}</h3>
         <h1>
-        {details?.title}
+          {details?.title}
         </h1>
         <div className={styles.blogMedia}>
           <div className={styles.mediaData}>
-            <p>{details?.author}</p>
+            <Link href={`/blog/author/${details?.author}`}><p>{details?.author}</p></Link>
             <i className="ri-calendar-2-line"></i>
             <p>{details?.date}</p>
           </div>
@@ -74,10 +74,10 @@ const BlogDetailsHero = ({details}) => {
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
               <p>
-              {details?.text1}
+                {details?.text1}
               </p>
               <p>
-              {details?.text2}
+                {details?.text2}
               </p>
             </div>
 
@@ -94,10 +94,10 @@ const BlogDetailsHero = ({details}) => {
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
               <p>
-              {details?.text3}
+                {details?.text3}
               </p>
               <p>
-              {details?.text4}
+                {details?.text4}
               </p>
             </div>
 
@@ -164,16 +164,16 @@ const BlogDetailsHero = ({details}) => {
               <div className={styles.PostsCard}>
                 {postsData?.map((post, i) => (
                   <Link href={`${post.href}/${post.id}`} passHref>
-                  <div className={styles.Icon} key={post?.id}>
-                    <Image width="360" height="195" src={post?.img} />
-                    <h3>{post?.subTitel}</h3>
-                    <h1>{post?.titel}</h1>
-                    <div className={styles.mediaData}>
-                      <p>{post?.text}</p>
-                      <i className="ri-calendar-2-line"></i>
-                      <p>{post?.data}</p>
+                    <div className={styles.Icon} key={post?.id}>
+                      <Image width="360" height="195" src={post?.img} />
+                      <h3>{post?.subTitel}</h3>
+                      <h1>{post?.titel}</h1>
+                      <div className={styles.mediaData}>
+                        <p>{post?.text}</p>
+                        <i className="ri-calendar-2-line"></i>
+                        <p>{post?.data}</p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
                 ))}
               </div>
