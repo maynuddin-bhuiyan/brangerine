@@ -1,6 +1,7 @@
 .ourTeam {
   margin: 100px 0px;
 }
+
 .ourTeam h5 {
   font-family: "Jost";
   font-style: normal;
@@ -11,8 +12,9 @@
   text-transform: uppercase;
   color: #8a81db;
 }
+
 .ourTeam h1 {
-  font-family: "Jost";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -26,6 +28,7 @@
 .teamMembers {
   margin-top: 60px;
 }
+
 .teamMemberCard {
   display: flex;
   flex-direction: column;
@@ -60,9 +63,8 @@
 }
 
 .teamMemberCardInfo p {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 120%;
   color: #e3ecff;
@@ -99,38 +101,48 @@
     font-size: 32px;
     line-height: 120%;
   }
+
   .teamMemberCard {
     margin-top: 30px;
   }
+
   .teamMembers {
     margin-top: 20px;
   }
+
   .ourTeam h5 {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .teamMemberCardInfo {
     padding: 15px 40px;
     width: 290px;
   }
+
   .teamMemberCard {
     margin-top: 30px;
   }
+
   .ourTeam h1 {
     font-size: 64px;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .teamMemberCard {
     width: 400px;
   }
+
   .teamMemberCard {
     margin-top: 30px;
   }
+
   .teamMemberCardInfo {
     padding: 15px 55px;
   }
+
   .ourTeam h5 {
     font-family: "Jost";
     font-style: normal;
@@ -141,6 +153,7 @@
     text-transform: uppercase;
     color: #8a81db;
   }
+
   .ourTeam h1 {
     font-size: 64px;
   }

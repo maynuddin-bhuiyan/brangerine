@@ -1,9 +1,8 @@
-.heroSecTextWrapper {
-}
+.heroSecTextWrapper {}
 
 .heroSecTextWrapper h1 {
   font-size: 130px;
-  font-weight: 800;
+  font-weight: 700;
   background-image: url("../../../public/images/hero_section/Text\ bg.png");
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11,12 +10,12 @@
   animation: flliper 5s infinite;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .heroSecTextWrapper p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 20px;
   line-height: 150%;
   /* or 30px */
@@ -151,6 +150,7 @@
 }
 
 @media screen and (max-width: 1490px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -163,6 +163,7 @@
 }
 
 @media screen and (max-width: 1162px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -175,6 +176,7 @@
 }
 
 @media screen and (max-width: 1001px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -187,6 +189,7 @@
 }
 
 @media screen and (max-width: 886px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -199,6 +202,7 @@
 }
 
 @media screen and (max-width: 794px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -211,6 +215,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -227,6 +232,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -247,6 +253,7 @@
 }
 
 @media screen and (max-width: 500px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -271,6 +278,7 @@
 }
 
 @media screen and (max-width: 400px) {
+
   .leftImage,
   .rightImage,
   .middleImage {
@@ -283,6 +291,7 @@
 }
 
 @media screen and (max-width: 450px) {
+
   .leftImage,
   .rightImage,
   .middleImage {

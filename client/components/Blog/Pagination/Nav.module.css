@@ -1,8 +1,9 @@
-.button_container{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+.button_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
 .studiePagination {
     background-color: #212122 !important;
     width: 550px !important;
@@ -13,6 +14,13 @@
     padding: 10px 20px !important;
     border-radius: 50px !important;
 }
+
+
+.CaseStudiesHeroSec h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
 .PaginationItem {
     width: 50px !important;
     height: 50px !important;
@@ -88,12 +96,16 @@
         line-height: 35px;
         margin-top: 0px;
         margin-bottom: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
     }
 
     .CaseStudiesHeroSec h3 {
         font-size: 20px;
         line-height: 22px;
         margin-top: 0px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
 
 

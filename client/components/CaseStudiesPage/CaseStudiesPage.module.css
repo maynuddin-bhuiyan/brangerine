@@ -46,8 +46,8 @@
 
 .CaseStudiesHeroSec h3 {
   font-size: 24px;
-  font-weight: 600;
-  font-family: "Jost";
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   color: #8a81db;
   line-height: 26.4px;
@@ -56,8 +56,8 @@
 
 .CaseStudiesHeroSec h1 {
   font-size: 80px;
-  font-weight: 800;
-  font-family: "Jost";
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   color: #ffffff;
   line-height: 88px;
@@ -233,6 +233,7 @@
   .PaginationButton {
     padding: 10px 15px !important;
   }
+
   .abstractLeft {
     opacity: 0.2;
   }
