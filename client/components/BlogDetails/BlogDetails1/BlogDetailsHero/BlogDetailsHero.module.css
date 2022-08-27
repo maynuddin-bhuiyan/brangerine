@@ -10,8 +10,8 @@
 
 .blogHeaderText h3 {
   font-size: 20px;
-  font-weight: 700;
-  font-family: "Swiss 721", sans-serif;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   color: #4f42c9;
   line-height: 32px;
@@ -21,7 +21,7 @@
 .blogHeaderText h1 {
   font-size: 48px;
   font-weight: 700;
-  font-family: "Jost";
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   color: #ffffff;
   line-height: 58px;
@@ -42,8 +42,8 @@
 
 .blogMedia p {
   font-size: 16px;
-  font-weight: 500;
-  font-family: "Swiss 721", sans-serif;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   text-align: left;
   color: #e3ecff;
   line-height: 18px;
@@ -99,9 +99,9 @@
   text-align: left !important;
   font-size: 18px !important;
   line-height: 30px !important;
-  font-weight: 400 !important;
   color: #e3ecff !important;
-  font-family: "Swiss 721", sans-serif;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
 }
 
 .DetailsText p a {
@@ -134,9 +134,9 @@
 .DetailsReview p {
   font-size: 16px;
   line-height: 32px;
-  font-weight: 600;
   color: #101010;
-  font-family: "Swiss 721", sans-serif;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
 }
 
 .DetailsTags {
@@ -164,9 +164,9 @@ ul .TagsHeader {
 .TagsHeader h3 {
   font-size: 14px;
   line-height: 32px;
-  font-weight: 600;
+  font-weight: 500;
   color: #4f42c9;
-  font-family: "Swiss 721", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   margin: 0px;
 }
@@ -212,9 +212,10 @@ ul .TagLink {
 .SocialMedia h2 {
   font-size: 28px;
   line-height: 32px;
-  font-weight: 600;
+  font-weight: 300;
   color: #e3ecff;
-  font-family: "Jost";
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
   margin: 0px;
   margin-bottom: 30px;
 }
@@ -242,9 +243,9 @@ ul .TagLink {
 .SocialMedia p {
   font-size: 16px;
   line-height: 32px;
-  font-weight: 500;
   color: #e3ecff;
-  font-family: "Spartan", sans-serif;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   margin: 0px;
 }
 
@@ -268,9 +269,10 @@ ul .TagLink {
 .RelatedPosts h2 {
   font-size: 28px;
   line-height: 40px;
-  font-weight: 600;
+  font-weight: 300;
   color: #e3ecff;
-  font-family: "Jost";
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
   margin: 0px;
   margin-bottom: 40px;
 }
@@ -291,8 +293,8 @@ ul .TagLink {
 
 .PostsCard h3 {
   font-size: 12px;
-  font-weight: 700;
-  font-family: "Swiss 721", sans-serif;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   color: #4f42c9;
   line-height: 18px;
@@ -303,17 +305,17 @@ ul .TagLink {
 .PostsCard h1 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 700;
   color: #e3ecff;
-  font-family: "Jost";
+  font-family: 'Poppins', sans-serif;
   margin: 0px;
   margin-bottom: 30px;
 }
 
 .PostsCard p {
   font-size: 12px;
-  font-weight: 500;
-  font-family: "Swiss 721", sans-serif;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   text-align: left;
   color: #e3ecff;
   line-height: 18px;

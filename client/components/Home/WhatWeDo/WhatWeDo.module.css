@@ -55,8 +55,8 @@
 
 .WhatWeDo h3 {
     font-size: 24px;
-    font-weight: 600;
-    font-family: "Jost";
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #8A81DB;
     line-height: 26.4px;
@@ -64,8 +64,8 @@
 
 .WhatWeDo h1 {
     font-size: 80px;
-    font-weight: 800;
-    font-family: "Jost";
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #FFFFFF;
     line-height: 88px;

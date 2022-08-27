@@ -10,8 +10,8 @@
 
 .CaseStudies h3 {
   font-size: 24px;
-  font-weight: 600;
-  font-family: "Jost";
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   color: #8a81db;
   line-height: 26.4px;
@@ -20,8 +20,8 @@
 
 .CaseStudies h1 {
   font-size: 80px;
-  font-weight: 800;
-  font-family: "Jost";
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   color: #ffffff;
   line-height: 88px;
@@ -139,6 +139,7 @@
   .CaseStudiesPart .StudieButton {
     width: 220px !important;
   }
+
   .CaseStudiesPart {
     padding-left: 20px;
   }
@@ -148,6 +149,7 @@
   .CaseStudiesPart {
     padding-left: 20px;
   }
+
   .CaseStudies {
     padding: 50px 0px 0px !important;
   }
@@ -189,6 +191,7 @@
     width: 220px !important;
     bottom: 0px;
   }
+
   .CaseStudiesPart {
     padding-left: 20px;
   }
@@ -206,9 +209,11 @@
     right: -10px;
     left: 33%;
   }
+
   .CaseStudiesPart {
     padding-left: 50px;
   }
+
   .CaseStudiesPart {
     padding-left: 20px;
   }

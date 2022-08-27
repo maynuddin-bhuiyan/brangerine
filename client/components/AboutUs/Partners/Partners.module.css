@@ -3,7 +3,7 @@
 }
 
 .partners h1 {
-  font-family: "Jost";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -41,9 +41,8 @@
 }
 
 .partnersCardInfo p {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 120%;
   color: #e3ecff;
@@ -76,25 +75,30 @@
     width: 290px;
     padding: 15px 40px;
   }
+
   .partners h1 {
     font-size: 42px;
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .partnersCardInfo {
     padding: 15px 28px;
     width: 325px;
     margin-top: 30px;
   }
+
   .partners h1 {
     font-size: 42px;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .partnersCardInfo {
     padding: 15px 28px;
     width: 270px;
   }
+
   .partners h1 {
     font-size: 42px;
   }

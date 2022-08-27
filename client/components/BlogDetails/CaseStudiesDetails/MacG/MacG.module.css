@@ -4,7 +4,7 @@
   padding: 100px 0px;
 }
 
-.macG > h4 {
+.macG>h4 {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -14,8 +14,9 @@
   text-transform: uppercase;
   color: #4f42c9;
 }
-.macG > h1 {
-  font-family: "Jost";
+
+.macG>h1 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -30,8 +31,8 @@
   text-align: center;
 }
 
-.macG > h2 {
-  font-family: "Jost";
+.macG>h2 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -43,10 +44,9 @@
   margin-bottom: 30px;
 }
 
-.macG > p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.macG>p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
   text-transform: capitalize;
@@ -59,24 +59,30 @@
   .macG {
     padding: 50px 0px;
   }
-  .macG > h4 {
+
+  .macG>h4 {
     font-size: 14px;
   }
-  .macG > h1 {
+
+  .macG>h1 {
     font-size: 32px;
   }
-  .macG > h2 {
+
+  .macG>h2 {
     font-size: 24px;
   }
+
   .macG {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .macG {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .macG {
     width: 100%;
