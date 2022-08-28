@@ -506,3 +506,29 @@ input[type="number"] {
 .navbar-expand-lg .navbar-nav {
   align-items: center;
 }
+
+/* Thank you */
+.thank {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.thank h1 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.thank p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300 !important;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: -0.01em;
+  color: #e3ecff;
+}
