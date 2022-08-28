@@ -65,13 +65,6 @@ const WhatWeDo = () => {
           <div
             className={`col-lg-6 col-md-6 col-sm-12  ${styles.WhatWeDoAccordion}`}
           >
-
-
-
-
-
-
-
             <div
               className={`accordion accordion-flush faqAccordion`}
               id="accordionPanelsStayOpenExample"
@@ -84,10 +77,12 @@ const WhatWeDo = () => {
                   >
                     <h2
                       className={`accordion-header ${styles.Title}`}
-                    // id={`panelsStayOpen-heading${item?.id}`}
+                      // id={`panelsStayOpen-heading${item?.id}`}
                     >
                       <button
-                        className={`accordion-button collapsed ${defaultActive === item.id ? "active" : ""}`}
+                        className={`accordion-button collapsed ${
+                          defaultActive === item.id ? "active" : ""
+                        }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#panelsStayOpen-collapse${item.id}`}
@@ -95,7 +90,7 @@ const WhatWeDo = () => {
                         aria-controls={`panelsStayOpen-collapse${item.id}`}
                         onClick={() => {
                           setShow(item.id);
-                          setDefaultActive(null)
+                          setDefaultActive(null);
                         }}
                       >
                         <span>{item?.number}</span> {item?.title}{" "}
@@ -103,7 +98,9 @@ const WhatWeDo = () => {
                     </h2>
                     <div
                       id={`panelsStayOpen-collapse${item.id}`}
-                      className={`accordion-collapse collapse ${item.id === 1 ? "show" : ""}`}
+                      className={`accordion-collapse collapse ${
+                        item.id === 1 ? "show" : ""
+                      }`}
                       aria-labelledby={`panelsStayOpen-heading${item.id}`}
                       data-bs-parent="#accordionPanelsStayOpenExample"
                     >

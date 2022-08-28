@@ -37,10 +37,6 @@ body {
   opacity: 100% !important;
 }
 
-.accordion-button {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
 
 .accordion-button::after {
   background: url("/images/WhatWeDo/Vector.svg") !important;
