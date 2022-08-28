@@ -64,9 +64,16 @@ const WhatWeDo = () => {
           <div
             className={`col-lg-6 col-md-6 col-sm-12  ${styles.WhatWeDoAccordion}`}
           >
-            <div
+
+
+
+
+
+
+
+             <div
               className={`accordion accordion-flush faqAccordion`}
-              id="accordionFlushExample"
+              id="accordionPanelsStayOpenExample"
             >
               {data.map((item, index) => {
                 return (
@@ -76,25 +83,25 @@ const WhatWeDo = () => {
                   >
                     <h2
                       className={`accordion-header ${styles.Title}`}
-                      // id={`flush-heading${item?.id}`}
+                      // id={`panelsStayOpen-heading${item?.id}`}
                     >
                       <button
                         className={`accordion-button collapsed`}
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#flush-collapse${item.id}`}
-                        aria-expanded="false"
-                        aria-controls={`flush-collapse${item.id}`}
-                        onClick={() => setShow(item.id)}
+                        data-bs-target={`#panelsStayOpen-collapse${item.id}`}
+                        aria-expanded={item.id === 1 ? "true" : "false"}
+                        aria-controls={`panelsStayOpen-collapse${item.id}`}
+                        onClick={() => setShow(item.id)}                        
                       >
                         <span>{item?.number}</span> {item?.title}{" "}
                       </button>
                     </h2>
                     <div
-                      id={`flush-collapse${item.id}`}
-                      className="accordion-collapse collapse"
-                      aria-labelledby={`flush-heading${item.id}`}
-                      data-bs-parent="#accordionFlushExample"
+                      id={`panelsStayOpen-collapse${item.id}`}
+                      className={`accordion-collapse collapse ${item.id === 1 ? "show" : ""}`}
+                      aria-labelledby={`panelsStayOpen-heading${item.id}`}
+                      data-bs-parent="#accordionPanelsStayOpenExample"
                     >
                       <div
                         className={`accordion-body  ${styles.AccordionBody}`}
@@ -108,7 +115,7 @@ const WhatWeDo = () => {
                   </div>
                 );
               })}
-            </div>
+            </div> 
           </div>
         </div>
       </div>

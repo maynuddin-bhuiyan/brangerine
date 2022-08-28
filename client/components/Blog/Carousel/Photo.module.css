@@ -7,6 +7,7 @@
     margin: 20px;
     position: relative;
     transition: transform .2s;
+    padding: 30px;
 }
 
 .category {
@@ -50,10 +51,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
     margin-top: 20px;
-    margin-left:70px
-    
+    gap: 45px;
 }
 
 .date_details {
@@ -61,7 +60,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    gap: 45px;
 }
 
 .calender {
@@ -76,6 +75,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .slider_buttons button {
@@ -103,7 +103,6 @@
 }
 
 .slider_button_left:hover {
-
     background: #4F42C9;
 }
 
@@ -123,14 +122,21 @@
     right: -159px;
     z-index: 10;
 }
+
 .slider_button_right:hover {
 
     background: #4F42C9;
 }
+
 .right_arrow {
     color: white;
 }
+
 @media screen and (max-width: 768px) {
+    .photo_container {
+        padding: 20px;
+    }
+
     .slider_buttons {
         display: none;
     }
@@ -139,4 +145,5 @@
         width: 100%;
         margin-left: 20px;
     }
+
 }

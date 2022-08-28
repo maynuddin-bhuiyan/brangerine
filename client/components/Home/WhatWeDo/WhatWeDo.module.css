@@ -60,10 +60,12 @@
     text-align: center;
     color: #8A81DB;
     line-height: 26.4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .WhatWeDo h1 {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     text-align: center;
