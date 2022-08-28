@@ -51,9 +51,23 @@
     opacity: 0;
     visibility: hidden;
   }
+
   100% {
     margin-left: 2px;
     opacity: 1;
     visibility: visible;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navItem {
+    display: block !important;
+    padding: 10px 0px;
+  }
+
+  .navBtn {
+    margin-top: 20px;
   }
 }
