@@ -88,7 +88,7 @@
     color: #FFFFFF !important;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
     .CaseStudiesHeroSec {
         padding: 40px 0px !important;
     }
@@ -133,4 +133,9 @@
     .PaginationButton {
         padding: 10px 15px !important;
     }
+
+    .button_container{
+        margin: 50px 0 10px 0;
+    }
+
 }
