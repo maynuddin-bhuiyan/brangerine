@@ -24,11 +24,11 @@ export default function Carousel() {
   // console.log("SLIDER INDEX", sliderIndex);
   const settings = {
     dots: width <= 768 ? true : false,
-    speed: 1500,
+    speed: 800,
     autoplay: true,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     swipe: width <= 768 ? true : false,
     slidesToShow: 2.35,
     slidesToScroll: 1,
