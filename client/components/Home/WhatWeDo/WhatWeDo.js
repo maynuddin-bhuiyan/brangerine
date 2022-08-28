@@ -86,6 +86,7 @@ const WhatWeDo = () => {
                         aria-expanded="false"
                         aria-controls={`flush-collapse${item.id}`}
                         onClick={() => setShow(item.id)}
+                        
                       >
                         <span>{item?.number}</span> {item?.title}{" "}
                       </button>

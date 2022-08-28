@@ -18,7 +18,7 @@ const BlogDetailsHero = ({ details }) => {
   //Blog Details Related Posts
   const postsData = [
     {
-      id: 1,
+      id: 7,
       img: "/images/BlogDetails1/pexels-photo-25876.jpg",
       subTitel: "SPORTS",
       text: "By Dianne Russell",
@@ -27,7 +27,7 @@ const BlogDetailsHero = ({ details }) => {
       href: '/blog-details',
     },
     {
-      id: 2,
+      id: 5,
       img: "/images/BlogDetails1/pexels-photo-57825.jpeg",
       subTitel: "SPORTS",
       text: "By Dianne Russell",

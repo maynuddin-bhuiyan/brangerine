@@ -5,7 +5,11 @@
 
 .CaseStudiesPart {
   position: relative;
-  padding-left: 550px;
+  padding-left: 0px;
+}
+
+.CaseStudiesCarousel {
+  padding-left: 100px;
 }
 
 .CaseStudies h3 {
@@ -68,7 +72,7 @@
   height: 410px;
 }
 
-.CaseStudiesPart .StudieButton {
+.CaseStudiesCarousel .StudieButton {
   background-color: #4f42c9;
   padding: 15px 30px;
   border-radius: 50px;
@@ -101,7 +105,7 @@
 
 @media only screen and (min-width: 1111px) and (max-width: 2000px) {
   .CaseStudiesPart {
-    padding-left: 50px;
+    padding-left: 0px;
   }
 }
 
@@ -111,15 +115,15 @@
   }
 
   .StudieCarouselCard {
-    height: 280px !important;
+    height: 220px !important;
   }
 
-  .CaseStudiesPart .StudieButton {
+  .CaseStudiesCarousel .StudieButton {
     width: 220px !important;
   }
 
-  .CaseStudiesPart {
-    padding-left: 20px;
+  .CaseStudiesCarousel {
+    padding-left: 40px;
   }
 }
 
@@ -129,34 +133,39 @@
   }
 
   .StudieSlideButton {
-    left: 30%;
+    left: 40%;
   }
 
   .StudieCarouselCard {
-    height: 220px !important;
+    height: 250px !important;
   }
 
-  .CaseStudiesPart .StudieButton {
+  .CaseStudiesCarousel .StudieButton {
     width: 220px !important;
   }
 
-  .CaseStudiesPart {
+  .CaseStudiesCarousel {
     padding-left: 20px;
+  }
+
+
+  .StudieCarouselCard img {
+    width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .CaseStudiesPart {
-    padding-left: 20px;
+  .CaseStudiesCarousel {
+    padding-left: 0px;
   }
 
   .CaseStudies {
-    padding: 50px 0px 0px !important;
+    padding: 50px 0px 0px 20px !important;
   }
 
   .CaseStudies h1 {
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 30px;
     margin-top: 0px;
     margin-bottom: 30px;
   }
@@ -167,8 +176,9 @@
     margin-top: 0px;
   }
 
-  .StudieCarouselCard {
-    height: 250px !important;
+  .StudieCarouselCard img {
+    width: 100% !important;
+    height: 220px !important;
   }
 
   .StudieSlideButton {
@@ -187,13 +197,17 @@
     font-size: 15px;
   }
 
-  .CaseStudiesPart .StudieButton {
+  .CaseStudiesCarousel .StudieButton {
     width: 220px !important;
     bottom: 0px;
   }
 
-  .CaseStudiesPart {
-    padding-left: 20px;
+  .StudieCarouselCard {
+    height: 240px !important;
+  }
+
+  .CaseStudiesCarousel {
+    padding-left: 0px;
   }
 }
 
@@ -210,11 +224,7 @@
     left: 33%;
   }
 
-  .CaseStudiesPart {
-    padding-left: 50px;
-  }
-
-  .CaseStudiesPart {
-    padding-left: 20px;
+  .CaseStudiesCarousel {
+    padding-left: 0px;
   }
 }
