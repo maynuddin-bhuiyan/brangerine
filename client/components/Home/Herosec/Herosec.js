@@ -39,13 +39,13 @@ function HeroSec() {
                         <p>
                             We create more than just logos and websites. We craft lush imagery, and bring imaginations to reality. We parter with companies to bring clarity to their brands purpose. Successful companies have strong, healthy foundations; rooted deeply within customer experiences.
                         </p>
-                        <div>
-                            <button className={`btn ${styles.btnDiscuss}`}>
-                                <i className="ri-message-3-fill me-2"></i>
-                                Discuss a project with Us
+                        <div className={styles.buttonDiv}>
+                            <a href='/contact' className={` ${styles.btnDiscuss}`}>
+                               <i class="ri-message-3-line"></i>
+                                <span>Discuss a project with Us</span>
                                 {/* <i className="ri-arrow-right-up-line"></i> */}
-                            </button>
-                            <button className={`btn ${styles.btnAbout}`}>About us</button>
+                            </a>
+                            <a href='/about' className={`${styles.btnAbout}`}>About us</a>
                         </div>
                     </div>
                 </div>

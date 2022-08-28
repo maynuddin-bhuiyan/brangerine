@@ -7,7 +7,7 @@
 }
 
 .faqInfo h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -16,7 +16,7 @@
 }
 
 .faqInfo p {
-  font-family: 'Lato', sans-serif !important;
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-style: normal;
   font-size: 18px;
@@ -26,7 +26,7 @@
 
 .contactButton {
   text-decoration: none;
-  width: 220px;
+  width: 225px;
   height: 60px;
   background: #4f42c9;
   border-radius: 50px;
@@ -43,32 +43,35 @@
   transition: all 0.5s;
 }
 
-.contactButton .icon2 {
-  display: none;
+.contactButton i {
+  font-size: 20px;
+  margin-right: 5px;
+  transition: 0.5s;
 }
 
 .contactButton:hover {
-  background: #352a9f;
-  color: #ffffff;
+  background-color: #352a9f;
+  color: white;
 }
 
 .contactButton:hover span {
-  color: #ffffff;
+  color: white;
 }
 
-.contactButton:hover .icon2 {
-  display: block;
+.contactButton:hover span {
+  transform: translateX(-35px);
 }
 
-.contactButton:hover .icon1 {
-  display: none;
+.contactButton:hover i {
+  transform: translateX(140px);
+  transition: 0.5s;
 }
 
 .accordionItem {
   margin-bottom: 30px;
 }
 
-.accordionItem>.accordionBody {
+.accordionItem > .accordionBody {
   background-color: black !important;
 }
 
@@ -95,7 +98,7 @@
   color: #ffffff;
 }
 
-.accordionBodyText>a {
+.accordionBodyText > a {
   color: #352a9f;
 }
 
@@ -129,7 +132,7 @@
   }
 
   .faqInfo p {
-    font-family: 'Lato', sans-serif !important;
+    font-family: "Lato", sans-serif !important;
     font-weight: 300 !important;
     font-size: 18px;
     line-height: 170%;
