@@ -6,7 +6,7 @@ exports.addMassage = addMassage = async (req, res) => {
   const newMessage = new MessageModel(message);
   try {
     await newMessage.save();
-    await SendMail(message);
+    await SendMail(message.first_name, message.last_name, message.email, message.phone_number, message.message, message.p_type, message.p_budget);
     res.status(200).json(newMessage);
   } catch (error) {
     res.status(500).json(error);
