@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "./Photo.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +12,8 @@ export default function Photo({
   length,
 }) {
   const { category, title, author, date, image, id } = photo;
-
+  const [hoverLeft,setHoverLeft] = useState(false)
+  const [hoverRight,setHoverRight] = useState(false)
   const x = length % 2 === 0 ? 1 : 2;
   return (
     <div
@@ -48,14 +49,18 @@ export default function Photo({
           <button
             onClick={() => gotoPrev()}
             className={styles.slider_button_left}
+            onMouseEnter={() => setHoverLeft(true)}
+            onMouseLeave={() => setHoverLeft(false)}
           >
-            <i className="fa-solid fa-arrow-left"></i>
+            <i className={`fa-solid fa-arrow-left ${hoverLeft ? styles.left_arrow: ''}`} ></i>
           </button>
           <button
             onClick={() => gotoNext()}
             className={styles.slider_button_right}
+            onMouseEnter={() => setHoverRight(true)}
+            onMouseLeave={() => setHoverRight(false)}
           >
-            <i className="fa-solid fa-arrow-right"></i>
+            <i className={`fa-solid fa-arrow-right ${hoverRight ? styles.right_arrow: ''}`}></i>
           </button>
         </div>
       ) : (
