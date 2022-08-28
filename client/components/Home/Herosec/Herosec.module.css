@@ -62,7 +62,7 @@
   text-decoration: none;
   width: 332px;
   align-items: center;
-  z-index: 9999999999;
+  z-index: 99999999;
 }
 
 .btnDiscuss span {
@@ -108,7 +108,7 @@
   text-transform: capitalize;
   color: #4f42c9;
   text-decoration: none;
-  z-index: 9999999999;
+  z-index: 99999999;
 }
 
 @keyframes flliper {
