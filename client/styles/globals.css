@@ -25,12 +25,14 @@ body {
   margin-right: 10px;
 }
 
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed),
+.accordion-button.active {
   background-color: #ffffff !important;
   color: #4f42c9 !important;
 }
 
-.accordion-button:not(.collapsed) span {
+.accordion-button:not(.collapsed) span,
+.accordion-button.active span {
   color: #4f42c9 !important;
   opacity: 100% !important;
 }
@@ -46,7 +48,8 @@ body {
   margin-top: 5px;
 }
 
-.accordion-button:not(.collapsed)::after {
+.accordion-button:not(.collapsed)::after,
+.accordion-button.active::after {
   background: url("/images/WhatWeDo/subtract-line.svg") !important;
   background-repeat: no-repeat !important;
   margin-top: 5px;
