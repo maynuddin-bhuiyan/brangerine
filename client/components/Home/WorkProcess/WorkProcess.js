@@ -1,8 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./WorkProcess.module.css";
 
 const WorkProcess = () => {
+
+   const [scrollState, setScrollState] = useState();
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      setScrollState(window.scrollY);
+      console.log(window.scrollY);
+    });
+  }, []);
   const data = [
     {
       id: 1,
@@ -43,37 +51,55 @@ const WorkProcess = () => {
   ];
   return (
     <div className="container">
-       {/* <div className={styles.scrollbar} id={styles.scrollbar_style}> */}
-        <div className={styles.workProcess}>
-        <div className={styles.workProcessHeadMain}>
-          <div className={styles.workProcessHead}>
-            <h1>Our Working Process</h1>
-            <p>
-              Much like healthy crops need rich soil, water and sunlight,
-              businesses need a cohesive plan that incorporates research,
-              branding and design.{" "}
-            </p>
-            <a className={styles.learnButton} href="/about" target="_blank" rel="noreferrer">
-              <i className="ri-arrow-right-up-line"></i>
-              <span>Learn More About Us</span>
-            </a>
-          </div>
-        </div>
-        <div className={styles.workProcessInfo}>
-          <div className={styles.scrollbar} id={styles.scrollbar_style}>
-            <div className={styles.scrollInfo}>
-              {data.map((item, i) => (
-                <div className={styles.scrollInfoCard} key={item.id}>
-                  <div className={styles.scrollInfoCardImg}>
-                    <Image src={item.logo} alt="" width={40} height={40} />
-                    <h1 className={styles.scrollInfoCardTitle}>{item.title}</h1>
-                  </div>
-                  <div className={styles.scrollInfoCardInfo}>
-                    <p className={styles.scrollInfoCardText}>{item.text}</p>
-                  </div>
-                </div>
-              ))}
+      {/* <div className={styles.scrollbar} id={styles.scrollbar_style}> */}
+      <div className={styles.workProcess}>
+        <div
+          className={`${scrollState > 3588 && scrollState < 4800
+                  ? `${styles.fixed}`
+                  : `${styles.workProcessHeadMain}`
+          }`}
+          // className={`${styles.workProcessHeadMain}`}
+        
+        >
+            <div className={styles.workProcessHead}>
+              <h1>Our Working Process</h1>
+              <p>
+                Much like healthy crops need rich soil, water and sunlight,
+                businesses need a cohesive plan that incorporates research,
+                branding and design.{" "}
+              </p>
+              <a
+                className={styles.learnButton}
+                href="/about"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="ri-message-3-line"></i>
+                <span>Learn More About Us</span>
+              </a>
             </div>
+        </div>
+        <div
+           className={`${scrollState > 3588 && scrollState < 4800
+                  ? `${styles.fixedInfo}`
+                  : `${styles.workProcessInfo}`
+          }`}
+          // className={styles.workProcessInfo}
+        >
+          {/* <div className={styles.scrollbar} id={styles.scrollbar_style}> */}
+          <div className={styles.scrollInfo}>
+            {data.map((item, i) => (
+              <div className={styles.scrollInfoCard} key={item.id}>
+                <div className={styles.scrollInfoCardImg}>
+                  <Image src={item.logo} alt="" width={40} height={40} />
+                  <h1 className={styles.scrollInfoCardTitle}>{item.title}</h1>
+                </div>
+                <div className={styles.scrollInfoCardInfo}>
+                  <p className={styles.scrollInfoCardText}>{item.text}</p>
+                </div>
+              </div>
+            ))}
+            {/* </div> */}
           </div>
         </div>
       </div>

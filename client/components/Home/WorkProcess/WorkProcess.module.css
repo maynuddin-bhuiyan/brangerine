@@ -1,16 +1,29 @@
 .workProcess {
   display: flex;
   margin-top: 100px;
-  height: 800px;
-  /* position: relative; */
+  height: 100%;
+  /* gap: 162px; */
+  /* width: 100%; */
 }
 
 .workProcessHeadMain {
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
-  /* border: 2px solid #4caf50; */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 1%;
+  box-sizing: border-box;
+  width: 42% !important;
+}
+
+.fixedInfo {
+  width: 38%;
+  position: relative;
+  left: 62%;
 }
 
 .workProcessHead {
@@ -33,7 +46,7 @@
 }
 
 .workProcessHead h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 110%;
@@ -43,7 +56,7 @@
 }
 
 .workProcessHead p {
-  font-family: 'Lato', sans-serif !important;
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 24px;
   line-height: 170%;
@@ -91,7 +104,7 @@
 }
 
 .learnButton:hover span {
-  color: #7768ff;
+  color: white;
 }
 
 .learnButton:hover span {
@@ -105,7 +118,8 @@
 
 .workProcessInfo {
   width: 60%;
-  height: 1448px;
+  position: relative;
+  /* height: 1448px; */
 }
 
 /* Scrollbar */
@@ -125,7 +139,8 @@
   align-items: center;
 }
 
-.scrollInfoCardInfo {}
+.scrollInfoCardInfo {
+}
 
 .scrollInfoCardTitle {
   font-family: "Jost";
@@ -233,6 +248,15 @@
   .scrollInfoCard {
     margin-bottom: 0px;
   }
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -242,6 +266,15 @@
     top: -12px;
     height: 307px;
   }
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -250,6 +283,15 @@
     left: 0px;
     top: -12px;
     height: 307px;
+  }
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
   }
 }
 
@@ -313,6 +355,15 @@
   .scrollInfoCard {
     margin-bottom: 0px;
   }
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -374,5 +425,41 @@
 
   .scrollInfoCard {
     margin-bottom: 0px;
+  }
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 80% !important;
+  }
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .fixed {
+    position: fixed;
+    top: 1%;
+    box-sizing: border-box;
+    width: 42% !important;
+  }
+
+  .fixedInfo {
+    width: 38%;
+    position: relative;
+    left: 62%;
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 3000px) {
+  .fixed {
+    width: 32% !important;
+  }
+
+  .fixedInfo {
+    width: 38%;
+    position: relative;
+    left: 62%;
   }
 }

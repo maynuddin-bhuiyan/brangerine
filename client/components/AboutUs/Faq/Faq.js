@@ -42,7 +42,6 @@ const Faq = () => {
           >
             <i className={`ri-message-3-line ${styles.icon1}`}></i>
             <span>Contact with us</span>
-            <i className={`ri-arrow-right-up-line ${styles.icon2}`}></i>
           </a>
         </div>
         <div className={`col-lg-7 col-md-7 col-sm-12`}>
