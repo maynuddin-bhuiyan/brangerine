@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import styles from "./ContactForm.module.css";
+import { submit } from './../../../api/contact';
 
 const ContactForm = () => {
   const inputs = [
@@ -36,22 +37,22 @@ const ContactForm = () => {
       label: "Phone Number",
       star: "*",
     },
-    // {
-    //   name: "project_type",
-    // //   placeholder: "Phone Number",
-    //   type: "select",
-    //   required: true,
-    //   label: "Project Type",
-    //   star: "*",
-    // },
-    // {
-    //   name: "project_type",
-    // //   placeholder: "Phone Number",
-    //   type: "select",
-    //   required: true,
-    //   label: "Project Type",
-    //   star: "*",
-    // },
+    {
+      name: "p_type",
+      //   placeholder: "Phone Number",
+      type: "select",
+      required: true,
+      label: "Project Type",
+      star: "*",
+    },
+    {
+      name: "p_budget",
+      //   placeholder: "Phone Number",
+      type: "select",
+      required: true,
+      label: "Project Budget",
+      star: "*",
+    },
     {
       name: "message",
       placeholder: "Message",
@@ -62,6 +63,15 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      const formData = new FormData(e.target);
+      const data = {};
+      inputs.forEach(({ name }) => (data[name] = formData.get(name)));
+      console.log(data);
+      await submit(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div className={styles.contactFormMain}>
@@ -98,9 +108,11 @@ const ContactForm = () => {
                             className={styles.formGroup}
                             controlId="exampleForm.ControlInput1"
                           >
-                            <Form.Label className={styles.formLabel}>
-                              {label} <span>{star}</span>
-                            </Form.Label>
+                            {type !== "select" && (
+                              <Form.Label className={styles.formLabel}>
+                                {label} <span>{star}</span>
+                              </Form.Label>
+                            )}
                             {name === "phone_number" ? (
                               <input
                                 type={type}
@@ -117,12 +129,23 @@ const ContactForm = () => {
                                 name={name}
                               />
                             ) : (
-                              <input
-                                type={type}
-                                name={name}
-                                placeholder={placeholder}
-                                required={required}
-                              />
+                              type === "email" ? (
+                                <input
+                                  type={type}
+                                  name={name}
+                                  placeholder={placeholder}
+                                  required={required}
+                                />
+                              ) : (
+                                type === "text" ? (
+                                  <input
+                                    type={type}
+                                    name={name}
+                                    placeholder={placeholder}
+                                    required={required}
+                                  />
+                                ) : ("")
+                              )
                             )}
                           </Form.Group>
                         ) : (
@@ -135,18 +158,24 @@ const ContactForm = () => {
                                 <Form.Label className={styles.formLabel}>
                                   Project Type<span>*</span>
                                 </Form.Label>
-                                <Form.Select size="lg" className={styles.formSelect}>
-                                  <option> Project Type</option>
-                                  <option> Project Type2</option>
+                                <Form.Select size="lg" name="p_type" className={styles.formSelect}>
+                                  <option value={'Brand Development'}>Brand Development</option>
+                                  <option value={'Web Design'}>Web Design</option>
+                                  <option value={'Video Production'}>Video Production</option>
+                                  <option value={'Business Consulting'}>Business Consulting</option>
+                                  <option value={'Combination'}>Combination</option>
                                 </Form.Select>
                               </Col>
                               <Col lg={6} md={6} sm={12}>
                                 <Form.Label className={styles.formLabel}>
-                                  Project Type<span>*</span>
+                                  Project Budget<span>*</span>
                                 </Form.Label>
-                                <Form.Select size="lg" className={styles.formSelect}>
-                                  <option> Project Type</option>
-                                  <option> Project Type2</option>
+                                <Form.Select name="p_budget" size="lg" className={styles.formSelect}>
+                                  <option value={'$500 - 1k'}>$500 - 1k</option>
+                                  <option value={'$1 - 2k'}>$1 - 2k</option>
+                                  <option value={'$3 - 5k'}>$3 - 5k</option>
+                                  <option value={'$7 - 10k'}>$7 - 10k</option>
+                                  <option value={'$10k+'}>$10k+</option>
                                 </Form.Select>
                               </Col>
                             </Row>
