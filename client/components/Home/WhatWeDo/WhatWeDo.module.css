@@ -33,11 +33,23 @@
 
 .StudieButton i {
     margin-right: 10px;
+    transition: all linear .2s;
 }
 
 .StudieButton p {
     margin: 0px !important;
     padding: 0px !important;
+    transition: all linear .2s;
+}
+
+
+.StudieButton:hover p {
+    transform: translateX(-35px);
+}
+
+.StudieButton:hover i {
+    transform: translateX(250px);
+    transition: 0.5s;
 }
 
 

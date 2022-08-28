@@ -30,6 +30,8 @@ function HeroSec() {
     const [active, setActive] = useState(null);
     return (
         <>
+        <div className={styles.heroSecOverlay}>
+            </div>
             <div className='container'>
                 <div className="row">
                     <div className={styles.heroSecTextWrapper}>
