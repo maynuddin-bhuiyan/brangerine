@@ -1,7 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import styles from './Navbar.module.css';
-import Link from 'next/link';
 
 function Navbar() {
     return (
@@ -43,7 +43,7 @@ function Navbar() {
                         </Link>
                         <Link href='/contact'>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navBtn}`} aria-current="page" href="#">Contact Us <i className="ri-arrow-right-line"></i></a>
+                                <a className={`nav-link active ${styles.navBtn}`} aria-current="page" href="#"><span>Contact Us</span> <i className="ri-arrow-right-line"></i></a>
                             </li>
                         </Link>
                     </ul>
