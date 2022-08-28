@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import styles from "./ContactForm.module.css";
 import { submit } from './../../../api/contact';
+import { useRouter } from 'next/router';
 
 const ContactForm = () => {
   const inputs = [
@@ -61,6 +62,7 @@ const ContactForm = () => {
     },
   ];
 
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -69,6 +71,7 @@ const ContactForm = () => {
       inputs.forEach(({ name }) => (data[name] = formData.get(name)));
       console.log(data);
       await submit(data);
+      router.push('/thank-you');
     } catch (error) {
       console.log(error);
     }
