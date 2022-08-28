@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./WhatWeDo.module.css";
 
 const WhatWeDo = () => {
+  const [defaultActive, setDefaultActive] = useState(1);
   const data = [
     {
       id: 1,
@@ -79,13 +80,18 @@ const WhatWeDo = () => {
                       // id={`panelsStayOpen-heading${item?.id}`}
                     >
                       <button
-                        className={`accordion-button collapsed`}
+                        className={`accordion-button collapsed ${
+                          defaultActive === item.id ? "active" : ""
+                        }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#panelsStayOpen-collapse${item.id}`}
                         aria-expanded={item.id === 1 ? "true" : "false"}
                         aria-controls={`panelsStayOpen-collapse${item.id}`}
-                        onClick={() => setShow(item.id)}
+                        onClick={() => {
+                          setShow(item.id);
+                          setDefaultActive(null);
+                        }}
                       >
                         <span>{item?.number}</span> {item?.title}{" "}
                       </button>

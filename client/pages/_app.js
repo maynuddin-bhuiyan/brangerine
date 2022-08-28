@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Brangerine</title>
         <meta name="description" content="Brangerine" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/Favicon.png" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
