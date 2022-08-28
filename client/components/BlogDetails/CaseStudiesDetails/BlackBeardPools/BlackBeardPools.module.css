@@ -3,7 +3,8 @@
   margin: 0 auto;
   padding: 100px 0px;
 }
-.BlackBeardPools > h4 {
+
+.BlackBeardPools>h4 {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -13,8 +14,9 @@
   text-transform: uppercase;
   color: #4f42c9;
 }
-.BlackBeardPools > h1 {
-  font-family: "Jost";
+
+.BlackBeardPools>h1 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -24,8 +26,9 @@
   color: #ffffff;
   margin-bottom: 50px;
 }
-.BlackBeardPools > h2 {
-  font-family: "Jost";
+
+.BlackBeardPools>h2 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -35,10 +38,10 @@
   color: #ffffff;
   margin-bottom: 30px;
 }
-.BlackBeardPools > p {
-  font-family: "Swiss 721";
-  font-style: normal;
-  font-weight: 400;
+
+.BlackBeardPools>p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
   text-transform: capitalize;
@@ -47,10 +50,10 @@
   margin-bottom: 50px;
 }
 
-.BlackBeardPools > h3 {
-  font-family: "Jost";
+.BlackBeardPools>h3 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -0.01em;
@@ -68,21 +71,26 @@
     width: 100%;
     padding: 50px 0px;
   }
-  .BlackBeardPools > h4 {
+
+  .BlackBeardPools>h4 {
     font-size: 14px;
   }
-  .BlackBeardPools > h1 {
+
+  .BlackBeardPools>h1 {
     font-size: 32px;
   }
-  .BlackBeardPools > h2 {
+
+  .BlackBeardPools>h2 {
     font-size: 24px;
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .BlackBeardPools {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .BlackBeardPools {
     width: 100%;

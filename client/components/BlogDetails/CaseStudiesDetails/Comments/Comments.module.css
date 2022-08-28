@@ -3,10 +3,11 @@
   padding: 58px 55px;
   margin: 50px 0px;
 }
+
 .comments h1 {
-  font-family: "Jost";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 38px;
   text-transform: capitalize;
@@ -16,9 +17,8 @@
 }
 
 .comments p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 32px;
   text-transform: capitalize;
@@ -29,14 +29,16 @@
   .comments h1 {
     font-size: 20px;
   }
+
   .comments {
     padding: 20px 24px;
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .comments {
     padding: 30px 34px;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}

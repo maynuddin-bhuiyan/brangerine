@@ -7,13 +7,14 @@
 }
 
 .footerTwo h1 {
-  font-family: "Swiss 721", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
 }
+
 .footerTwo a {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
@@ -29,6 +30,7 @@
   .footerTwo {
     flex-direction: column;
   }
+
   .footerTwo a {
     margin-left: 0px;
     margin-right: 10px;

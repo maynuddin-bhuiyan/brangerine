@@ -22,7 +22,7 @@
   z-index: 10;
 }
 
-.contactHero > h5 {
+.contactHero>h5 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
@@ -34,10 +34,10 @@
   margin-bottom: 20px;
 }
 
-.contactHero > h1 {
-  font-family: "Jost";
+.contactHero>h1 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 80px;
   line-height: 120%;
   text-align: center;
@@ -45,10 +45,9 @@
   margin-bottom: 60px;
 }
 
-.contactHero > p {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
+.contactHero>p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 28px;
   line-height: 140%;
   text-align: center;
@@ -87,9 +86,8 @@
 }
 
 .contactText p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 32px;
   color: #101010;
@@ -104,17 +102,17 @@
     background-repeat: no-repeat;
   }
 
-  .contactHero > h5 {
+  .contactHero>h5 {
     font-size: 14px;
   }
 
-  .contactHero > h1 {
+  .contactHero>h1 {
     font-size: 32px;
     line-height: 120%;
     margin-bottom: 30px;
   }
 
-  .contactHero > p {
+  .contactHero>p {
     padding: 0px 0px;
     font-size: 18px;
     line-height: 140%;
@@ -147,17 +145,18 @@
     margin-left: 10px;
     /* width: 100%; */
   }
+
   .abstractLeft {
     opacity: 0.2;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .contactHero > h1 {
+  .contactHero>h1 {
     font-size: 64px;
   }
 
-  .contactHero > p {
+  .contactHero>p {
     padding: 0px 74px;
 
     margin-bottom: 50px;
@@ -185,11 +184,11 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .contactHero > h1 {
+  .contactHero>h1 {
     font-size: 64px;
   }
 
-  .contactHero > p {
+  .contactHero>p {
     padding: 0px 187px;
     margin-bottom: 50px;
   }
@@ -208,7 +207,7 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  .contactHero > p {
+  .contactHero>p {
     padding: 0px 100px;
     margin-bottom: 50px;
   }

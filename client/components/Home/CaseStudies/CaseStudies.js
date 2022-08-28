@@ -12,7 +12,7 @@ const CaseStudies = () => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -84,11 +84,11 @@ const CaseStudies = () => {
   return (
     <div className={styles.CaseStudies}>
       <div className="abstractMore"></div>
-      <div className={`container ${styles.CaseStudiesPart}`}>
+      <div className={` ${styles.CaseStudiesPart}`}>
         <div className="row">
           <h3>PAST PROJECTS</h3>
           <h1>Case Studies</h1>
-          <Slider {...settings} ref={CaseStudiesSlider}>
+          <Slider {...settings} className={`slickSlider`} ref={CaseStudiesSlider}>
             {data?.map((item, i) => (
               <div className="row d-flex align-items-center" key={item?.id}>
                 <div
@@ -97,7 +97,7 @@ const CaseStudies = () => {
                   onMouseOver={() => setShow(item?.id)}
                 >
                   <Image
-                    width="665"
+                    width="615"
                     height="385"
                     src={item.id === show ? item?.hoverImage : item?.image}
                   />

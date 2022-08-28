@@ -6,22 +6,22 @@ const WhatWeDo = () => {
   const data = [
     {
       id: 1,
-      image: "/images/WhatWeDo/Videography.jpg",
+      image: "/images/WhatWeDo/brand_development.jpg",
       title: "BRAND DEVELOPMENT",
       number: "01",
-      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today.",
+      text: "Give your brand life that will stand the test of time.  Effective branding is more than just a pretty logo; it tells your story, proves your identity, and establishes your personality.  If you find yourself still pushing for sales, perhaps it's time to push that orange button and request an appointment today.",
     },
     {
       id: 2,
       number: "02",
-      image: "/images/WhatWeDo/brand_development.jpg",
+      image: "/images/WhatWeDo/business_consulting .jpg",
       title: "BUSINESS CONSULTING",
-      text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today.",
+      text: "With the business world constantly changing, some are forced to either take action or face the reality of closing the doors to their business.  We saw an opportunity that could potentially save jobs & families alike. Remember the excitement you had when you first started?",
     },
     {
       id: 3,
       number: "03",
-      image: "/images/WhatWeDo/business_consulting .jpg",
+      image: "/images/WhatWeDo/Videography.jpg",
       title: "VIDEOGRAPHY",
       text: "Motion creates emotion, and the key to selling any product is to get your audience emotionally bought in first.  A short film could tell a story and captivate the audience at the same time.  The possibilities are endless but the availabilities are limited. Book your appointment today.",
     },

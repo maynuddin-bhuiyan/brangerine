@@ -3,7 +3,8 @@
   margin: 0 auto;
   padding: 100px 0px;
 }
-.motivv > h4 {
+
+.motivv>h4 {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -13,8 +14,9 @@
   text-transform: uppercase;
   color: #4f42c9;
 }
-.motivv > h1 {
-  font-family: "Jost";
+
+.motivv>h1 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -42,7 +44,7 @@
   margin-bottom: 30px;
 }
 
-.workList > li {
+.workList>li {
   font-family: "Swiss 721", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +55,7 @@
   opacity: 0.8;
 }
 
-.workList > li::marker {
+.workList>li::marker {
   color: #4f42c9;
 }
 
@@ -64,8 +66,8 @@
   gap: 40px;
 }
 
-.logoInfo > h2 {
-  font-family: "Jost";
+.logoInfo>h2 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -75,16 +77,17 @@
   color: #ffffff;
   margin-bottom: 30px;
 }
-.logoInfo > p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+
+.logoInfo>p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
   text-transform: capitalize;
   color: #e3ecff;
   opacity: 0.8;
 }
+
 .symbol {
   display: flex;
   align-items: center;
@@ -96,8 +99,8 @@
   width: 56%;
 }
 
-.symbolInfo > h2 {
-  font-family: "Jost";
+.symbolInfo>h2 {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -108,10 +111,9 @@
   margin-bottom: 30px;
 }
 
-.symbolInfo > p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.symbolInfo>p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
   text-transform: capitalize;
@@ -119,7 +121,7 @@
   opacity: 0.8;
 }
 
-.website > h2 {
+.website>h2 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -132,10 +134,9 @@
   margin-top: 30px;
 }
 
-.website > p {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.website>p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
   text-transform: capitalize;
@@ -143,7 +144,7 @@
   opacity: 0.8;
 }
 
-.website > p > a {
+.website>p>a {
   color: #4f42c9;
 }
 
@@ -157,48 +158,61 @@
     width: 100%;
     padding: 50px 0px;
   }
-  .motivv > h4 {
+
+  .motivv>h4 {
     font-size: 14px;
   }
-  .motivv > h1 {
+
+  .motivv>h1 {
     font-size: 32px;
   }
+
   .workTitle {
     font-size: 24px;
   }
-  .logoInfo > h2 {
+
+  .logoInfo>h2 {
     font-size: 24px;
   }
-  .symbolInfo > h2 {
+
+  .symbolInfo>h2 {
     font-size: 24px;
   }
-  .website > h2 {
+
+  .website>h2 {
     font-size: 24px;
   }
+
   .work {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+
   .logo {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .symbol {
     display: flex;
     flex-direction: column;
   }
+
   .symbolImage {
     width: 100%;
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .motivv {
     width: 100%;
   }
+
   .symbolImage {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .motivv {
     width: 100%;

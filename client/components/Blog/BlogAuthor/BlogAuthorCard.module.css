@@ -1,0 +1,10 @@
+.authorCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blogAuthorCard {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
