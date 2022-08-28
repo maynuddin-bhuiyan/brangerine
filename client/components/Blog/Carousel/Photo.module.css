@@ -126,6 +126,16 @@
     position: absolute;
 }
 
+.slider_button_left:hover {
+
+    background: #4F42C9;
+}
+
+
+.left_arrow {
+    color: white;
+}
+
 .slider_button_right {
     width: 64px;
     height: 64px;
@@ -137,7 +147,13 @@
     right: -159px;
     z-index: 10;
 }
+.slider_button_right:hover {
 
+    background: #4F42C9;
+}
+.right_arrow {
+    color: white;
+}
 @media screen and (max-width: 768px) {
     .photo_container {
         padding: 20px;
