@@ -37,7 +37,7 @@
     color: #e3ecff;
     z-index: 10;
     transition: transform .2s;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .title:hover {
@@ -52,6 +52,8 @@
     align-items: center;
     width: 50%;
     margin-top: 20px;
+    margin-left:70px
+    
 }
 
 .date_details {
@@ -65,30 +67,6 @@
 .calender {
     position: absolute;
     bottom: 5px !important;
-}
-
-.slide1 {
-    background: url("/images/blog/slide1.png");
-}
-
-.slide2 {
-    background: url("/images/blog/slide2.jpeg");
-}
-
-.slide3 {
-    background: url("/images/blog/slide3.jpg");
-}
-
-.slide4 {
-    background: url("/images/blog/slide4.jpg");
-}
-
-.slide5 {
-    background: url("/images/blog/slide5.jpeg");
-}
-
-.slide6 {
-    background: url("/images/blog/slide6.png");
 }
 
 /* Btns styles */
@@ -159,6 +137,6 @@
 
     .desc {
         width: 100%;
-        padding-left: 20px;
+        margin-left: 20px;
     }
 }
