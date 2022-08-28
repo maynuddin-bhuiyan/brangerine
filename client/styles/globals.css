@@ -144,32 +144,32 @@ input[type="number"] {
 }
 
 .slide1 {
-  background: linear-gradient( rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/slide1.png");
+  background: linear-gradient(rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/slide1.png");
 }
 
 .slide2 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/slide2.jpeg");
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/slide2.jpeg");
 }
 
 .slide3 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/slide3.jpg");
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/slide3.jpg");
 }
 
 .slide4 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/slide4.jpg");
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/slide4.jpg");
 
 }
 
 .slide5 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/slide5.jpeg");
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/slide5.jpeg");
 }
 
 .slide6 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/slide6.png");
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/slide6.png");
 }
 
 .slide7 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%),url("/images/blog/post.jpeg");
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60.42%), url("/images/blog/post.jpeg");
 }
 
 .common_slide {
@@ -185,7 +185,7 @@ input[type="number"] {
   /* background-color: rgba(50, 70, 80, 0.4); */
 }
 
-.fade{
+.fade {
   opacity: 0.6 !important;
 }
 
