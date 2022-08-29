@@ -32,6 +32,26 @@
   text-decoration: underline;
 }
 
+.DetailsBodyText {
+  padding-left: 40px;
+}
+
+.DetailsBodyMain {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.DetailsBodyMain h2 {
+  text-align: left;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: .1px;
+  text-transform: none;
+  line-height: 1.2em;
+  font-family: 'Poppins', sans-serif;
+}
 /* Blog Details 5 */
 .spacing {
   letter-spacing: 4px !important;
