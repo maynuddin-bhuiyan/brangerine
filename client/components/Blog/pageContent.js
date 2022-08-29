@@ -1,8 +1,8 @@
 export const posts = [
   {
     id: 1,
-    title: "Like meadowlark while onto this this that dully some far wound",
-    subtitle: "ALIENS ON THE AVE NFT ",
+    title: "Introducing Aliens On The Ave",
+    subtitle: "ALIENS ON THE AVE NFT",
     src: "/images/blog/slide1.png",
     author: "Jake Flores",
     date: "August 17, 2022",
@@ -16,8 +16,8 @@ export const posts = [
   },
   {
     id: 2,
-    title: "First and foremost if you are reading this thank you.",
-    subtitle: "WORKING FROM HOME DURING QUARANTINE",
+    title: "Working From Home During Quarantine",
+    subtitle: "ORGANIZING, PERSONAL GROWTH",
     src: "/images/blog/slide5.jpeg",
     author: "Jake Flores",
     date: "April 28, 2020",
@@ -30,8 +30,8 @@ export const posts = [
   },
   {
     id: 3,
-    title: "It stores everything you need in one neat little app on all of your devices",
-    subtitle: "EVERNOTE FOR BUSINESS",
+    title: "Evernote for Business",
+    subtitle: "BUSINESS ADVICE, ORGANIZING",
     src: "/images/blog/slide6.png",
     author: "Jake Flores",
     date: "May 7, 2019",
@@ -44,8 +44,8 @@ export const posts = [
   },
   {
     id: 4,
-    title: "It was the same walk I take every day back to my car.",
-    subtitle: "CRUSHING CANS (AND HABITS)",
+    title: "Crushing Cans (and Habits)",
+    subtitle: "PSYCHOLOGY, PERSONAL GROWTH",
     src: "/images/blog/slide3.jpg",
     author: "Jake Flores",
     date: "May 19, 2019",
@@ -58,8 +58,8 @@ export const posts = [
   },
   {
     id: 5,
-    title: " A BIOLOGICAL COMMUNITY OF INTERACTING ORGANISMS AND THEIR PHYSICAL ENVIRONMENT.",
-    subtitle: "Find the Right People For Your Business",
+    title: "Find the Right People For Your Business",
+    subtitle: "BUSINESS ADVICE, RECRUITING",
     src: "/images/blog/post.jpeg",
     author: "Sam Tavarez",
     date: "April 3, 2017",
@@ -73,7 +73,7 @@ export const posts = [
   {
     id: 6,
     title: "5 Reasons Why Your Business Is Failing",
-    subtitle: "It's happy hour where's everyone at?!",
+    subtitle: "",
     src: "/images/blog/slide2.jpeg",
     author: "Jake Flores",
     date: " April 3, 2017",
@@ -87,7 +87,7 @@ export const posts = [
   {
     id: 7,
     title: "Be Bold and Stand Out!",
-    subtitle: "Instead stand out!",
+    subtitle: "",
     src: "/images/blog/slide4.jpg",
     author: "Jake Flores",
     date: " April 3, 2017",
