@@ -15,7 +15,7 @@ const MacG = () => {
   return (
     <div className="container">
       <div className={styles.macG}>
-        <h4>BRANDING,WEB PROJECT</h4>
+        <h4>Branding,web project</h4>
         <h1>Mac G - THE BARBER</h1>
               <div className={styles.macGImage}>
                   <Image

@@ -54,7 +54,7 @@ const WorkProcess = () => {
       {/* <div className={styles.scrollbar} id={styles.scrollbar_style}> */}
       <div className={styles.workProcess}>
         <div
-          className={`${scrollState > 3588 && scrollState < 4800
+          className={`${scrollState > 3588 && scrollState < 4600
                   ? `${styles.fixed}`
                   : `${styles.workProcessHeadMain}`
           }`}
@@ -80,7 +80,7 @@ const WorkProcess = () => {
             </div>
         </div>
         <div
-           className={`${scrollState > 3588 && scrollState < 4800
+           className={`${scrollState > 3588 && scrollState < 4600
                   ? `${styles.fixedInfo}`
                   : `${styles.workProcessInfo}`
           }`}

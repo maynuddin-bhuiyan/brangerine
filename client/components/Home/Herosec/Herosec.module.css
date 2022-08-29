@@ -1,9 +1,15 @@
-.heroSecTextWrapper {}
-
+.heroSecTextWrapper {
+}
 
 .heroSecOverlay {
   position: absolute;
-  background: linear-gradient(192.32deg, rgba(16, 16, 16, 0) 19.33%, rgba(16, 16, 16, 0.567907) 45.72%, rgba(16, 16, 16, 0.745265) 61.77%, #101010 84.73%);
+  background: linear-gradient(
+    192.32deg,
+    rgba(16, 16, 16, 0) 19.33%,
+    rgba(16, 16, 16, 0.567907) 45.72%,
+    rgba(16, 16, 16, 0.745265) 61.77%,
+    #101010 84.73%
+  );
   width: 100%;
   height: 550px;
   top: 800px;
@@ -55,7 +61,7 @@
   padding: 18px 30px;
   transition: all 0.5s;
   margin: 10px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   display: flex;
   text-transform: capitalize;
@@ -98,7 +104,7 @@
   gap: 10px;
   background: #ffffff;
   border-radius: 50px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -195,7 +201,6 @@
 }
 
 @media screen and (max-width: 1490px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -208,7 +213,6 @@
 }
 
 @media screen and (max-width: 1162px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -225,7 +229,6 @@
 }
 
 @media screen and (max-width: 1001px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -238,7 +241,6 @@
 }
 
 @media screen and (max-width: 886px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -251,7 +253,6 @@
 }
 
 @media screen and (max-width: 794px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -272,7 +273,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -289,7 +289,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -311,11 +310,9 @@
   .middleImageWrapper {
     margin-top: 60px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -340,7 +337,6 @@
 }
 
 @media screen and (max-width: 400px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
@@ -353,7 +349,6 @@
 }
 
 @media screen and (max-width: 450px) {
-
   .leftImage,
   .rightImage,
   .middleImage {
