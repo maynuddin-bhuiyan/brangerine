@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import BlogDetailsBody2 from "../../BlogDetailsBody/BlogDetailsBody2";
 import styles from "./BlogDetailsHero.module.css";
 
 const BlogDetailsHero = ({ details }) => {
@@ -73,12 +74,7 @@ const BlogDetailsHero = ({ details }) => {
 
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
-              <p>
-                {details?.text1}
-              </p>
-              <p>
-                {details?.text2}
-              </p>
+              <BlogDetailsBody2 />
             </div>
 
             {/* Blog Details Review
@@ -92,14 +88,14 @@ const BlogDetailsHero = ({ details }) => {
             </div> */}
 
             {/* Blog Details Information  */}
-            <div className={styles.DetailsText}>
+            {/* <div className={styles.DetailsText}>
               <p>
                 {details?.text3}
               </p>
               <p>
                 {details?.text4}
               </p>
-            </div>
+            </div> */}
 
             {/* Blog Details Tags */}
             <div className={styles.DetailsTags}>
