@@ -1,7 +1,8 @@
+import { useRouter } from 'next/router';
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
-import styles from "./ContactForm.module.css";
 import { submit } from './../../../api/contact';
+import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
   const inputs = [
@@ -61,6 +62,7 @@ const ContactForm = () => {
     },
   ];
 
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -69,6 +71,7 @@ const ContactForm = () => {
       inputs.forEach(({ name }) => (data[name] = formData.get(name)));
       console.log(data);
       await submit(data);
+      router.push('/thank-you');
     } catch (error) {
       console.log(error);
     }
@@ -102,105 +105,103 @@ const ContactForm = () => {
                       sm={12}
                       className={styles.formGroupMain}
                     >
-                      <div className="field-inner">
-                        {type ? (
-                          <Form.Group
-                            className={styles.formGroup}
-                            controlId="exampleForm.ControlInput1"
-                          >
-                            {type !== "select" && (
-                              <Form.Label className={styles.formLabel}>
-                                {label} <span>{star}</span>
-                              </Form.Label>
-                            )}
-                            {name === "phone_number" ? (
+                      {type ? (
+                        <Form.Group
+                          className={type !== "select" && styles.formGroup}
+                          controlId="exampleForm.ControlInput1"
+                        >
+                          {type !== "select" && (
+                            <Form.Label className={styles.formLabel}>
+                              {label} <span>{star}</span>
+                            </Form.Label>
+                          )}
+                          {name === "phone_number" ? (
+                            <input
+                              type={type}
+                              placeholder={placeholder}
+                              required={required}
+                              onInput={(e) => {
+                                e.target.setCustomValidity("");
+                              }}
+                              onInvalid={(e) =>
+                                e.target.setCustomValidity(
+                                  "Phone number at least 10 digits"
+                                )
+                              }
+                              name={name}
+                            />
+                          ) : (
+                            type === "email" ? (
                               <input
                                 type={type}
+                                name={name}
                                 placeholder={placeholder}
                                 required={required}
-                                onInput={(e) => {
-                                  e.target.setCustomValidity("");
-                                }}
-                                onInvalid={(e) =>
-                                  e.target.setCustomValidity(
-                                    "Phone number at least 10 digits"
-                                  )
-                                }
-                                name={name}
                               />
                             ) : (
-                              type === "email" ? (
+                              type === "text" ? (
                                 <input
                                   type={type}
                                   name={name}
                                   placeholder={placeholder}
                                   required={required}
                                 />
-                              ) : (
-                                type === "text" ? (
-                                  <input
-                                    type={type}
-                                    name={name}
-                                    placeholder={placeholder}
-                                    required={required}
-                                  />
-                                ) : ("")
-                              )
-                            )}
-                          </Form.Group>
-                        ) : (
-                          <Form.Group
-                            className={styles.formGroup}
-                            controlId="exampleForm.ControlInput1"
-                          >
-                            <Row>
-                              <Col lg={6} md={6} sm={12}>
-                                <Form.Label className={styles.formLabel}>
-                                  Project Type<span>*</span>
-                                </Form.Label>
-                                <Form.Select size="lg" name="p_type" className={styles.formSelect}>
-                                  <option value={'Brand Development'}>Brand Development</option>
-                                  <option value={'Web Design'}>Web Design</option>
-                                  <option value={'Video Production'}>Video Production</option>
-                                  <option value={'Business Consulting'}>Business Consulting</option>
-                                  <option value={'Combination'}>Combination</option>
-                                </Form.Select>
-                              </Col>
-                              <Col lg={6} md={6} sm={12}>
-                                <Form.Label className={styles.formLabel}>
-                                  Project Budget<span>*</span>
-                                </Form.Label>
-                                <Form.Select name="p_budget" size="lg" className={styles.formSelect}>
-                                  <option value={'$500 - 1k'}>$500 - 1k</option>
-                                  <option value={'$1 - 2k'}>$1 - 2k</option>
-                                  <option value={'$3 - 5k'}>$3 - 5k</option>
-                                  <option value={'$7 - 10k'}>$7 - 10k</option>
-                                  <option value={'$10k+'}>$10k+</option>
-                                </Form.Select>
-                              </Col>
-                            </Row>
-                            <Form.Label className={styles.formLabel}>
-                              {label}{" "}
-                            </Form.Label>
-                            <textarea
-                              name={name}
-                              placeholder={placeholder}
-                              required={required}
-                              className={styles.formTextarea}
-                            ></textarea>
-                          </Form.Group>
-                        )}
-                      </div>
+                              ) : ("")
+                            )
+                          )}
+                        </Form.Group>
+                      ) : (
+                        <Form.Group
+                          className={styles.formGroup}
+                          controlId="exampleForm.ControlInput1"
+                        >
+                          <Row>
+                            <Col lg={6} md={6} sm={12}>
+                              <Form.Label className={styles.formLabel}>
+                                Project Type<span>*</span>
+                              </Form.Label>
+                              <Form.Select size="lg" name="p_type" className={styles.formSelect}>
+                                <option value={'Brand Development'}>Brand Development</option>
+                                <option value={'Web Design'}>Web Design</option>
+                                <option value={'Video Production'}>Video Production</option>
+                                <option value={'Business Consulting'}>Business Consulting</option>
+                                <option value={'Combination'}>Combination</option>
+                              </Form.Select>
+                            </Col>
+                            <Col lg={6} md={6} sm={12}>
+                              <Form.Label className={styles.formLabel}>
+                                Project Budget<span>*</span>
+                              </Form.Label>
+                              <Form.Select name="p_budget" size="lg" className={styles.formSelect}>
+                                <option value={'$500 - 1k'}>$500 - 1k</option>
+                                <option value={'$1 - 2k'}>$1 - 2k</option>
+                                <option value={'$3 - 5k'}>$3 - 5k</option>
+                                <option value={'$7 - 10k'}>$7 - 10k</option>
+                                <option value={'$10k+'}>$10k+</option>
+                              </Form.Select>
+                            </Col>
+                          </Row>
+                          <Form.Label className={styles.formLabel}>
+                            {label}{" "}
+                          </Form.Label>
+                          <textarea
+                            name={name}
+                            placeholder={placeholder}
+                            required={required}
+                            className={styles.formTextarea}
+                          ></textarea>
+                        </Form.Group>
+                      )}
                     </Col>
                   )
                 )}
-                <Col lg={3} md={3} sm={12} className="form-group">
+                <Col lg={4} md={4} sm={12} className="form-group">
                   <button className={styles.submitButton}>
                     <span>Submit</span>
                     <i className="ri-arrow-right-up-line"></i>
                   </button>
                 </Col>
-                <Col lg={9} md={9} sm={12} className="form-group">
+                <Col lg={8} md={8} sm={12} className="form-group">
                   <p className={styles.formEndText}>
                     Your email address will not be published.
                   </p>

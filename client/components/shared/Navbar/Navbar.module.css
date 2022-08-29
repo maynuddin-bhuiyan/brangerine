@@ -1,5 +1,5 @@
 .navItem {
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -15,7 +15,7 @@
   height: 44px;
   background: #ffffff;
   border-radius: 50px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -58,8 +58,6 @@
     visibility: visible;
   }
 }
-
-
 
 @media screen and (max-width: 600px) {
   .navItem {
