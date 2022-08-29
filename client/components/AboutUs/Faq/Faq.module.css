@@ -73,7 +73,7 @@
 }
 
 .accordionItem > .accordionBody {
-  background-color: black !important;
+  background-color: #101010 !important;
 }
 
 .accordionButton {
@@ -101,6 +101,7 @@
 
 .accordionBodyText > a {
   color: #352a9f;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 576px) {
