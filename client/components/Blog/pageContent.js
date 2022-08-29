@@ -1,3 +1,5 @@
+
+
 export const posts = [
   {
     id: 1,
@@ -8,8 +10,7 @@ export const posts = [
     date: "August 17, 2022",
     category: "ALIENS ON THE AVE NFT",
     href: '/blog-details',
-    detailsBody: "",
-    
+    DetailsBody: "BlogDetailsBody1",    
   },
   {
     id: 2,
@@ -20,10 +21,7 @@ export const posts = [
     date: "April 28, 2020",
     category: "ORGANIZING, PERSONAL GROWTH",
     href: '/blog-details',
-    text1: "First and foremost if you are reading this thank you, I feel for you and your family.  I understand how this pandemic situation has turned our daily routines into utter chaos, but it doesn’t have to be that way.   My day job for those that don’t know is in the remodeling space, we do windows, kitchens & bath rooms.  Coming into a strangers home with a mask. Hand sanitizer and a UV sanitizing wand is new norm but the job has been relatively the same.  It’s the conversations I’ve had with these families that I’d like to share with you today.",
-    text2: " If you take anything from these tips I’d say this is the most important.  It goes without saying that time sure does fly and whether things adjust in a few weeks or a few months, being present with your actions can really be impactful.  Enjoy life and enjoy the time you have with others always.",
-    text3: "I don’t mean get distracted with the dishes, laundry and all that but clean your work area a bit.  I’m all about efficiency and a minute spent planning/ organizing can save you hours on the back end.",
-    text4: "My day job for those that don’t know is in the remodeling space, we do windows, kitchens & bath rooms.  Coming into a strangers home with a mask. Hand sanitizer and a UV sanitizing wand is new norm but the job has been relatively the same.",
+    DetailsBody: "BlogDetailsBody2",     
   },
   {
     id: 3,
@@ -34,10 +32,7 @@ export const posts = [
     date: "May 7, 2019",
     category: "BUSINESS ADVICE, ORGANIZING",
     href: '/blog-details',
-    text1: "One of the Evernotes key features is it’s ability to tag notes.  By using the tags correctly, you can take notes with out having to search as deeply with in the notebook.   Not only will tags help you stay organized they can also do the opposite if you put too many tags that never get used, to prevent this I would recommend simplifying them to only a few per notebook.",
-    text2: "This was a game changer for me.  When I started using Evernote, I was only using it partially to take my notes,  I found myself still using the iphone notes app.  That became a problem when it came time to search for things,",
-    text3: "The transition took some time to move all my notes into one place but soon as I did.  I was a like a well oiled machine.  I recommend this for that reason and all the features that other notes app lacks, Evernote picks up with ease.",
-    text4: "If you want to take it one step further and up your note taking experience to the next level check this out 8 tips on going paperless with Evernote! Save the Trees!",
+    DetailsBody: "BlogDetailsBody3",
   },
   {
     id: 4,
@@ -48,10 +43,7 @@ export const posts = [
     date: "May 19, 2019",
     category: "PSYCHOLOGY, PERSONAL GROWTH",
     href: '/blog-details',
-    text1: "On this particular day, I heard a man crushing a can on a sidewalk with his foot and a tear came to my eye. In an instant, I was taken back in time to a memory of my grandpa. Among his many great attributes, he recycled regularly. ",
-    text2: "the accomplishment of saving space in a large plastic bag and the possibility that I might see money on the other side. Some easy change could get us a lotto ticket, a piece of candy or a tall can for my super hero.",
-    text3: "I can't take credit for this one, but I am a witness to its power. This simple method helps you practice being hyper-focused on a regular basis. Battling anxiety? Become hyper-focused on healthy thoughts.",
-    text4: "In Atomic Habits by James Clear, he explains understanding habits and how they work in this way. My challenge to you is to write down one habit you want to break and one habit you want to make. For the habit you're going to break, start backwards, and visualize each part of the process above. When you work back and figure out what the cue is (a smell, a sight, something you hear, feel, taste or think), then you know where and what to work on.",
+    DetailsBody: "BlogDetailsBody4",
   },
   {
     id: 5,
@@ -62,10 +54,7 @@ export const posts = [
     date: "April 3, 2017",
     category: "BUSINESS ADVICE, RECRUITING",
     href: '/blog-details',
-    text1: "Having the right team is crucial to success in business. More importantly, having a proper ecosystem breeds replication. In this article, we will discuss why having the right people running your business can make all the difference.",
-    text2: "Many businesses find themselves in a purgatory between stagnating and breaking barriers. Some are losing money every day while others are in a place where productivity is electric. But remember, even if you're standing on top of a mountain, the earth is still 238,900 miles away from the moon. (yes, I googled it)",
-    text3: "I hope you can answer that question without hesitation. Did you notice how none of those questions asked about a person's resume? Now, understand that experience and qualifications are essential, but not the most important part.",
-    text4: "Let's change lenses for a second to get a different view. If you are a technology-based company, then maybe now, we weigh data set and knowledge a little heavier. A brain that can scale numbers and formulas is a great tool for productivity.",
+    DetailsBody: "BlogDetailsBody5",
   },
   {
     id: 6,
@@ -76,10 +65,7 @@ export const posts = [
     date: " April 3, 2017",
     category: "",
     href: '/blog-details',    
-    text1: "The open sign is lit, it's a nice day out, and you have specials going on and it's empty. What's going on?  If you have been there more times than you can remember, stay calm.  Also keep in mind that a business failing is still a business, in business.  However, you do need to change.",
-    text2: "The biggest opportunity you have to change is marketing.  Not every business owner is a natural born marketing pro.  In fact we've come to find out that the know it alls actually don't know much.  When you have jobs on the line, and your business is in jeopardy.  Somebody has to take action.  Yes marketing is absolutely an investment in time and money.  Being decisive about making that investment will reap you the reward in the long run.",
-    text3: "This is critical because how else do you present a solution for a problem if you don't know your demographics problem.  How do you show them they have a problem if you don't know who they even are? Think of an ice-cream man, he drives through the streets knowing kids are out playing and their parents with their wallets are nearby.  The point is you may be that ice-cream man driving down the business district rather than the neighborhood.",
-    text4: "Business is an acquired taste, allow a business connoisseur plant the seeds of success with the soil provided by Brangerine.  We are a team of driven entrepreneurs, designers, business connoisseurs and social media strategist ready to deliver and steer your company back into profit land.  Request an appointment today.",
+    DetailsBody: "BlogDetailsBody6",
   },
   {
     id: 7,
@@ -90,10 +76,7 @@ export const posts = [
     date: " April 3, 2017",
     category: "",
     href: '/blog-details',
-    text1: "What exactly does that mean?  Well the real question is Are you fitting in? See most businesses fail because they were trying to fit in with their competition.  That in it self is problem because you are never truly unique.  Think about it and ask yourself a few simple questions.",
-    text2: "If you answered 'Yes' then that's exactly the problem.  You are trying to fit in rather than trying to stand out.  I've seen plenty of desktops, and they all looked the same.  First time I laid eyes on an iMac though, dang, I wanted one.  Apple has branded themselves very well in the tech market because they have separated themselves from their competition.  ",
-    text3: "Companies like Coke and Pepsi or ATT and Verizon are looking for market share.  They have a huge budget & a corporate presence that they would like to keep.  Instead of focusing on playing with the big dogs how about focusing on standing out in a market niche.  This form of strategy is one that allows for start ups to grow.  See apple had a pin point focus.  They have a target market and pin point focus.  Think different.",
-    text4: "How do you brand yourself to standout and grow?  Where do you start?  What does that process even look like?  All of these questions are great and our team would love to show you the way.  Request an appointment today, to see how Brangerine can help.",
+    DetailsBody: "BlogDetailsBody7",
   },
   {
     id: 8,

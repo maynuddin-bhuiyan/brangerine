@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BlogDetailsBody7 from "../../BlogDetailsBody/BlogDetailsBody7";
+import BlogDetailsBody1 from "../../BlogDetailsBody/BlogDetailsBody1";
 import styles from "./BlogDetailsHero.module.css";
 
 const BlogDetailsHero = ({ details }) => {
   // Blog Details Social Media Data
+
+  const {DetailsBody} = details;
+  
   const data = [
     { id: 1, img: "/images/BlogDetails1/FB.svg" },
     { id: 2, img: "/images/BlogDetails1/tw.svg" },
@@ -74,7 +77,13 @@ const BlogDetailsHero = ({ details }) => {
 
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
-              <BlogDetailsBody7 />            
+              {DetailsBody === "BlogDetailsBody1" && <BlogDetailsBody1 />}           
+              {DetailsBody === "BlogDetailsBody2" && <BlogDetailsBody2 />}           
+              {DetailsBody === "BlogDetailsBody3" && <BlogDetailsBody3 />}           
+              {DetailsBody === "BlogDetailsBody4" && <BlogDetailsBody4 />}           
+              {DetailsBody === "BlogDetailsBody5" && <BlogDetailsBody5 />}           
+              {DetailsBody === "BlogDetailsBody6" && <BlogDetailsBody6 />}           
+              {DetailsBody === "BlogDetailsBody7" && <BlogDetailsBody7 />}           
              </div>
             
 
