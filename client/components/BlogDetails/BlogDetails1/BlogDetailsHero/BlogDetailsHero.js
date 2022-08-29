@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BlogDetailsBody1 from "../../BlogDetailsBody/BlogDetailsBody1";
 import styles from "./BlogDetailsHero.module.css";
 
 const BlogDetailsHero = ({ details }) => {
@@ -100,7 +99,6 @@ const BlogDetailsHero = ({ details }) => {
               <p>
                 {details?.text4}
               </p> */}
-              <BlogDetailsBody1/>
             </div>
 
             {/* Blog Details Tags */}
