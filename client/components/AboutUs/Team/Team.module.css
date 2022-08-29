@@ -3,7 +3,7 @@
 }
 
 .ourTeam h5 {
-  font-family: "Jost";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -14,7 +14,7 @@
 }
 
 .ourTeam h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -54,7 +54,7 @@
 }
 
 .teamMemberCardInfo h4 {
-  font-family: "Jost";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -63,7 +63,7 @@
 }
 
 .teamMemberCardInfo p {
-  font-family: 'Lato', sans-serif !important;
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 16px;
   line-height: 120%;

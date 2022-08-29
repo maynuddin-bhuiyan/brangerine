@@ -1,41 +1,54 @@
 .hero_container {
-    gap:127px;
-    margin-top: 30px;
-    height:auto
+  gap: 127px;
+  margin-top: 30px;
+  height: auto;
 }
 
 .title {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 80px;
-    line-height: 100%;
-    text-transform: capitalize;
-    color: #E3ECFF;
-    height: 136px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  height: 200px;
 }
 
 .desc {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 120%;
-    text-transform: capitalize;
-    color: #E3ECFF;
-    opacity: 0.8;
-    width: 360px;
-    height: 136px;
-    margin-left: 120px;
-    margin-top:15px
+  font-family: "Lato", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+  width: 360px;
+  height: 136px;
+  margin-left: 120px;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 768px) {
-    .desc {
-      margin: 13px 0 0 0;
-      width:100%
-    }
-    .title{
-        height:auto;
-    }
+  .desc {
+    margin: 13px 0 0 0;
+    width: 100%;
   }
+  .title {
+    height: auto;
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .desc {
+    margin: 13px 0 0 0;
+    width: 100%;
+    font-size: 24px;
+  }
+  .title {
+    height: auto;
+    font-size: 32px;
+  }
+}

@@ -4,19 +4,17 @@
   padding: 100px 0px;
 }
 
-.rileyZavala>h4 {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+.rileyZavala > h4 {
   font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
   color: #4f42c9;
+  line-height: 32px;
 }
 
-.rileyZavala>h1 {
-  font-family: 'Poppins', sans-serif;
+.rileyZavala > h1 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -27,8 +25,8 @@
   margin-bottom: 50px;
 }
 
-.rileyZavala>h2 {
-  font-family: 'Poppins', sans-serif;
+.rileyZavala > h2 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -40,8 +38,8 @@
   margin-top: 30px;
 }
 
-.rileyZavala>p {
-  font-family: 'Lato', sans-serif !important;
+.rileyZavala > p {
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
@@ -51,7 +49,7 @@
   margin-bottom: 30px;
 }
 
-.rileyZavala>p>a {
+.rileyZavala > p > a {
   color: #4f42c9;
 }
 
@@ -64,15 +62,15 @@
     width: 100%;
   }
 
-  .rileyZavala>h4 {
+  .rileyZavala > h4 {
     font-size: 14px;
   }
 
-  .rileyZavala>h1 {
+  .rileyZavala > h1 {
     font-size: 32px;
   }
 
-  .rileyZavala>h2 {
+  .rileyZavala > h2 {
     font-size: 24px;
   }
 }

@@ -8,7 +8,7 @@
 }
 
 .linkText {
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -32,9 +32,9 @@
 }
 
 .projectName {
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 5s00;
   font-size: 16px;
   line-height: 26px;
   text-transform: capitalize;

@@ -4,19 +4,18 @@
   padding: 100px 0px;
 }
 
-.motivv>h4 {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+.motivv > h4 {
   font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #4f42c9;
   line-height: 32px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #4f42c9;
 }
 
-.motivv>h1 {
-  font-family: 'Poppins', sans-serif;
+.motivv > h1 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -33,7 +32,7 @@
 }
 
 .workTitle {
-  font-family: "Jost";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -44,8 +43,8 @@
   margin-bottom: 30px;
 }
 
-.workList>li {
-  font-family: "Swiss 721", sans-serif;
+.workList > li {
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -55,7 +54,7 @@
   opacity: 0.8;
 }
 
-.workList>li::marker {
+.workList > li::marker {
   color: #4f42c9;
 }
 
@@ -66,8 +65,8 @@
   gap: 40px;
 }
 
-.logoInfo>h2 {
-  font-family: 'Poppins', sans-serif;
+.logoInfo > h2 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -78,8 +77,8 @@
   margin-bottom: 30px;
 }
 
-.logoInfo>p {
-  font-family: 'Lato', sans-serif !important;
+.logoInfo > p {
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
@@ -99,8 +98,8 @@
   width: 56%;
 }
 
-.symbolInfo>h2 {
-  font-family: 'Poppins', sans-serif;
+.symbolInfo > h2 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -111,8 +110,8 @@
   margin-bottom: 30px;
 }
 
-.symbolInfo>p {
-  font-family: 'Lato', sans-serif !important;
+.symbolInfo > p {
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
@@ -121,7 +120,7 @@
   opacity: 0.8;
 }
 
-.website>h2 {
+.website > h2 {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -134,8 +133,8 @@
   margin-top: 30px;
 }
 
-.website>p {
-  font-family: 'Lato', sans-serif !important;
+.website > p {
+  font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 16px;
   line-height: 170%;
@@ -144,7 +143,7 @@
   opacity: 0.8;
 }
 
-.website>p>a {
+.website > p > a {
   color: #4f42c9;
 }
 
@@ -159,11 +158,11 @@
     padding: 50px 0px;
   }
 
-  .motivv>h4 {
+  .motivv > h4 {
     font-size: 14px;
   }
 
-  .motivv>h1 {
+  .motivv > h1 {
     font-size: 32px;
   }
 
@@ -171,15 +170,15 @@
     font-size: 24px;
   }
 
-  .logoInfo>h2 {
+  .logoInfo > h2 {
     font-size: 24px;
   }
 
-  .symbolInfo>h2 {
+  .symbolInfo > h2 {
     font-size: 24px;
   }
 
-  .website>h2 {
+  .website > h2 {
     font-size: 24px;
   }
 

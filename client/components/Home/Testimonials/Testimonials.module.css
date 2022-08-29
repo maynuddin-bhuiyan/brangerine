@@ -29,6 +29,7 @@
   border: 1px solid #4f42c9;
   padding: 40px;
   margin: 0px 20px;
+  height: 340px;
 }
 
 .sliderDiv img {
@@ -103,14 +104,28 @@
 
   .sliderDiv {
     margin: 0px 0px;
+    height: 500px;
   }
 }
 
-/* @media only screen and (min-width: 577px) and (max-width: 768px) {
-} */
-@media only screen and (min-width: 577px) and (max-width: 1024px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   .testimonials h1 {
     font-size: 64px;
     line-height: 120%;
+  }
+  .sliderDiv {
+    height: 480px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .sliderDiv {
+    height: 420px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .sliderDiv {
+    height: 380px;
   }
 }
