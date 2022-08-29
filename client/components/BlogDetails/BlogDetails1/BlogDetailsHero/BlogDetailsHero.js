@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BlogDetailsBody2 from "../../BlogDetailsBody/BlogDetailsBody2";
+import BlogDetailsBody7 from "../../BlogDetailsBody/BlogDetailsBody7";
 import styles from "./BlogDetailsHero.module.css";
 
 const BlogDetailsHero = ({ details }) => {
@@ -74,28 +74,9 @@ const BlogDetailsHero = ({ details }) => {
 
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
-              <BlogDetailsBody2 />
-            </div>
-
-            {/* Blog Details Review
-            <div className={styles.DetailsReview}>
-              <i className="ri-double-quotes-l"></i>
-              <h4>
-                “ Wake up to reality! Nothing ever goes as planned in this
-                world.”
-              </h4>
-              <p>By Madara Uchiha</p>
-            </div> */}
-
-            {/* Blog Details Information  */}
-            {/* <div className={styles.DetailsText}>
-              <p>
-                {details?.text3}
-              </p>
-              <p>
-                {details?.text4}
-              </p>
-            </div> */}
+              <BlogDetailsBody7 />            
+             </div>
+            
 
             {/* Blog Details Tags */}
             <div className={styles.DetailsTags}>

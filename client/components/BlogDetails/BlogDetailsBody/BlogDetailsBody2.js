@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./BlogDetailsBody.module.css";
 
 const BlogDetailsBody2 = () => {
   return (
@@ -30,7 +31,7 @@ const BlogDetailsBody2 = () => {
             href="/contact"
             target="_blank"
             rel="noreferrer"
-            className={styles.TagItem}
+            className={styles.link}
           >
             “The 4 Hr Workweek”
           </a>{" "}
@@ -59,7 +60,7 @@ const BlogDetailsBody2 = () => {
             href="/contact"
             target="_blank"
             rel="noreferrer"
-            className={styles.TagItem}
+            className={styles.link}
           >
             15 quick stretches to do while in the office{" "}
           </a>
@@ -89,7 +90,7 @@ const BlogDetailsBody2 = () => {
             href="/contact"
             target="_blank"
             rel="noreferrer"
-            className={styles.TagItem}
+            className={styles.link}
           >
             Ugly
           </a>{" "}
@@ -133,7 +134,7 @@ const BlogDetailsBody2 = () => {
           href="/contact"
           target="_blank"
           rel="noreferrer"
-          className={styles.TagItem}
+          className={styles.link}
         >
           here
         </a>
