@@ -79,6 +79,8 @@
   color: white;
 }
 
+
+
 .btnDiscuss:hover span {
   color: white;
 }
@@ -109,7 +111,16 @@
   color: #4f42c9;
   text-decoration: none;
   z-index: 99999999;
+  transition: all linear .2s;
 }
+
+
+.btnAbout:hover {
+  background-color: #352a9f !important;
+  color: white !important;
+}
+
+
 
 @keyframes flliper {
   0% {

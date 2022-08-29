@@ -49,6 +49,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0px;
+  cursor: pointer;
 }
 
 .mediaData i {

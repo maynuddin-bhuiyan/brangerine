@@ -72,9 +72,8 @@
 }
 
 .avatarComment {
-  font-family: "Swiss 721", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px;
   line-height: 32px;
   color: #e3ecff;

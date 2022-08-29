@@ -59,7 +59,7 @@ const WhatWeDo = () => {
 
             <button className={styles.StudieButton}>
               <i className="ri-user-voice-line"></i>
-              <p>Book Your appointment Today</p>
+              <a href="/contact" target="_blank" rel="noreferrer"> Book Your appointment Today </a>
             </button>
           </div>
           <div
@@ -108,8 +108,8 @@ const WhatWeDo = () => {
                         className={`accordion-body  ${styles.AccordionBody}`}
                       >
                         {item?.text}
-                        <a href="/" target="_blank" rel="noreferrer">
-                          Learn More
+                        <a href="/contact" target="_blank" rel="noreferrer">
+                         <br /> Learn More
                         </a>
                       </div>
                     </div>
