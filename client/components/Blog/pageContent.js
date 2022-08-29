@@ -9,9 +9,9 @@ export const posts = [
     category: "SPORTS",
     href: '/blog-details',
     text1: "AOTA is the first NFT to bring creatives together under one roof.  We had envisioned a place to collaborate with other like minded people.  Owning an AOTA NFT grants access to The Creative Haven. ",
-    text2: "We intend on making a difference by providing clean water & power to places all over the world, starting with Kenya, Africa 2023.  Also with every NFT sold we will be planting trees all over the world with the help of One Tree Planted & The Give Power Foundation.  ",
-    text3: "We have been poured passion, hard work, and money into bringing AOTA to life.  Moving into 2023 we will be bringing Blockchain projects to life.  With the help of Apexdv.",
-    text4: "Whom is currently working to revamp our new site.  There are many changes for Brangerine in the works and AOTA is the start of something so much bigger.",
+    text2: " With in this space we intend on providing real world utility such as the Following: -Yoga by certified yogis River -Mindful meditation and Sound baths  (coming soon) - Exclusive Merch by our team of designers -Member only co working space ",
+    text3: "We intend on making a difference by providing clean water & power to places all over the world, starting with Kenya, Africa 2023.  Also with every NFT sold we will be planting trees all over the world with the help of One Tree Planted & The Give Power Foundation.  ",
+    text4: "We have been poured passion, hard work, and money into bringing AOTA to life.  Moving into 2023 we will be bringing Blockchain projects to life.  With the help of Apexdv.  Whom is currently working to revamp our new site.  There are many changes for Brangerine in the works and AOTA is the start of something so much bigger.  MINT is live now on the company website Aliens On The Ave",
     
   },
   {
@@ -23,7 +23,7 @@ export const posts = [
     date: "April 28, 2020",
     category: "SPORTS",
     href: '/blog-details',
-    text1: "When you are out running errands please don’t wear gloves, they are quite useless, a mask and washing your hands is fine enough. I carry a UV wand to sterilize my mask daily.  If you happen to see gloves on the flood pick them up and throw them away.",
+    text1: "First and foremost if you are reading this thank you, I feel for you and your family.  I understand how this pandemic situation has turned our daily routines into utter chaos, but it doesn’t have to be that way.   My day job for those that don’t know is in the remodeling space, we do windows, kitchens & bath rooms.  Coming into a strangers home with a mask. Hand sanitizer and a UV sanitizing wand is new norm but the job has been relatively the same.  It’s the conversations I’ve had with these families that I’d like to share with you today.",
     text2: " If you take anything from these tips I’d say this is the most important.  It goes without saying that time sure does fly and whether things adjust in a few weeks or a few months, being present with your actions can really be impactful.  Enjoy life and enjoy the time you have with others always.",
     text3: "I don’t mean get distracted with the dishes, laundry and all that but clean your work area a bit.  I’m all about efficiency and a minute spent planning/ organizing can save you hours on the back end.",
     text4: "My day job for those that don’t know is in the remodeling space, we do windows, kitchens & bath rooms.  Coming into a strangers home with a mask. Hand sanitizer and a UV sanitizing wand is new norm but the job has been relatively the same.",
