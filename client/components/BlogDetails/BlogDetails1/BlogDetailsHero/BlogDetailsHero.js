@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import BlogDetailsBody1 from "../../BlogDetailsBody/BlogDetailsBody1";
+import BlogDetailsBody2 from "../../BlogDetailsBody/BlogDetailsBody2";
+import BlogDetailsBody3 from "../../BlogDetailsBody/BlogDetailsBody3";
+import BlogDetailsBody4 from "../../BlogDetailsBody/BlogDetailsBody4";
+import BlogDetailsBody5 from "../../BlogDetailsBody/BlogDetailsBody5";
+import BlogDetailsBody6 from "../../BlogDetailsBody/BlogDetailsBody6";
+import BlogDetailsBody7 from "../../BlogDetailsBody/BlogDetailsBody7";
 import styles from "./BlogDetailsHero.module.css";
 
 const BlogDetailsHero = ({ details }) => {
@@ -85,7 +91,7 @@ const BlogDetailsHero = ({ details }) => {
               {DetailsBody === "BlogDetailsBody6" && <BlogDetailsBody6 />}           
               {DetailsBody === "BlogDetailsBody7" && <BlogDetailsBody7 />}           
              </div>
-            
+
 
             {/* Blog Details Tags */}
             <div className={styles.DetailsTags}>

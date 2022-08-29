@@ -52,3 +52,17 @@
   line-height: 1.2em;
   font-family: 'Poppins', sans-serif;
 }
+/* Blog Details 5 */
+.spacing {
+  letter-spacing: 4px !important;
+}
+
+.quote {
+  font-style: italic;
+  margin: 30px;
+  color: #4f42c9;
+}
+
+.boldText {
+  font-weight: bolder !important;
+}
