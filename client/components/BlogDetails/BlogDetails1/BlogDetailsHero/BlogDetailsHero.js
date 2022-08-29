@@ -81,7 +81,7 @@ const BlogDetailsHero = ({ details }) => {
               </p>
             </div>
 
-            {/* Blog Details Review*/}
+            {/* Blog Details Review
             <div className={styles.DetailsReview}>
               <i className="ri-double-quotes-l"></i>
               <h4>
@@ -89,7 +89,7 @@ const BlogDetailsHero = ({ details }) => {
                 world.”
               </h4>
               <p>By Madara Uchiha</p>
-            </div>
+            </div> */}
 
             {/* Blog Details Information  */}
             <div className={styles.DetailsText}>
