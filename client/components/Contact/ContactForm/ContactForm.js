@@ -1,8 +1,8 @@
+import { useRouter } from 'next/router';
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
-import styles from "./ContactForm.module.css";
 import { submit } from './../../../api/contact';
-import { useRouter } from 'next/router';
+import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
   const inputs = [
@@ -195,13 +195,13 @@ const ContactForm = () => {
                     </Col>
                   )
                 )}
-                <Col lg={3} md={3} sm={12} className="form-group">
+                <Col lg={4} md={4} sm={12} className="form-group">
                   <button className={styles.submitButton}>
                     <span>Submit</span>
                     <i className="ri-arrow-right-up-line"></i>
                   </button>
                 </Col>
-                <Col lg={9} md={9} sm={12} className="form-group">
+                <Col lg={8} md={8} sm={12} className="form-group">
                   <p className={styles.formEndText}>
                     Your email address will not be published.
                   </p>
