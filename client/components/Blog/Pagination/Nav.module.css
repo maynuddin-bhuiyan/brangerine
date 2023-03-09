@@ -1,0 +1,141 @@
+.button_container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.studiePagination {
+    background-color: #212122 !important;
+    width: 550px !important;
+    border: 0px !important;
+    box-shadow: none !important;
+    border-radius: 30px !important;
+    margin: 0 auto !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+}
+
+
+.CaseStudiesHeroSec h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.PaginationItem {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #E3ECFF !important;
+    color: #4F42C9 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    margin-right: 20px !important;
+    font-size: 16px;
+    font-family: "Swiss 721", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all linear .2s;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.PaginationButton {
+    background-color: #E3ECFF !important;
+    color: #4F42C9 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50px !important;
+    margin-right: 20px !important;
+    padding: 13px 26px !important;
+    font-size: 16px;
+    font-family: "Swiss 721", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all linear .2s;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.PaginationButton {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+
+
+.PaginationButton #iconLeft {
+    margin-right: 10px !important;
+}
+
+.PaginationButton #iconRight {
+    margin-left: 10px !important;
+}
+
+
+
+.PaginationButton:hover {
+    background-color: #4F42C9 !important;
+    color: #FFFFFF !important;
+}
+
+.PaginationItem:hover {
+    background-color: #4F42C9 !important;
+    color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .CaseStudiesHeroSec {
+        padding: 40px 0px !important;
+    }
+
+    .CaseStudiesHeroSec h1 {
+        font-size: 32px;
+        line-height: 35px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+
+    .CaseStudiesHeroSec h3 {
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 0px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+
+    .studiePagination {
+        width: 285px !important;
+    }
+
+    .StudieButton i {
+        font-size: 15px;
+    }
+
+    #PaginationButton {
+        display: none !important;
+    }
+
+    .PaginationItem {
+        width: 40px !important;
+        height: 40px !important;
+        padding: 10px 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .PaginationButton {
+        padding: 10px 15px !important;
+    }
+
+    .button_container{
+        margin: 50px 0 10px 0;
+    }
+
+}

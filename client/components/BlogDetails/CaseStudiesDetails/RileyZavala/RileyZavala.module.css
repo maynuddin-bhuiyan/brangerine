@@ -1,0 +1,88 @@
+.rileyZavala {
+  width: 956px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
+.rileyZavala > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #4f42c9;
+  line-height: 32px;
+}
+
+.rileyZavala > h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.rileyZavala > h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.rileyZavala > p {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #e3ecff;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.rileyZavala > p > a {
+  color: #4f42c9;
+}
+
+@media only screen and (max-width: 576px) {
+  .rileyZavala {
+    padding: 50px 0px;
+  }
+
+  .rileyZavala {
+    width: 100%;
+  }
+
+  .rileyZavala > h4 {
+    font-size: 14px;
+  }
+
+  .rileyZavala > h1 {
+    font-size: 32px;
+  }
+
+  .rileyZavala > h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .rileyZavala {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .rileyZavala {
+    width: 100%;
+  }
+}

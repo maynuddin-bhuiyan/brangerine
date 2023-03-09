@@ -1,0 +1,44 @@
+.headerWrapper {
+  height: auto;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background-image: url("../public/images/hero_section/Mask\ group.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog_container {
+  margin-top: 30px;
+}
+
+.blogAuthor_container {
+  margin-top: 30px;
+}
+
+.blogAuthor_container h3 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4f42c9;
+}
+
+.blogAuthor_container h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 35px;
+}

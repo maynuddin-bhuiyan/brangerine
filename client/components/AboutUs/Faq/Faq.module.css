@@ -1,0 +1,150 @@
+.faq {
+  margin: 80px 0px;
+}
+
+.faqInfo {
+  margin-bottom: 20px;
+}
+
+.faqInfo h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #e3ecff;
+}
+
+.faqInfo p {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300 !important;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #e3ecff;
+}
+
+.contactButton {
+  text-decoration: none;
+  width: 225px;
+  height: 60px;
+  background: #4f42c9;
+  border-radius: 50px;
+  padding: 18px 30px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactButton span {
+  transition: all 0.5s;
+}
+
+.contactButton i {
+  font-size: 18px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.contactButton:hover {
+  background-color: #352a9f;
+  color: white;
+}
+
+.contactButton:hover span {
+  color: white;
+}
+
+.contactButton:hover span {
+  transform: translateX(-35px);
+}
+
+.contactButton:hover i {
+  transform: translateX(140px);
+  transition: 0.5s;
+}
+
+.accordionItem {
+  margin-bottom: 30px;
+}
+
+.accordionItem > .accordionBody {
+  background-color: #101010 !important;
+}
+
+.accordionButton {
+  padding: 30px 40px !important;
+  border: 1px solid white !important;
+  border-radius: 500px !important;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+.accordionButton:focus {
+  box-shadow: none !important;
+}
+
+.accordionBodyText {
+  font-family: "Lato", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  color: #ffffff;
+}
+
+.accordionBodyText > a {
+  color: #352a9f;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  .accordionButton {
+    padding: 17px 20px !important;
+    font-size: 18px !important;
+  }
+
+  .accordionBodyText {
+    font-size: 16px;
+  }
+
+  .faqInfo h1 {
+    font-size: 32px;
+  }
+
+  .faqInfo {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .accordionButton {
+    padding: 17px 20px !important;
+    font-size: 17px !important;
+  }
+
+  .faqInfo h1 {
+    font-size: 32px;
+  }
+
+  .faqInfo p {
+    font-family: "Lato", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 18px;
+    line-height: 170%;
+    color: #e3ecff;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .accordionButton {
+    padding: 17px 20px !important;
+    font-size: 20px !important;
+  }
+}

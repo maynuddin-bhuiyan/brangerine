@@ -1,0 +1,23 @@
+.carousel_container {
+    margin-top: 50px;
+}
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 72px;
+    margin-left: 40%;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #606060;
+    border-radius:2.5rem;
+    transition: transform .4s;
+}
+.big_dot{
+    background: #4F42C9;
+    transform: scale(1.2); 
+}

@@ -1,0 +1,230 @@
+.CaseStudies {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.CaseStudiesPart {
+  position: relative;
+  padding-left: 0px;
+}
+
+.CaseStudiesCarousel {
+  padding-left: 100px;
+}
+
+.CaseStudies h3 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #8a81db;
+  line-height: 26.4px;
+  margin-bottom: 20px;
+}
+
+.CaseStudies h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #ffffff;
+  line-height: 88px;
+  letter-spacing: -1%;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.StudieSlideButton {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  justify-content: center;
+  left: 25%;
+}
+
+.StudieSlideButton button {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #4f42c9;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: none;
+  transition: all linear 0.2s;
+}
+
+.StudieSlideButton button:hover {
+  background-color: #4f42c9;
+  color: #ffffff;
+}
+
+.StudieSlideButton button i {
+  font-size: 20px;
+}
+
+.StudieCarouselCard {
+  cursor: pointer;
+  position: relative;
+  height: 410px;
+}
+
+.CaseStudiesCarousel .StudieButton {
+  background-color: #4f42c9;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: "Swiss 721", sans-serif;
+  font-weight: 400;
+}
+
+.StudieButton a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.StudieButton i {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 1111px) and (max-width: 2000px) {
+  .CaseStudiesPart {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1100px) {
+  .StudieSlideButton button {
+    margin-right: 20px;
+  }
+
+  .StudieCarouselCard {
+    height: 220px !important;
+  }
+
+  .CaseStudiesCarousel .StudieButton {
+    width: 220px !important;
+  }
+
+  .CaseStudiesCarousel {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .StudieSlideButton button {
+    margin-right: 20px;
+  }
+
+  .StudieSlideButton {
+    left: 40%;
+  }
+
+  .StudieCarouselCard {
+    height: 250px !important;
+  }
+
+  .CaseStudiesCarousel .StudieButton {
+    width: 220px !important;
+  }
+
+  .CaseStudiesCarousel {
+    padding-left: 20px;
+  }
+
+
+  .StudieCarouselCard img {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .CaseStudiesCarousel {
+    padding-left: 0px;
+  }
+
+  .CaseStudies {
+    padding: 50px 0px 0px 20px !important;
+  }
+
+  .CaseStudies h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .CaseStudies h3 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0px;
+  }
+
+  .StudieCarouselCard img {
+    width: 100% !important;
+    height: 220px !important;
+  }
+
+  .StudieSlideButton {
+    top: 35px;
+    right: -15px;
+    left: 33%;
+  }
+
+  .StudieSlideButton button {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .StudieSlideButton button i {
+    font-size: 15px;
+  }
+
+  .CaseStudiesCarousel .StudieButton {
+    width: 220px !important;
+    bottom: 0px;
+  }
+
+  .StudieCarouselCard {
+    height: 240px !important;
+  }
+
+  .CaseStudiesCarousel {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .StudieSlideButton button {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+  }
+
+  .StudieSlideButton {
+    top: 45px;
+    right: -10px;
+    left: 33%;
+  }
+
+  .CaseStudiesCarousel {
+    padding-left: 0px;
+  }
+}

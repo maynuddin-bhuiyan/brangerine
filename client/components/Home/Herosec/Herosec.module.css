@@ -1,0 +1,407 @@
+.heroSecTextWrapper {
+}
+
+.heroSecOverlay {
+  position: absolute;
+  background: linear-gradient(
+    192.32deg,
+    rgba(16, 16, 16, 0) 19.33%,
+    rgba(16, 16, 16, 0.567907) 45.72%,
+    rgba(16, 16, 16, 0.745265) 61.77%,
+    #101010 84.73%
+  );
+  width: 100%;
+  height: 550px;
+  top: 800px;
+  left: 0px;
+}
+
+.heroSecTextWrapper h1 {
+  font-size: 130px;
+  font-weight: 700;
+  background-image: url("../../../public/images/hero_section/Text\ bg.png");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: flliper 5s infinite;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.1;
+}
+
+.heroSecTextWrapper p {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+  max-width: 677px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnDiscuss {
+  border-radius: 50px;
+  background: #4f42c9;
+  color: #ffffff;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  padding: 18px 30px;
+  transition: all 0.5s;
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: flex;
+  text-transform: capitalize;
+  text-decoration: none;
+  width: 332px;
+  align-items: center;
+  z-index: 99999999;
+}
+
+.btnDiscuss span {
+  transition: all 0.5s;
+}
+
+.btnDiscuss i {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.btnDiscuss:hover {
+  background-color: #352a9f;
+  color: white;
+}
+
+
+
+.btnDiscuss:hover span {
+  color: white;
+}
+
+.btnDiscuss:hover span {
+  transform: translateX(-25px);
+}
+
+.btnDiscuss:hover i {
+  transform: translateX(250px);
+  transition: 0.5s;
+}
+
+.btnAbout {
+  margin: 10px;
+  padding: 18px 30px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  text-transform: capitalize;
+  color: #4f42c9;
+  text-decoration: none;
+  z-index: 99999999;
+  transition: all linear .2s;
+}
+
+
+.btnAbout:hover {
+  background-color: #352a9f !important;
+  color: white !important;
+}
+
+
+
+@keyframes flliper {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.trampWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: -140px;
+}
+
+.tramp {
+  width: 410px;
+}
+
+.leftImageWrapper,
+.rightImageWrapper,
+.middleImageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leftImageWrapper:hover,
+.rightImageWrapper:hover,
+.middleImageWrapper:hover {
+  cursor: pointer;
+}
+
+.leftImageWrapper::before,
+.rightImageWrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/hero_section/Ellipse_line_shape.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.rightImageWrapper::before {
+  transform: rotate(115deg);
+}
+
+.middleImageWrapper {
+  margin-top: 200px;
+}
+
+.leftImage,
+.rightImage,
+.middleImage {
+  z-index: 1;
+}
+
+.flowImage {
+  position: absolute;
+  top: 98px;
+}
+
+.leftImageWrapper:hover .flowImage,
+.rightImageWrapper:hover .flowImage,
+.middleImageWrapper:hover:hover .flowImage {
+  animation: flowDown 1s;
+  top: 120px;
+}
+
+@media screen and (max-width: 1490px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 160px !important;
+  }
+
+  .tramp {
+    width: 329px;
+  }
+}
+
+@media screen and (max-width: 1162px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 145px !important;
+  }
+
+  .tramp {
+    width: 296px;
+  }
+
+  .trampWrapper {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 135px !important;
+  }
+
+  .tramp {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 130px !important;
+  }
+
+  .tramp {
+    width: 224px;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 125px !important;
+  }
+
+  .tramp {
+    width: 198px;
+  }
+
+  .trampWrapper {
+    margin-top: -30px;
+  }
+
+  .middleImageWrapper {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 120px !important;
+  }
+
+  .tramp {
+    width: 150px;
+  }
+
+  .heroSecTextWrapper h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 100px !important;
+  }
+
+  .tramp {
+    width: 130px;
+  }
+
+  .flowImage {
+    top: 80px;
+  }
+
+  .trampWrapper {
+    margin-top: 30px;
+  }
+
+  .middleImageWrapper {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 90px !important;
+  }
+
+  .tramp {
+    width: 110px;
+  }
+
+  .flowImage {
+    top: 75px;
+  }
+
+  .heroSecTextWrapper h1 {
+    font-size: 50px;
+  }
+
+  .heroSecTextWrapper p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 90px !important;
+  }
+
+  .tramp {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .leftImage,
+  .rightImage,
+  .middleImage {
+    width: 56px !important;
+  }
+
+  .tramp {
+    width: 90px;
+  }
+
+  .flowImage {
+    top: 42px;
+  }
+}
+
+/*  */
+@keyframes flowDown {
+  0% {
+    top: 98px;
+  }
+
+  100% {
+    top: 120px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .buttonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnDiscuss {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 18px 15px;
+  }
+
+  .btnAbout {
+    width: 100%;
+  }
+}

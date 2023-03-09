@@ -1,0 +1,167 @@
+.ourTeam {
+  margin: 100px 0px;
+}
+
+.ourTeam h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8a81db;
+}
+
+.ourTeam h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 88px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.teamMembers {
+  margin-top: 60px;
+}
+
+.teamMemberCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.memberImage {
+  border-radius: 12px !important;
+}
+
+.teamMemberCardInfo {
+  background: #4f42c9;
+  border-radius: 500px;
+  padding: 15px 60px;
+  margin: 0px 20px;
+  margin-top: -68px;
+  z-index: 1;
+  text-align: center;
+  width: 314px;
+}
+
+.teamMemberCardInfo h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #e3ecff;
+}
+
+.teamMemberCardInfo p {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px;
+  line-height: 120%;
+  color: #e3ecff;
+  opacity: 0.8;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.socials a i {
+  color: #8a81db;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.socials a i:hover {
+  color: #e3ecff;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .teamMemberCardInfo {
+    width: 290px;
+    padding: 15px 48px;
+  }
+
+  .ourTeam h1 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .teamMemberCard {
+    margin-top: 30px;
+  }
+
+  .teamMembers {
+    margin-top: 20px;
+  }
+
+  .ourTeam h5 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .teamMemberCardInfo {
+    padding: 15px 40px;
+    width: 290px;
+  }
+
+  .teamMemberCard {
+    margin-top: 30px;
+  }
+
+  .ourTeam h1 {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .teamMemberCard {
+    width: 400px;
+  }
+
+  .teamMemberCard {
+    margin-top: 30px;
+  }
+
+  .teamMemberCardInfo {
+    padding: 15px 55px;
+  }
+
+  .ourTeam h5 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8a81db;
+  }
+
+  .ourTeam h1 {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .teamMemberCardInfo {
+    width: 290px;
+    padding: 15px 40px;
+  }
+}

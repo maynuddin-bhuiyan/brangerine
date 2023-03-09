@@ -1,0 +1,260 @@
+.CaseStudiesHeroSec {
+  padding: 100px 0px;
+  position: relative;
+}
+
+.abstractLeft {
+  position: absolute;
+  width: 478px;
+  height: 478px;
+  left: -239px;
+  top: 210px;
+  background: #4f2416;
+  filter: blur(250px);
+}
+
+.abstractRight {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  right: -500px !important;
+  top: 616px;
+  background: #4f42c9;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+
+.abstractMore {
+  position: absolute;
+  width: 792px;
+  height: 792px;
+  left: -402px;
+  top: 1200px;
+  background: #4f42c9;
+  opacity: 0.2;
+  filter: blur(200px);
+}
+
+.caseStudiesMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.StudiesHeroSec {
+  margin: 0 auto !important;
+}
+
+.CaseStudiesHeroSec h3 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #8a81db;
+  line-height: 26.4px;
+  margin-bottom: 20px;
+}
+
+.CaseStudiesHeroSec h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  line-height: 88px;
+  letter-spacing: -1%;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.StudiesHeroSec .StudieCard {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.StudieCard img {
+  width: 100%;
+}
+
+.StudieButton {
+  background-color: #4f42c9;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: "Swiss 721", sans-serif;
+  font-weight: 400;
+}
+
+.StudieButton a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.StudieButton i {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.StudieButton button i {
+  font-size: 20px;
+}
+
+.studiePagination {
+  background-color: #212122 !important;
+  width: max-content !important;
+  border: 0px !important;
+  box-shadow: none !important;
+  border-radius: 30px !important;
+  margin: 0 auto !important;
+  padding: 10px 20px !important;
+  border-radius: 50px !important;
+}
+
+.PaginationItem {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #e3ecff !important;
+  color: #4f42c9 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  margin-right: 20px !important;
+  font-size: 16px;
+  font-family: "Swiss 721", sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  transition: all linear 0.2s;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.PaginationItem.active {
+  background-color: #4f42c9 !important;
+  color: #e3ecff !important;
+}
+
+.PaginationButton {
+  background-color: #e3ecff !important;
+  color: #4f42c9 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50px !important;
+  margin-right: 20px !important;
+  padding: 13px 26px !important;
+  font-size: 16px;
+  font-family: "Swiss 721", sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  transition: all linear 0.2s;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.PaginationButton {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+.PaginationButton #iconLeft {
+  margin-right: 10px !important;
+}
+
+.PaginationButton #iconRight {
+  margin-left: 10px !important;
+}
+
+.PaginationButton:hover {
+  background-color: #4f42c9 !important;
+  color: #ffffff !important;
+}
+
+.PaginationItem:hover {
+  background-color: #4f42c9 !important;
+  color: #ffffff !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .CaseStudiesHeroSec {
+    padding: 40px 0px !important;
+  }
+
+  .CaseStudiesHeroSec h1 {
+    font-size: 32px;
+    line-height: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .CaseStudiesHeroSec h3 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0px;
+  }
+
+  .studiePagination {
+    width: max-content !important;
+  }
+
+  .StudieButton {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .StudieButton i {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  #PaginationButton {
+    display: none !important;
+  }
+
+  .PaginationItem {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 10px 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .PaginationButton {
+    padding: 10px 15px !important;
+  }
+
+  .abstractLeft {
+    opacity: 0.2;
+  }
+
+  .abstractRight {
+    opacity: 0.2;
+  }
+
+  .abstractMore {
+    opacity: 0.2;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .StudieButton {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .StudieButton i {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}

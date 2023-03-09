@@ -1,0 +1,475 @@
+.workProcess {
+  display: flex;
+  margin-top: 100px;
+  height: 100%;
+  /* gap: 162px; */
+  /* width: 100%; */
+}
+
+.workProcessHeadMain {
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 1%;
+  box-sizing: border-box;
+  width: 42% !important;
+}
+
+.fixedInfo {
+  width: 38%;
+  position: relative;
+  left: 62%;
+}
+
+.workProcessHead {
+  position: relative;
+  z-index: 1;
+}
+
+.workProcessHead:after {
+  content: " ";
+  background: url("/images/workprocess/Ellipse Shape.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 600px;
+  left: 85px;
+  top: -12px;
+  height: 613px;
+  z-index: -1;
+}
+
+.workProcessHead h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.workProcessHead p {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 24px;
+  line-height: 170%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.workProcessHead a {
+  text-decoration: none;
+}
+
+.learnButton {
+  border-radius: 4px;
+  background: #101011;
+  border: 1px solid #7768ff;
+  border-radius: 50px;
+  color: #7768ff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  padding: 18px 30px;
+  transition: all 0.5s;
+  margin: 5px;
+  display: flex;
+  width: 280px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.learnButton span {
+  transition: all 0.5s;
+}
+
+.learnButton i {
+  font-size: 18px;
+  margin-right: 16px;
+  transition: 0.5s;
+}
+
+.learnButton:hover {
+  background-color: #352a9f;
+  color: white;
+}
+
+.learnButton:hover span {
+  color: white;
+}
+
+.learnButton:hover span {
+  transform: translateX(-35px);
+}
+
+.learnButton:hover i {
+  transform: translateX(190px);
+  transition: 0.5s;
+}
+
+.workProcessInfo {
+  width: 60%;
+  position: relative;
+  /* height: 1448px; */
+}
+
+/* Scrollbar */
+.scrollbar {
+  margin-left: 30px;
+  height: 55%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.scrollInfoCard {
+  margin-bottom: 30px;
+}
+
+.scrollInfoCardImg {
+  display: flex;
+  align-items: center;
+}
+
+.scrollInfoCardInfo {
+}
+
+.scrollInfoCardTitle {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 170%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.scrollInfoCardText {
+  font-family: "Lato", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+#scrollbar_style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: black;
+}
+
+#scrollbar_style::-webkit-scrollbar {
+  width: 4px;
+  background-color: black;
+  padding-left: 20px;
+}
+
+#scrollbar_style::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+  background-color: black;
+}
+
+.scrollInfo {
+  width: 80%;
+  float: right;
+}
+
+@media only screen and (max-width: 576px) {
+  .workProcess {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .workProcessHead:after {
+    width: 350px;
+    left: 0px;
+    top: -12px;
+    height: 358px;
+  }
+
+  .workProcessInfo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .scrollInfo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+  }
+
+  .workProcessHead h1 {
+    font-size: 32px;
+    line-height: 110%;
+  }
+
+  .workProcessHead p {
+    font-size: 20px;
+    line-height: 170%;
+  }
+
+  .learnButton {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 12px 20px;
+    margin-bottom: 78px;
+    width: 248px;
+  }
+
+  .learnButton:hover i {
+    transform: translateX(175px);
+    transition: 0.5s;
+  }
+
+  .workProcessHeadMain {
+    width: 100%;
+  }
+
+  .scrollbar {
+    margin-left: 0px;
+  }
+
+  .scrollInfoCard {
+    margin-bottom: 0px;
+  }
+
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .workProcessHead:after {
+    width: 300px;
+    left: 0px;
+    top: -12px;
+    height: 307px;
+  }
+
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .workProcessHead:after {
+    width: 300px;
+    left: 0px;
+    top: -12px;
+    height: 307px;
+  }
+
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .workProcess {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .workProcessHead:after {
+    width: 429px;
+    left: 85px;
+    top: -12px;
+    height: 439px;
+  }
+
+  .workProcessInfo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .scrollInfo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 36px;
+  }
+
+  .workProcessHead h1 {
+    font-size: 64px;
+    line-height: 110%;
+  }
+
+  .workProcessHead p {
+    font-size: 20px;
+    line-height: 170%;
+  }
+
+  .learnButton {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 12px 20px;
+    margin-bottom: 115px;
+    width: 248px;
+  }
+
+  .learnButton:hover i {
+    transform: translateX(175px);
+    transition: 0.5s;
+  }
+
+  .workProcessHeadMain {
+    width: 100%;
+  }
+
+  .scrollbar {
+    margin-left: 0px;
+  }
+
+  .scrollInfoCard {
+    margin-bottom: 0px;
+  }
+
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 100% !important;
+  }
+
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .workProcess {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .workProcessHead:after {
+    width: 429px;
+    left: 85px;
+    top: -12px;
+    height: 439px;
+  }
+
+  .workProcessInfo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .scrollInfo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 36px;
+  }
+
+  .workProcessHead h1 {
+    font-size: 64px;
+    line-height: 110%;
+  }
+
+  .workProcessHead p {
+    font-size: 20px;
+    line-height: 170%;
+  }
+
+  .learnButton {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 12px 20px;
+    margin-bottom: 125px;
+    width: 248px;
+  }
+
+  .learnButton:hover i {
+    transform: translateX(175px);
+    transition: 0.5s;
+  }
+
+  .workProcessHeadMain {
+    width: 80%;
+  }
+
+  .scrollbar {
+    margin-left: 0px;
+  }
+
+  .scrollInfoCard {
+    margin-bottom: 0px;
+  }
+
+  .fixed {
+    position: relative;
+    top: 0%;
+    width: 80% !important;
+  }
+
+  .fixedInfo {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .fixed {
+    position: fixed;
+    top: 1%;
+    box-sizing: border-box;
+    width: 42% !important;
+  }
+
+  .fixedInfo {
+    width: 38%;
+    position: relative;
+    left: 62%;
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 3000px) {
+  .fixed {
+    width: 40% !important;
+  }
+
+  .fixedInfo {
+    width: 38%;
+    position: relative;
+    left: 62%;
+  }
+}

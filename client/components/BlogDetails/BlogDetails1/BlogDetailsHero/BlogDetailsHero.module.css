@@ -1,0 +1,454 @@
+.blogDetailsHero {
+  padding: 100px 0px 30px 0px;
+}
+
+.blogHeaderText {
+  width: 730px;
+  margin: 0 auto !important;
+  margin-bottom: 40px !important;
+}
+
+.blogHeaderText h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #4f42c9;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+.blogHeaderText h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #ffffff;
+  line-height: 58px;
+  letter-spacing: -1%;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.blogMedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mediaData {
+  display: flex;
+}
+
+.blogMedia p {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
+  text-align: left;
+  color: #e3ecff;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.mediaData i {
+  margin-left: 60px;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.blogMedia .mediaButton button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #e3ecff;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.4s;
+}
+
+.mediaButton button a {
+  text-decoration: none;
+  transition: all linear 0.4s;
+  color: #4f42c9;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mediaButton button:hover {
+  background-color: #4f42c9 !important;
+}
+
+.mediaButton button a:hover {
+  color: #ffffff !important;
+}
+
+.DetailsText {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.DetailsText p {
+  text-align: left !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #e3ecff !important;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.DetailsText p a {
+  color: #4f42c9 !important;
+}
+
+.DetailsReview {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px 50px;
+  background-color: #e3ecff;
+  text-align: left !important;
+}
+
+.DetailsReview i {
+  font-size: 32px;
+  color: #4f42c9;
+}
+
+.DetailsReview h4 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 600;
+  color: #101010;
+  font-family: "Jost";
+  margin-top: 10px;
+}
+
+.DetailsReview p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #101010;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.DetailsTags {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 0px;
+  text-align: left !important;
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #383838;
+}
+
+.DetailsTags ul {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul .TagsHeader {
+  display: flex;
+  align-items: center;
+}
+
+.TagsHeader h3 {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #4f42c9;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.TagsHeader i {
+  font-size: 25px;
+  line-height: 32px;
+  font-family: 600;
+  color: #4f42c9;
+  margin-right: 5px;
+}
+
+ul .TagLink {
+  list-style: none;
+}
+
+.TagLink .TagItem {
+  text-decoration: none;
+  background-color: #e3ecff !important;
+  padding: 10px !important;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #101010;
+  font-family: "Swiss 721", sans-serif;
+  margin-left: 16px !important;
+  transition: all linear 0.2s;
+}
+
+.TagLink .TagItem:hover {
+  background-color: #4f42c9 !important;
+  color: #ffffff !important;
+}
+
+.SocialMedia {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0px 0px 80px;
+  border-bottom: 1px solid #383838;
+}
+
+.SocialMedia h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #e3ecff;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.SocialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.SocialIcon .Icon {
+  margin-right: 20px;
+}
+
+.BlogLink {
+  width: 470px;
+  border: 1px solid #e3ecff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.SocialMedia p {
+  font-size: 15px;
+  line-height: 32px;
+  color: #e3ecff;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
+  margin: 0px;
+}
+
+.SocialMedia i {
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #4f42c9;
+  margin-left: 5px;
+}
+
+.RelatedPosts {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0px 0px 50px;
+  border-bottom: 1px solid #383838;
+  text-align: left !important;
+}
+
+.RelatedPosts h2 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #e3ecff;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 40px;
+}
+
+.PostsCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.PostsCard img {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+.PostsCard h3 {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #4f42c9;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.PostsCard h1 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #e3ecff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.PostsCard p {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
+  text-align: left;
+  color: #e3ecff;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.PostsCard i {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+  .blogDetailsHero {
+    padding: 40px 0px;
+  }
+
+  .blogHeaderText {
+    width: 600px !important;
+  }
+
+  .DetailsText {
+    width: 600px !important;
+  }
+
+  .DetailsTags {
+    width: 600px !important;
+  }
+
+  .SocialMedia {
+    width: 600px !important;
+  }
+
+  .RelatedPosts {
+    width: 600px !important;
+  }
+
+  .DetailsReview {
+    width: 600px !important;
+  }
+
+  .PostsCard i {
+    width: 10px;
+  }
+
+  .PostsCard p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .blogDetailsHero {
+    padding: 40px 0px;
+  }
+
+  .blogHeaderText {
+    width: auto !important;
+    padding: 0px 10px;
+  }
+
+  .blogHeaderText h3 {
+    font-size: 15px !important;
+  }
+
+  .blogHeaderText h1 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+
+  .blogMedia p {
+    font-size: 12px !important;
+  }
+
+  .blogMedia i {
+    margin: 0px !important;
+    padding: 0px 10px;
+  }
+
+  .DetailsText {
+    width: auto !important;
+  }
+
+  .DetailsTags {
+    width: auto !important;
+  }
+
+  .SocialMedia {
+    width: auto !important;
+  }
+
+  .RelatedPosts {
+    width: auto !important;
+  }
+
+  .DetailsReview {
+    width: auto !important;
+    padding: 10px 20px !important;
+  }
+
+  .BlogLink {
+    width: 310px !important;
+  }
+
+  .PostsCard i {
+    width: 10px;
+  }
+
+  .PostsCard p {
+    font-size: 10px;
+  }
+
+  .SocialMedia p {
+    font-size: 9px !important;
+  }
+
+  .SocialMedia i {
+    font-size: 16px !important;
+  }
+
+  .PostsCard img {
+    width: 100% !important;
+    height: auto !important;
+    text-align: center;
+    margin-top: 30px !important;
+  }
+
+  .PostsCard {
+    display: flow-root !important;
+  }
+
+  .RelatedPosts h2 {
+    margin-bottom: 0px !important;
+  }
+}
