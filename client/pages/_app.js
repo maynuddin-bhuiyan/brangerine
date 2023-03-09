@@ -18,13 +18,13 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossOrigin="anonymous"
         ></link>
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
           integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        />
+        /> */}
         <link
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"

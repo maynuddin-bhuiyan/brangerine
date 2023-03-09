@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { caseStudiesData } from "../../data/casestudiesdata";
 import styles from "./CaseStudiesPage.module.css";
@@ -18,18 +18,22 @@ const CaseStudiesPage = () => {
     }
   }, [router.query.page]);
 
+
+
   return (
     <div className={styles.CaseStudiesHeroSec}>
-       <div className={styles.abstractLeft}></div>
+      <div className={styles.abstractLeft}></div>
       <div className={styles.abstractRight}></div>
       <div className={styles.abstractMore}></div>
       <h3>PAST PROJECTS</h3>
       <h1>Case Studies</h1>
       <div className={`container ${styles.StudiesHeroSec}`}>
         <div className={`row `}>
-
           {caseStudiesData[currPage]?.data?.map((item, i) => (
-            <div className={`col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center`} key={item?.id}>
+            <div
+              className={`col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center`}
+              key={item?.id}
+            >
               <div
                 className={`${styles.StudieCard}`}
                 onMouseOut={() => setShow(null)}
@@ -59,26 +63,58 @@ const CaseStudiesPage = () => {
             </div>
           ))}
 
-
           <nav aria-label="Page navigation example">
             <ul className={`pagination ${styles.studiePagination}`}>
-              {
-                currPage > 0 && <Link href={`/case-studies/?page=${currPage - 1}`}><li className="page-item"><a className={`page-link ${styles.PaginationButton}`} id={styles.PaginationButton} href="#"> <i className="ri-arrow-left-line" id={styles.iconLeft}></i> Previous</a></li></Link>
-              }
-              {
-                caseStudiesData.map((data, i) => {
-                  return (
-                    <Link href={`/case-studies/?page=${i}`}>
-                      <li className="page-item">
-                        <a className={`page-link ${styles.PaginationItem} ${currPage == i && styles.active}`} href="#">{i + 1}</a>
-                      </li>
-                    </Link>
-                  )
-                })
-              }
-              {
-                caseStudiesData.length > currPage + 1 && <Link href={`/case-studies/?page=${currPage + 1}`}><li className="page-item"><a className={`page-link ${styles.PaginationButton}`} href="#">Next <i className="ri-arrow-right-line" id={styles.iconRight}></i></a></li></Link>
-              }
+              {currPage > 0 && (
+                <Link href={`/case-studies/?page=${currPage - 1}`}>
+                  <li className="page-item">
+                    <a
+                      className={`page-link ${styles.PaginationButton}`}
+                      id={styles.PaginationButton}
+                      href="#"
+                    >
+                      {" "}
+                      <i
+                        className="ri-arrow-left-line"
+                        id={styles.iconLeft}
+                      ></i>{" "}
+                      Previous
+                    </a>
+                  </li>
+                </Link>
+              )}
+              {caseStudiesData.map((data, i) => {
+                return (
+                  <Link href={`/case-studies/?page=${i}`}>
+                    <li className="page-item">
+                      <a
+                        className={`page-link ${styles.PaginationItem} ${
+                          currPage == i && styles.active
+                        }`}
+                        href="/"
+                      >
+                        {i + 1}
+                      </a>
+                    </li>
+                  </Link>
+                );
+              })}
+              {caseStudiesData.length > currPage + 1 && (
+                <Link href={`/case-studies/?page=${currPage + 1}`}>
+                  <li className="page-item">
+                    <a
+                      className={`page-link ${styles.PaginationButton}`}
+                      href="#"
+                    >
+                      Next{" "}
+                      <i
+                        className="ri-arrow-right-line"
+                        id={styles.iconRight}
+                      ></i>
+                    </a>
+                  </li>
+                </Link>
+              )}
             </ul>
           </nav>
         </div>
